@@ -5,21 +5,36 @@
       "name": "主動統一台股增長",
       "full_name": "統一台股增長主動式ETF基金",
       "provider": "uni",
-      "provider_id": "49YTW"
+      "provider_id": "49YTW",
+      "issuer": "統一投信",
+      "tag": "大型成長",
+      "description": "聚焦市值前 300 大企業，重視成長性與獲利力，依市場變化動態調整配置。",
+      "color": "#167dca",
+      "info_url": "https://www.ezmoney.com.tw/ETF/Fund/Info?fundCode=49YTW"
     },
     {
       "code": "00403A",
       "name": "主動統一升級50",
       "full_name": "統一台股升級50主動式ETF基金",
       "provider": "uni",
-      "provider_id": "63YTW"
+      "provider_id": "63YTW",
+      "issuer": "統一投信",
+      "tag": "大型股升級",
+      "description": "以台灣大型股為核心，透過主動選股在大型企業中尋找升級與成長機會。",
+      "color": "#1e8f5a",
+      "info_url": "https://www.ezmoney.com.tw/ETF/Fund/Info?fundCode=63YTW"
     },
     {
       "code": "00405A",
       "name": "主動富邦台灣龍耀",
       "full_name": "台灣龍耀主動式ETF基金",
       "provider": "fubon",
-      "provider_id": "00405A"
+      "provider_id": "00405A",
+      "issuer": "富邦投信",
+      "tag": "趨勢龍頭",
+      "description": "鎖定台灣長期耀眼的趨勢產業與龍頭企業，依市況動態調整，追求優於大盤的成長。",
+      "color": "#d97b1f",
+      "info_url": "https://websys.fsit.com.tw/FubonETF/Fund/Profile.aspx?stkId=00405A"
     }
   ],
   "analysis": {

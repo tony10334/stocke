@@ -54,7 +54,9 @@ python analyze.py
 python -m http.server 8765
 ```
 
-前端是 `site/` 下的三個檔案（HTML、CSS、JS），透過相對路徑讀 `../data/site-data.json`，所以整個 repo 直接當靜態網站部署即可（GitHub Pages 選 branch 根目錄，根目錄的 `index.html` 會轉到 `site/`）。若資料檔放別處，可用 `?data=<url>` 覆蓋。圖表用 Chart.js 4.4.1（cdnjs），其餘無依賴。
+前端是 `site/` 下的三個檔案（HTML、CSS、JS），透過相對路徑讀 `../data/site-data.json`，所以整個 repo 直接當靜態網站部署即可（GitHub Pages 選 branch 根目錄，根目錄的 `index.html` 會轉到 `site/`）。若資料檔放別處，可用 `?data=<url>` 覆蓋。圖表用 Chart.js 4.4.1（cdnjs），字體用 Google Fonts 的 Geist、Geist Mono、Noto Sans TC，其餘無依賴。
+
+每檔 ETF 的顏色、標籤、簡介與投信連結在 `etfs.json`（`color`、`tag`、`description`、`info_url`），加新檔時一併填寫。
 
 ## 測試
 

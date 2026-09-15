@@ -236,6 +236,10 @@ class Prices(unittest.TestCase):
         s = site["series"]["A"]
         self.assertEqual([x["premium_pct"] for x in s], [2.0, -2.0])
         self.assertEqual(site["prices_coverage"]["A"], {"count": 2, "last": "d2"})
+        self.assertEqual([p["date"] for p in site["price_series"]["A"]], ["d1", "d2"])
+        self.assertEqual(site["price_series"]["A"][1]["close"], 10.29)
+        self.assertEqual(site["etfs"][0]["code"], "A")
+        self.assertIn("description", site["etfs"][0])
         # 缺某天行情 -> 該天 null，其他不受影響
         site2 = build_site_data(ETFS[:1], snaps, prices={"A": {"d1": prices["A"]["d1"]}})
         self.assertIsNone(site2["overview"][0]["close"])
