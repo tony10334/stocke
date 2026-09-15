@@ -18,6 +18,9 @@
   </a>
   <nav class="top-actions">
     <a href="#about">資料說明</a>
+    <button class="icon-button" id="settings-toggle" type="button" title="觀察設定" aria-label="觀察設定" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+    </button>
     <a class="icon-button" href="https://github.com/tony10334/stocke" target="_blank" rel="noreferrer" title="GitHub" aria-label="GitHub">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.7 5.6.7 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2a10.7 10.7 0 0 1 5.7 0c2.2-1.5 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.4.8 1 .8 2.1v3.1c0 .3.2.6.8.5 4.5-1.5 7.8-5.8 7.8-10.9C23.3 5.6 18.3.5 12 .5z"/></svg>
     </a>
@@ -40,6 +43,24 @@
   </section>
 
   <section class="status-line" id="status-line"></section>
+
+  <section class="panel settings-panel" id="settings-panel" hidden>
+    <div class="section-head">
+      <div>
+        <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>觀察設定</h2>
+        <p class="settings-hint">選擇想看的內容與共同異動規則。設定只保存在此瀏覽器，完整資料仍會保留。</p>
+      </div>
+      <button class="icon-button dark" id="settings-close" type="button" aria-label="關閉">✕</button>
+    </div>
+    <div class="settings-grid">
+      <label><span>比較窗口</span><select data-setting="window"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="5">5</option><option value="10">10</option></select></label>
+      <label><span>統計口徑</span><select data-setting="basis"><option value="funds">funds</option><option value="issuers">issuers</option></select></label>
+      <label><span>門檻</span><select data-setting="min" id="setting-min"></select></label>
+      <label><span>方向</span><select data-setting="direction"><option value="buy">buy</option><option value="sell">sell</option><option value="both">both</option></select></label>
+      <label><span>規模調整後強度</span><select data-setting="strength"><option value="0">0</option><option value="0.5">0.5</option><option value="1">1</option><option value="2">2</option><option value="5">5</option></select></label>
+    </div>
+    <div class="settings-checks" id="settings-checks"></div>
+  </section>
 
   <section class="summary-strip" id="summary-strip"></section>
 

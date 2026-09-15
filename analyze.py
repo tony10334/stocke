@@ -58,7 +58,8 @@ def main(argv=None) -> int:
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     with open(args.out, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(site, f, ensure_ascii=False, indent=1)
+        # 前端讀的產物，不縮排以縮小檔案（git diff 可讀性不重要）
+        json.dump(site, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
 
     log.info("%d snapshots, %d dates (%s .. %s) -> %s (%.0f KB)",

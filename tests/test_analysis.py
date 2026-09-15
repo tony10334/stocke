@@ -182,6 +182,19 @@ class SiteData(unittest.TestCase):
         self.assertEqual([x["date"] for x in s], ["d1", "d2", "d3"])
         self.assertIsNotNone(s[0]["cash_pct"])
         self.assertIsNone(self.site["series"]["B"][0]["cash_pct"])      # B 沒揭露現金
+        self.assertEqual(s[0]["top10_weight"], round(sum(h["weight"] for h in self.snaps["A"]["d1"]["holdings"]), 2))
+
+    def test_holdings_history(self):
+        h = self.site["holdings_history"]["C"]
+        self.assertEqual(h["dates"], ["d1", "d3"])
+        self.assertEqual(h["units"], [500, 500])
+        self.assertEqual(h["stocks"]["1"], {"name": "股一", "shares": [100, 200]})
+        a = self.site["holdings_history"]["A"]
+        self.assertEqual(a["stocks"]["3"]["shares"], [100, 100, 1000])
+        # 某天沒持有的股票補 0
+        snaps = {"A": {"d1": snap("A", "d1", 1000, {"1": 100, "2": 100}), "d2": snap("A", "d2", 1000, {"1": 100})}}
+        site = build_site_data(ETFS[:1], snaps)
+        self.assertEqual(site["holdings_history"]["A"]["stocks"]["2"]["shares"], [100, 0])
 
     def test_stock_index(self):
         st = self.site["stocks"]

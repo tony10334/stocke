@@ -32,6 +32,7 @@ DEFAULT_CONFIG = {
     "corporate_action_min_ratio": 1.5,  # 股數倍數 >= 1.5 或 <= 1/1.5 才可能是公司行動
     "corporate_action_tolerance_pct": 1.0,  # 各 ETF 倍數彼此差異 <= 1% 視為一致
     "top_holdings": 3,                  # 總覽卡片顯示前幾大
+    "detail_change_intervals": 40,      # 單檔明細保留最近幾個區間的異動（反向索引仍看完整歷史）
 }
 
 ACTION_ORDER = {"new": 0, "add": 1, "reduce": 2, "exit": 3, "corporate_action": 4}
@@ -242,8 +243,8 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
         })
     intervals.reverse()  # 最新在前
 
-    # 3. 每檔：序列、最新持股、異動清單、總覽
-    overview, series, detail, coverage = [], {}, {}, {}
+    # 3. 每檔：序列、最新持股、異動清單、總覽、壓縮的持股歷史（前端自訂比較窗口用）
+    overview, series, detail, coverage, holdings_history = [], {}, {}, {}, {}
     for code in codes:
         snaps = snapshots[code]
         ds = sorted(snaps)
@@ -263,7 +264,20 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
             "non_stock_pct": non_stock_pct(s),
             "cash_pct": cash_pct(s),
             "holdings_count": len(s["holdings"]),
+            "top10_weight": round(sum(sorted((h.get("weight") or 0 for h in s["holdings"]), reverse=True)[:10]), 2),
         } for d, s in ((d, snaps[d]) for d in ds)]
+
+        stocks_hist: dict[str, dict] = {}
+        for i, d in enumerate(ds):
+            for h in snaps[d]["holdings"]:
+                entry = stocks_hist.setdefault(h["code"], {"name": h.get("name"), "shares": [0] * len(ds)})
+                entry["shares"][i] = h.get("shares") or 0
+                entry["name"] = h.get("name") or entry["name"]
+        holdings_history[code] = {
+            "dates": ds,
+            "units": [snaps[d]["outstanding_units"] for d in ds],
+            "stocks": stocks_hist,
+        }
 
         latest, prev = snaps[ds[-1]], (snaps[ds[-2]] if len(ds) > 1 else None)
         px_latest = px.get(ds[-1], {})
@@ -273,6 +287,9 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
         changes = [{"date": b, "prev_date": a, "items": own_diffs[(code, a, b)]}
                    for a, b in zip(ds, ds[1:])]
         changes.reverse()
+        # 反向索引要看完整歷史，前端明細只列最近幾十個區間，其餘裁掉以控制檔案大小
+        full_changes = changes
+        changes = changes[: cfg.get("detail_change_intervals", 40)]
         detail[code] = {
             "date": ds[-1],
             "holdings": holdings,
@@ -280,6 +297,7 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
             "non_stock_items": latest.get("non_stock_items") or [],
             "futures": latest.get("futures") or [],
             "changes": changes,
+            "_full_changes": full_changes,
         }
 
         nsp, nsp_prev = non_stock_pct(latest), (non_stock_pct(prev) if prev else None)
@@ -321,7 +339,7 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
     for code in codes:
         d = detail[code]
         last_change_by_stock: dict[str, dict] = {}
-        for ch in d["changes"]:  # 最新在前，第一次遇到即最近一次
+        for ch in d["_full_changes"]:  # 最新在前，第一次遇到即最近一次
             for it in ch["items"]:
                 last_change_by_stock.setdefault(it["code"], {
                     "date": ch["date"], "action": it["action"],
@@ -338,10 +356,12 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
         # 已出清的股票也要查得到最近一次異動
         for stock, lc in last_change_by_stock.items():
             if lc["action"] == "exit" and stock not in stocks:
-                name = next((it["name"] for ch in d["changes"] for it in ch["items"] if it["code"] == stock), None)
+                name = next((it["name"] for ch in d["_full_changes"] for it in ch["items"] if it["code"] == stock), None)
                 stocks[stock] = {"code": stock, "name": name, "held_by": []}
             if stock in stocks and not any(x["etf"] == code for x in stocks[stock]["held_by"]) and lc["action"] == "exit":
                 stocks[stock].setdefault("exited_by", []).append({"etf": code, **lc})
+    for d in detail.values():
+        del d["_full_changes"]
     for entry in stocks.values():
         entry["etf_count"] = len(entry["held_by"])
         entry["total_amount"] = sum(x.get("amount") or 0 for x in entry["held_by"])
@@ -361,6 +381,7 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
         "series": series,
         "intervals": intervals,
         "etf_detail": detail,
+        "holdings_history": holdings_history,
         "stocks": dict(sorted(stocks.items(), key=lambda kv: (-kv[1]["etf_count"], -kv[1]["total_amount"]))),
         "notes": {
             "per_unit": "每單位持股數 = 股數 / 流通在外單位數；日對日比較用它，排除申贖造成的規模效果。加/減碼要同時滿足股數有變且每單位變動超過門檻。",

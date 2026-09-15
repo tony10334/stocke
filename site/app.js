@@ -11,6 +11,18 @@
   const ICON_TREND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>';
   const ICON_DB = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>';
 
+  // 觀察設定：只存在這個瀏覽器（localStorage），資料本身不變
+  const SETTINGS_KEY = "stocketf.settings.v1";
+  const SECTIONS = [
+    ["signals", "共同異動雷達"], ["cash", "現金水位"], ["holdings", "持股與調整"],
+    ["m-close", "收盤價"], ["m-nav", "基金淨值"], ["m-vol", "成交量"], ["m-chg", "每日漲跌幅"],
+    ["m-prem", "折溢價"], ["m-aum", "基金規模"], ["m-units", "流通單位數"], ["m-top10", "前十大集中度"],
+  ];
+  let settings = { window: 1, basis: "funds", min: null, direction: "buy", strength: null, show: Object.fromEntries(SECTIONS.map(([k]) => [k, true])) };
+  const loadSettings = () => { try { const s = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "null"); if (s) settings = { ...settings, ...s, show: { ...settings.show, ...(s.show || {}) } }; } catch (e) { /* ignore */ } };
+  const saveSettings = () => { try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings)); } catch (e) { /* ignore */ } };
+  const showSection = (key) => settings.show[key] !== false;
+
   let site = null;
   let color = {};                 // etf -> 顏色（依 etfs.json 順序固定，不隨篩選改變）
   let selected = new Set();       // 篩選中的 ETF
@@ -127,10 +139,10 @@
 
   function renderSummary() {
     const cov = site.coverage;
-    const comparable = site.etfs.filter((e) => (cov[e.code]?.count || 0) >= 2).length;
+    const comparable = site.etfs.filter((e) => (cov[e.code]?.count || 0) > settings.window).length;
     const pending = site.etfs.length - comparable;
-    const iv = site.intervals[0];
-    const aligned = iv ? iv.etfs.length : 0;
+    const iv = computeWindow(site.dates.length - 1);
+    const aligned = iv ? iv.participating.length : 0;
     const excluded = iv ? iv.excluded.length : 0;
     const obs = site.etfs.reduce((s, e) => s + (cov[e.code]?.count || 0), 0);
     fill($("#summary-strip"),
@@ -157,46 +169,139 @@
 
   function rerenderFiltered() { renderFilters(); renderCash(); renderFundGrid(); }
 
-  // ---------------------------------------------------------------- consensus
-  function renderConsensus() {
+  // ---------------------------------------------------------------- consensus（瀏覽器端依觀察設定即時計算）
+  const ADD = new Set(["new", "add"]);
+  const REDUCE = new Set(["reduce", "exit"]);
+
+  // 比較全體日期序列上 toIdx 與 toIdx - window 兩天；缺任一天的 ETF 不納入。規則同 analysis/core.py。
+  function computeWindow(toIdx) {
+    const dates = site.dates;
+    const fromIdx = toIdx - settings.window;
+    if (fromIdx < 0 || toIdx >= dates.length) return null;
+    const from = dates[fromIdx], to = dates[toIdx];
     const cfg = site.config;
-    $("#consensus-title").textContent = `${cfg.co_signal_min_etfs} 檔 ETF 以上共同加碼`;
-    const ivs = site.intervals;
+    const minPct = settings.strength ?? cfg.min_per_unit_change_pct;
+    const participating = [], excluded = [], byStock = {}, names = {};
+    for (const e of site.etfs) {
+      const h = site.holdings_history[e.code];
+      const iTo = h ? h.dates.indexOf(to) : -1, iFrom = h ? h.dates.indexOf(from) : -1;
+      if (iTo < 0 || iFrom < 0) { excluded.push(e.code); continue; }
+      participating.push(e.code);
+      const uTo = h.units[iTo], uFrom = h.units[iFrom];
+      for (const [code, st] of Object.entries(h.stocks)) {
+        const sp = st.shares[iFrom] || 0, sc = st.shares[iTo] || 0;
+        if (sp === sc) continue;                       // 股數沒動就不是經理人決策
+        let action, chg = null;
+        if (sp && sc) {
+          const pp = sp / uFrom, pc = sc / uTo;
+          chg = (pc - pp) / pp * 100;
+          if (chg > 0 && chg >= minPct) action = "add";
+          else if (chg < 0 && -chg >= minPct) action = "reduce";
+          else continue;
+        } else if (sc) action = "new";
+        else { action = "exit"; chg = -100; }
+        names[code] = st.name;
+        (byStock[code] ||= []).push({ etf: e.code, action, per_unit_change_pct: chg == null ? null : Math.round(chg * 100) / 100, shares_change: sc - sp, ratio: sp && sc ? sc / sp : null });
+      }
+    }
+    const ca = {};
+    for (const [code, lst] of Object.entries(byStock)) {
+      const rs = lst.filter((x) => x.ratio).map((x) => x.ratio);
+      if (rs.length < 2) continue;
+      const mn = Math.min(...rs), mx = Math.max(...rs);
+      if ((mx - mn) / mn * 100 > cfg.corporate_action_tolerance_pct) continue;
+      const mean = rs.reduce((a, b) => a + b, 0) / rs.length;
+      if (mean >= cfg.corporate_action_min_ratio || mean <= 1 / cfg.corporate_action_min_ratio) ca[code] = { code, name: names[code], ratio: Math.round(mean * 10000) / 10000, etfs: lst.map((x) => x.etf) };
+    }
+    const basisKey = (etf) => (settings.basis === "issuers" ? providerName(etfMeta(etf)) : etf);
+    const minCount = settings.min ?? cfg.co_signal_min_etfs;
+    const signals = (actions) => Object.entries(byStock).filter(([code]) => !ca[code]).map(([code, lst]) => {
+      const hits = lst.filter((x) => actions.has(x.action));
+      const count = new Set(hits.map((x) => basisKey(x.etf))).size;
+      return count >= minCount ? { code, name: names[code], count, etfs: hits.sort((a, b) => a.etf.localeCompare(b.etf)) } : null;
+    }).filter(Boolean).sort((a, b) => b.count - a.count || a.code.localeCompare(b.code));
+    return { from, to, participating, excluded, co_add: signals(ADD), co_reduce: signals(REDUCE), corporate_actions: Object.values(ca).sort((a, b) => a.code.localeCompare(b.code)) };
+  }
+
+  function renderConsensus() {
+    const minCount = settings.min ?? site.config.co_signal_min_etfs;
+    const unit = settings.basis === "issuers" ? "家投信" : "檔 ETF";
+    const dirLabel = settings.direction === "sell" ? "減碼" : settings.direction === "both" ? "異動" : "加碼";
+    $("#consensus-title").textContent = `${minCount} ${unit} 以上共同${dirLabel}`;
     const body = $("#consensus-body");
-    if (!ivs.length) {
+    const last = site.dates.length - 1;
+    const iv = computeWindow(last);
+    if (!iv) {
       $("#consensus-meta").textContent = "";
-      fill(body, el("div", { class: "consensus-empty", html: ICON_TREND }, el("div", null, el("b", null, "還沒有兩個以上的資料日可比較"), el("span", null, "累積第二個營業日後開始比較。"))));
+      fill(body, el("div", { class: "consensus-empty", html: ICON_TREND }, el("div", null, el("b", null, `還沒有足夠的資料日可比較（比較窗口 ${settings.window}）`), el("span", null, "累積更多營業日，或在觀察設定把比較窗口調小。"))));
       return;
     }
-    const iv = ivs[0];
     $("#consensus-meta").textContent = `固定比較 ${iv.from} → ${iv.to}`;
     const signalList = (list) => el("div", { class: "signal-list" }, list.map((s) => el("div", { class: "signal-item" },
       el("span", { class: "stock" }, el("code", null, s.code), s.name || ""),
-      el("span", { class: "count" }, `${s.count} 檔`),
+      el("span", { class: "count" }, `${s.count} ${settings.basis === "issuers" ? "家" : "檔"}`),
       el("a", { href: `#stock/${s.code}` }, "反查"),
       el("span", { class: "etfs" }, s.etfs.map((x) => pill(x.etf, `${ACTION_LABEL[x.action]}${x.per_unit_change_pct != null ? " " + signed(x.per_unit_change_pct) + "%" : ""}`, x.action))),
     )));
     const empty = (what) => el("div", { class: "consensus-empty", html: ICON_TREND }, el("div", null, el("b", null, `目前沒有符合門檻的共同${what}`), el("span", null, "只使用相同前後資料日的完整快照；缺日基金不會混入訊號。")));
+    const showBuy = settings.direction !== "sell", showSell = settings.direction !== "buy";
+    const strength = settings.strength ?? site.config.min_per_unit_change_pct;
+    const history = [];
+    for (let i = last - 1; i >= 0 && history.length < 6; i--) { const w = computeWindow(i); if (w) history.push(w); }
     fill(body,
       el("div", { class: "coverage-row" },
-        el("b", null, `${iv.etfs.length} / ${site.etfs.length} 檔日期對齊`),
-        el("span", null, `參與：${iv.etfs.join("、")}`),
+        el("b", null, `${iv.participating.length} / ${site.etfs.length} 檔日期對齊`),
+        el("span", null, `參與：${iv.participating.join("、")}`),
         iv.excluded.length ? el("span", null, `未納入：${iv.excluded.join("、")}`) : el("span", null, "無缺日"),
+        el("span", null, `窗口 ${settings.window} 個資料日 · 強度 ≥ ${strength}%`),
       ),
-      iv.co_add.length ? signalList(iv.co_add) : empty("加碼"),
-      el("div", { class: "signal-group" }, el("h3", null, `${cfg.co_signal_min_etfs} 檔以上共同減碼`), iv.co_reduce.length ? signalList(iv.co_reduce) : el("p", { class: "empty" }, "無")),
+      showBuy ? (iv.co_add.length ? signalList(iv.co_add) : empty("加碼")) : null,
+      showSell ? el("div", { class: "signal-group" }, el("h3", null, `${minCount} ${unit} 以上共同減碼`), iv.co_reduce.length ? signalList(iv.co_reduce) : (showBuy ? el("p", { class: "empty" }, "無") : empty("減碼"))) : null,
       iv.corporate_actions.length ? el("div", { class: "signal-group" }, el("h3", null, "疑似公司行動（待核對）"), el("ul", null, iv.corporate_actions.map((c) => el("li", null, `${c.code} ${c.name || ""}：股數 ×${c.ratio}（${c.etfs.join("、")}）`)))) : null,
-      el("p", { class: "footnote" }, `「每單位」用持有股數除以基金流通單位數，協助排除申購買回造成的規模效果。加減碼需股數確實改變且每單位變動超過 ${cfg.min_per_unit_change_pct}%。多檔出現一致倍數變化時標為公司行動待核對。權重上升本身不算買進。`),
+      el("p", { class: "footnote" }, `「每單位」用持有股數除以基金流通單位數，協助排除申購買回造成的規模效果。加減碼需股數確實改變且每單位變動超過強度門檻。多檔出現一致倍數變化時標為公司行動待核對。權重上升本身不算買進。`),
       el("details", { class: "signal-history" },
-        el("summary", null, `歷史符合紀錄（最近 ${Math.min(6, Math.max(ivs.length - 1, 0))} 個區間）`),
-        el("div", null, ivs.slice(1, 7).map((h) => el("div", null,
+        el("summary", null, `歷史符合紀錄（最近 ${history.length} 個區間）`),
+        el("div", null, history.map((h) => el("div", null,
           el("b", null, `${h.from} → ${h.to}`),
-          el("span", null, `共同加碼 ${h.co_add.length}`), el("span", null, `共同減碼 ${h.co_reduce.length}`),
+          showBuy ? el("span", null, `共同加碼 ${h.co_add.length}`) : null, showSell ? el("span", null, `共同減碼 ${h.co_reduce.length}`) : null,
           h.excluded.length ? el("span", null, `缺：${h.excluded.join("、")}`) : null,
-          h.co_add.map((s) => el("span", null, el("code", null, s.code), ` ${s.name || ""} ×${s.count}`)),
-        )), ivs.length < 2 ? el("p", { class: "empty" }, "尚無更早的區間。") : null),
+          (showBuy ? h.co_add : []).concat(showSell ? h.co_reduce : []).map((s) => el("span", null, el("code", null, s.code), ` ${s.name || ""} ×${s.count}`)),
+        )), history.length ? null : el("p", { class: "empty" }, "尚無更早的區間。")),
       ),
     );
+  }
+
+  // ---------------------------------------------------------------- settings panel
+  function renderSettings() {
+    const cfg = site.config;
+    const minSel = $("#setting-min");
+    const maxN = Math.max(2, site.etfs.length);
+    fill(minSel, Array.from({ length: maxN - 1 }, (_, i) => el("option", { value: String(i + 2) }, String(i + 2))));
+    const current = { window: settings.window, basis: settings.basis, min: settings.min ?? cfg.co_signal_min_etfs, direction: settings.direction, strength: settings.strength ?? cfg.min_per_unit_change_pct };
+    for (const sel of document.querySelectorAll("#settings-panel select[data-setting]")) {
+      const k = sel.dataset.setting;
+      if (![...sel.options].some((o) => o.value === String(current[k]))) sel.append(el("option", { value: String(current[k]) }, String(current[k])));
+      sel.value = String(current[k]);
+    }
+    fill($("#settings-checks"), SECTIONS.map(([k, label]) => el("label", null,
+      el("input", { type: "checkbox", checked: showSection(k) || null, onchange: (ev) => { settings.show[k] = ev.target.checked; saveSettings(); applySections(); } }), label)));
+    applySections();
+  }
+  function applySections() {
+    $("#signals").toggleAttribute("data-hidden-section", !showSection("signals"));
+    $("#cash").toggleAttribute("data-hidden-section", !showSection("cash"));
+    const holdingsTab = $("#detail-tabs button[data-tab=holdings]");
+    holdingsTab.toggleAttribute("data-hidden-section", !showSection("holdings"));
+    if (!showSection("holdings") && detailTab === "holdings") { detailTab = "price"; if (site) renderDetail(); }
+    for (const [k] of SECTIONS) { const box = document.getElementById(k + "-box"); if (box) box.toggleAttribute("data-hidden-section", !showSection(k)); }
+  }
+  function onSettingChange(ev) {
+    const k = ev.target.dataset.setting, v = ev.target.value;
+    if (k === "window" || k === "min") settings[k] = Number(v);
+    else if (k === "strength") settings[k] = Number(v);
+    else settings[k] = v;
+    saveSettings();
+    renderSummary(); renderConsensus();
   }
 
   // ---------------------------------------------------------------- cash
@@ -294,9 +399,10 @@
     const sLabels = series.map((s) => s.date);
     const pLabels = prices.map((p) => p.date);
 
-    const metric = (id, title, value, unit, note) => el("div", { class: "metric-box" },
+    const metric = (id, title, value, unit, note) => el("div", { class: "metric-box", id: id + "-box", "data-hidden-section": showSection(id) ? null : "" },
       el("div", { class: "metric-head" }, el("h3", null, title), el("span", null, value, unit ? el("small", null, unit) : null)),
       el("div", { class: "chart" }, el("canvas", { id })), note ? el("p", { class: "footnote", style: "margin-top:8px" }, note) : null);
+    const latestS = series[series.length - 1] || {};
 
     if (detailTab === "price") {
       const last = prices[prices.length - 1] || {};
@@ -321,6 +427,7 @@
         el("div", { class: "metrics-grid" },
           metric("m-units", "流通在外單位數", fmtYi(ov.outstanding_units, 2), "億單位", ov.units_change != null ? `最新一日變動 ${ov.units_change > 0 ? "+" : ""}${fmtInt(ov.units_change)} 單位` : null),
           metric("m-cash", "非股票水位", fmtNum(ov.non_stock_pct), "%", "非股票水位 =（淨資產 − 股票市值）÷ 淨資產；揭露現金為投信公告項目。"),
+          metric("m-top10", "前十大集中度", fmtNum(latestS.top10_weight), "%", "前十大持股權重合計，越高代表配置越集中。"),
         ),
         el("h3", { class: "sub-head" }, `非股票部位明細（${d.date}）`),
         items.length ? el("dl", { class: "kv" }, items.flatMap((i) => [el("dt", null, i.name), el("dd", null, fmtYi(i.amount, 2) + " 億")]), el("dt", null, "非股票合計（淨資產 − 股票市值）"), el("dd", null, fmtYi(ov.non_stock_total, 2) + " 億")) : el("p", { class: "empty" }, "此日投信未揭露明細。"),
@@ -329,6 +436,7 @@
       );
       makeChart("m-units", "line", sLabels, [{ label: "單位數（億）", data: series.map((s) => (s.outstanding_units == null ? null : s.outstanding_units / 1e8)), color: c }], { unit: " 億", tickDigits: 1 });
       makeChart("m-cash", "line", sLabels, [{ label: "非股票水位", data: series.map((s) => s.non_stock_pct), color: c }, { label: "揭露現金", data: series.map((s) => s.cash_pct), color: "#9fb0b5", dash: [4, 3] }], { unit: "%", legend: true, zero: true, tickDigits: 1 });
+      makeChart("m-top10", "line", sLabels, [{ label: "前十大權重合計", data: series.map((s) => s.top10_weight), color: c }], { unit: "%", tickDigits: 0 });
     } else if (detailTab === "holdings") {
       const holdings = [...d.holdings].sort((a, b) => {
         const x = a[holdingsSort.key], y = b[holdingsSort.key];
@@ -392,9 +500,21 @@
     color = Object.fromEntries(site.etfs.map((e, i) => [e.code, e.color || FALLBACK_COLORS[i % FALLBACK_COLORS.length]]));
     if (!selected.size) selected = new Set(site.etfs.map((e) => e.code));
     if (!detailEtf || !site.etf_detail[detailEtf]) detailEtf = site.etfs[0].code;
-    renderStatus(); renderSummary(); renderFilters(); renderConsensus(); renderCash(); stockOptions(); renderStock(""); renderFundGrid(); renderDetail(); renderAbout();
+    renderStatus(); renderSettings(); renderSummary(); renderFilters(); renderConsensus(); renderCash(); stockOptions(); renderStock(""); renderFundGrid(); renderDetail(); renderAbout();
     route();
   }
+
+  function toggleSettings(open) {
+    const panel = $("#settings-panel");
+    const show = open ?? panel.hidden;
+    panel.hidden = !show;
+    $("#settings-toggle").setAttribute("aria-expanded", String(show));
+    if (show) panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  loadSettings();
+  $("#settings-toggle").addEventListener("click", () => toggleSettings());
+  $("#settings-close").addEventListener("click", () => toggleSettings(false));
+  for (const sel of document.querySelectorAll("#settings-panel select[data-setting]")) sel.addEventListener("change", onSettingChange);
 
   function load() {
     return fetch(DATA_URL + (DATA_URL.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" })
