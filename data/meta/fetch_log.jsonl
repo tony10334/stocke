@@ -1,0 +1,33 @@
+{"ts": "2026-09-15T17:06:03+08:00", "etf": "00981A", "date": "2026-09-15", "status": "created", "posted_date": "2026-09-16", "path": "data/00981A/2026-09-15.json"}
+{"ts": "2026-09-15T17:06:03+08:00", "etf": "00403A", "date": "2026-09-15", "status": "created", "posted_date": "2026-09-16", "path": "data/00403A/2026-09-15.json"}
+{"ts": "2026-09-15T17:06:04+08:00", "etf": "00981A", "date": "2026-09-08", "status": "created", "posted_date": "2026-09-09", "path": "data/00981A/2026-09-08.json"}
+{"ts": "2026-09-15T17:06:05+08:00", "etf": "00403A", "date": "2026-09-08", "status": "created", "posted_date": "2026-09-09", "path": "data/00403A/2026-09-08.json"}
+{"ts": "2026-09-15T17:06:05+08:00", "etf": "00981A", "date": "2026-09-09", "status": "created", "posted_date": "2026-09-10", "path": "data/00981A/2026-09-09.json"}
+{"ts": "2026-09-15T17:06:05+08:00", "etf": "00403A", "date": "2026-09-09", "status": "created", "posted_date": "2026-09-10", "path": "data/00403A/2026-09-09.json"}
+{"ts": "2026-09-15T17:06:06+08:00", "etf": "00981A", "date": "2026-09-10", "status": "created", "posted_date": "2026-09-11", "path": "data/00981A/2026-09-10.json"}
+{"ts": "2026-09-15T17:06:06+08:00", "etf": "00403A", "date": "2026-09-10", "status": "created", "posted_date": "2026-09-11", "path": "data/00403A/2026-09-10.json"}
+{"ts": "2026-09-15T17:06:06+08:00", "etf": "00981A", "date": "2026-09-11", "status": "created", "posted_date": "2026-09-14", "path": "data/00981A/2026-09-11.json"}
+{"ts": "2026-09-15T17:06:07+08:00", "etf": "00403A", "date": "2026-09-11", "status": "created", "posted_date": "2026-09-14", "path": "data/00403A/2026-09-11.json"}
+{"ts": "2026-09-15T17:06:07+08:00", "etf": "00981A", "date": "2026-09-14", "status": "created", "posted_date": "2026-09-15", "path": "data/00981A/2026-09-14.json"}
+{"ts": "2026-09-15T17:06:07+08:00", "etf": "00403A", "date": "2026-09-14", "status": "created", "posted_date": "2026-09-15", "path": "data/00403A/2026-09-14.json"}
+{"ts": "2026-09-15T17:06:08+08:00", "etf": "00981A", "date": "2026-09-16", "status": "no_data", "reason": "latest PCF data date is 2026-09-15, 2026-09-16 not posted yet"}
+{"ts": "2026-09-15T17:06:22+08:00", "etf": "00981A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00981A/2026-09-15.json"}
+{"ts": "2026-09-15T17:06:23+08:00", "etf": "00403A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00403A/2026-09-15.json"}
+{"ts": "2026-09-15T17:28:33+08:00", "etf": "00981A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00981A/2026-09-15.json"}
+{"ts": "2026-09-15T17:28:34+08:00", "etf": "00403A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00403A/2026-09-15.json"}
+{"ts": "2026-09-15T17:31:42+08:00", "etf": "00405A", "date": "2026-09-15", "status": "created", "posted_date": "2026-09-15", "path": "data/00405A/2026-09-15.json"}
+{"ts": "2026-09-15T17:31:43+08:00", "etf": "00405A", "date": "2026-09-08", "status": "created", "posted_date": "2026-09-08", "path": "data/00405A/2026-09-08.json"}
+{"ts": "2026-09-15T17:31:43+08:00", "etf": "00405A", "date": "2026-09-09", "status": "created", "posted_date": "2026-09-09", "path": "data/00405A/2026-09-09.json"}
+{"ts": "2026-09-15T17:31:44+08:00", "etf": "00405A", "date": "2026-09-10", "status": "created", "posted_date": "2026-09-10", "path": "data/00405A/2026-09-10.json"}
+{"ts": "2026-09-15T17:31:45+08:00", "etf": "00405A", "date": "2026-09-11", "status": "created", "posted_date": "2026-09-11", "path": "data/00405A/2026-09-11.json"}
+{"ts": "2026-09-15T17:31:45+08:00", "etf": "00405A", "date": "2026-09-14", "status": "created", "posted_date": "2026-09-14", "path": "data/00405A/2026-09-14.json"}
+{"ts": "2026-09-15T17:31:46+08:00", "etf": "00405A", "date": "2026-09-16", "status": "no_data", "reason": "page shows data date 2026-09-15, 2026-09-16 not posted yet (or holiday)"}
+{"ts": "2026-09-15T17:31:46+08:00", "etf": "00405A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-15", "path": "data/00405A/2026-09-15.json"}
+{"ts": "2026-09-15T17:32:00+08:00", "etf": "00981A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00981A/2026-09-15.json"}
+{"ts": "2026-09-15T17:32:00+08:00", "etf": "00403A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00403A/2026-09-15.json"}
+{"ts": "2026-09-15T17:32:01+08:00", "etf": "00405A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-15", "path": "data/00405A/2026-09-15.json"}
+{"ts": "2026-09-15T17:48:16+08:00", "etf": "*", "date": "2026-09-15", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 75, "has_end": true}, "00403A": {"changed": 75, "has_end": true}, "00405A": {"changed": 69, "has_end": true}}}
+{"ts": "2026-09-15T17:48:48+08:00", "etf": "00981A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00981A/2026-09-15.json"}
+{"ts": "2026-09-15T17:48:49+08:00", "etf": "00403A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-16", "path": "data/00403A/2026-09-15.json"}
+{"ts": "2026-09-15T17:48:50+08:00", "etf": "00405A", "date": "2026-09-15", "status": "unchanged", "posted_date": "2026-09-15", "path": "data/00405A/2026-09-15.json"}
+{"ts": "2026-09-15T17:48:50+08:00", "etf": "*", "date": "2026-09-15", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 0, "has_end": true}, "00403A": {"changed": 0, "has_end": true}, "00405A": {"changed": 0, "has_end": true}}}

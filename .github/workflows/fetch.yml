@@ -1,0 +1,79 @@
+name: 每日抓取與分析
+
+on:
+  schedule:
+    # GitHub Actions 的 cron 是 UTC。台北 17:30 = 09:30 UTC（投信 16:30 後公告，留 buffer）
+    - cron: "30 9 * * 1-5"
+    # 台北 21:00 = 13:00 UTC，補抓（投信延遲公告時重試一次）
+    - cron: "0 13 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "持股資料日 YYYY-MM-DD（空白 = 今天台北時間）"
+        required: false
+        default: ""
+      date_to:
+        description: "回補到這天（含），與 date 搭配"
+        required: false
+        default: ""
+
+# 同一時間只跑一個，避免 17:30 那次跑太久與 21:00 撞在一起
+concurrency:
+  group: fetch-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Taipei
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 純標準函式庫，不用 pip install
+
+      - name: 抓持股與行情
+        id: fetch
+        continue-on-error: true   # 一檔失敗也要把其他檔的結果 commit 回去，最後再讓 job 變紅
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.date }}" ]; then ARGS="$ARGS --date ${{ github.event.inputs.date }}"; fi
+          if [ -n "${{ github.event.inputs.date_to }}" ]; then ARGS="$ARGS --date-to ${{ github.event.inputs.date_to }}"; fi
+          python fetch.py $ARGS
+
+      - name: 分析
+        run: python analyze.py
+
+      - name: Commit 資料
+        id: commit
+        run: |
+          git add -A data
+          # 只有快照或行情真的有變才 commit；site-data.json 與 fetch_log 每次都會動，不當作變化
+          CHANGED=$(git status --porcelain -- data | grep -v 'data/site-data.json' | grep -v 'data/meta/fetch_log.jsonl' || true)
+          if [ -z "$CHANGED" ]; then
+            echo "no new snapshots or prices; nothing to commit"
+            git reset -q
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          DAY=$(date +%Y-%m-%d)
+          git commit -m "data: $DAY" -m "$CHANGED"
+          # 兩次排程或手動觸發可能交錯，先 rebase 再推
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
+
+      - name: 抓取有錯誤時讓 job 失敗
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "::error::fetch.py exited with errors; see the 抓持股與行情 step and data/meta/fetch_log.jsonl"
+          exit 1

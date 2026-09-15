@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>主動式 ETF 觀測站</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>主動式 ETF 觀測站</h1>
+    <p class="sub" id="site-meta">載入中…</p>
+    <nav class="nav" aria-label="區塊">
+      <a href="#overview">總覽</a>
+      <a href="#signals">共同訊號</a>
+      <a href="#cash">現金水位</a>
+      <a href="#stock">個股反查</a>
+      <a href="#detail">單檔深入</a>
+      <a href="#about">資料說明</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p id="error" class="error" hidden></p>
+
+  <section id="overview" aria-labelledby="overview-h">
+    <h2 id="overview-h">總覽</h2>
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <section id="signals" aria-labelledby="signals-h">
+    <h2 id="signals-h">共同加碼 / 減碼訊號</h2>
+    <p class="hint" id="signals-hint"></p>
+    <div id="signals-latest"></div>
+    <h3>歷史區間</h3>
+    <div id="signals-history"></div>
+  </section>
+
+  <section id="cash" aria-labelledby="cash-h">
+    <h2 id="cash-h">現金水位比較</h2>
+    <p class="hint">非股票水位 =（基金淨資產 − 股票市值）÷ 基金淨資產，三檔口徑一致。「揭露現金」是投信公告的現金項目，統一投信只有最新一天有。</p>
+    <div id="cash-table"></div>
+    <div class="chart-card">
+      <h3>非股票水位走勢（%）</h3>
+      <div class="chart"><canvas id="cash-chart"></canvas></div>
+      <details><summary>表格檢視</summary><div id="cash-chart-table"></div></details>
+    </div>
+  </section>
+
+  <section id="stock" aria-labelledby="stock-h">
+    <h2 id="stock-h">個股反查</h2>
+    <form id="stock-form" class="search" role="search">
+      <label for="stock-q">股票代號或名稱</label>
+      <input id="stock-q" list="stock-list" placeholder="例如 2330 或 台積電" autocomplete="off">
+      <datalist id="stock-list"></datalist>
+      <button type="submit">查詢</button>
+    </form>
+    <div id="stock-result"></div>
+    <h3>持有檔數最多的股票</h3>
+    <div id="stock-top"></div>
+  </section>
+
+  <section id="detail" aria-labelledby="detail-h">
+    <h2 id="detail-h">單檔深入</h2>
+    <div id="etf-tabs" class="tabs" role="tablist"></div>
+    <div id="etf-detail"></div>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">資料說明</h2>
+    <div id="about-body"></div>
+    <p class="disclaimer">資料來自統一投信、富邦投信官網公告與臺灣證券交易所，僅供個人研究參考，非投資建議。投信網站改版或延遲公告可能造成缺日，缺日不納入比較。</p>
+  </section>
+</main>
+
+<footer class="wrap foot"><span id="foot-meta"></span></footer>
+<script src="app.js"></script>
+</body>
+</html>

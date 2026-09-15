@@ -1,0 +1,6 @@
+# 資料檔與程式碼一律 LF，避免 Windows 與 Actions 之間互相改行尾造成假 diff
+* text=auto eol=lf
+*.xlsx binary
+*.xls binary
+# 原始樣本是偵察時抓下來的原始位元組（含 CRLF），不要動它
+samples/** -text

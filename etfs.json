@@ -1,0 +1,32 @@
+{
+  "etfs": [
+    {
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "full_name": "統一台股增長主動式ETF基金",
+      "provider": "uni",
+      "provider_id": "49YTW"
+    },
+    {
+      "code": "00403A",
+      "name": "主動統一升級50",
+      "full_name": "統一台股升級50主動式ETF基金",
+      "provider": "uni",
+      "provider_id": "63YTW"
+    },
+    {
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "full_name": "台灣龍耀主動式ETF基金",
+      "provider": "fubon",
+      "provider_id": "00405A"
+    }
+  ],
+  "analysis": {
+    "co_signal_min_etfs": 2,
+    "min_per_unit_change_pct": 0.5,
+    "corporate_action_min_ratio": 1.5,
+    "corporate_action_tolerance_pct": 1.0,
+    "top_holdings": 3
+  }
+}

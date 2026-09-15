@@ -1,0 +1,4646 @@
+{
+ "schema_version": 1,
+ "generated_at": "2026-09-15T17:48:53+08:00",
+ "config": {
+  "co_signal_min_etfs": 2,
+  "min_per_unit_change_pct": 0.5,
+  "corporate_action_min_ratio": 1.5,
+  "corporate_action_tolerance_pct": 1.0,
+  "top_holdings": 3
+ },
+ "etfs": [
+  {
+   "code": "00981A",
+   "name": "主動統一台股增長",
+   "provider": "uni"
+  },
+  {
+   "code": "00403A",
+   "name": "主動統一升級50",
+   "provider": "uni"
+  },
+  {
+   "code": "00405A",
+   "name": "主動富邦台灣龍耀",
+   "provider": "fubon"
+  }
+ ],
+ "dates": [
+  "2026-09-08",
+  "2026-09-09",
+  "2026-09-10",
+  "2026-09-11",
+  "2026-09-14",
+  "2026-09-15"
+ ],
+ "coverage": {
+  "00981A": {
+   "dates": [
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-15"
+   ],
+   "missing": [],
+   "first": "2026-09-08",
+   "last": "2026-09-15",
+   "count": 6
+  },
+  "00403A": {
+   "dates": [
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-15"
+   ],
+   "missing": [],
+   "first": "2026-09-08",
+   "last": "2026-09-15",
+   "count": 6
+  },
+  "00405A": {
+   "dates": [
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-15"
+   ],
+   "missing": [],
+   "first": "2026-09-08",
+   "last": "2026-09-15",
+   "count": 6
+  }
+ },
+ "prices_coverage": {
+  "00981A": {
+   "count": 75,
+   "last": "2026-09-15"
+  },
+  "00403A": {
+   "count": 75,
+   "last": "2026-09-15"
+  },
+  "00405A": {
+   "count": 69,
+   "last": "2026-09-15"
+  }
+ },
+ "overview": [
+  {
+   "etf": "00981A",
+   "name": "主動統一台股增長",
+   "provider": "uni",
+   "date": "2026-09-15",
+   "posted_date": "2026-09-16",
+   "prev_date": "2026-09-14",
+   "nav": 28.66,
+   "nav_change": -0.64,
+   "close": 28.86,
+   "close_change": -0.46,
+   "close_change_pct": -1.57,
+   "volume": 164063144,
+   "premium_pct": 0.7,
+   "premium_pct_change": 0.63,
+   "aum": 271602709764,
+   "outstanding_units": 9475209000,
+   "units_change": 8500000,
+   "stock_value": 262860145255,
+   "non_stock_total": 8742564509,
+   "non_stock_pct": 3.22,
+   "non_stock_pct_change": 0.14,
+   "cash_pct": 1.43,
+   "futures_notional_pct": 2.28,
+   "holdings_count": 50,
+   "top_holdings": [
+    {
+     "code": "2330",
+     "name": "台積電",
+     "weight": 10.42
+    },
+    {
+     "code": "2383",
+     "name": "台光電",
+     "weight": 8.95
+    },
+    {
+     "code": "2454",
+     "name": "聯發科",
+     "weight": 8.46
+    }
+   ],
+   "latest_changes": {
+    "new": 0,
+    "add": 0,
+    "reduce": 0,
+    "exit": 0,
+    "corporate_action": 0
+   }
+  },
+  {
+   "etf": "00403A",
+   "name": "主動統一升級50",
+   "provider": "uni",
+   "date": "2026-09-15",
+   "posted_date": "2026-09-16",
+   "prev_date": "2026-09-14",
+   "nav": 9.94,
+   "nav_change": -0.2,
+   "close": 9.95,
+   "close_change": -0.14,
+   "close_change_pct": -1.39,
+   "volume": 130139135,
+   "premium_pct": 0.1,
+   "premium_pct_change": 0.59,
+   "aum": 148779475763,
+   "outstanding_units": 14966519000,
+   "units_change": -8000000,
+   "stock_value": 135176909140,
+   "non_stock_total": 13602566623,
+   "non_stock_pct": 9.14,
+   "non_stock_pct_change": 0.96,
+   "cash_pct": 5.62,
+   "futures_notional_pct": null,
+   "holdings_count": 50,
+   "top_holdings": [
+    {
+     "code": "2330",
+     "name": "台積電",
+     "weight": 15.71
+    },
+    {
+     "code": "2454",
+     "name": "聯發科",
+     "weight": 6.58
+    },
+    {
+     "code": "3017",
+     "name": "奇鋐",
+     "weight": 5.97
+    }
+   ],
+   "latest_changes": {
+    "new": 0,
+    "add": 2,
+    "reduce": 2,
+    "exit": 0,
+    "corporate_action": 0
+   }
+  },
+  {
+   "etf": "00405A",
+   "name": "主動富邦台灣龍耀",
+   "provider": "fubon",
+   "date": "2026-09-15",
+   "posted_date": "2026-09-15",
+   "prev_date": "2026-09-14",
+   "nav": 8.33,
+   "nav_change": -0.27,
+   "close": 8.32,
+   "close_change": -0.24,
+   "close_change_pct": -2.8,
+   "volume": 49122906,
+   "premium_pct": -0.12,
+   "premium_pct_change": 0.35,
+   "aum": 25694955548,
+   "outstanding_units": 3086245000,
+   "units_change": -4500000,
+   "stock_value": 24223129835,
+   "non_stock_total": 1471825713,
+   "non_stock_pct": 5.73,
+   "non_stock_pct_change": 0.48,
+   "cash_pct": 4.51,
+   "futures_notional_pct": null,
+   "holdings_count": 47,
+   "top_holdings": [
+    {
+     "code": "3443",
+     "name": "創意",
+     "weight": 8.5493
+    },
+    {
+     "code": "2454",
+     "name": "聯發科",
+     "weight": 8.2755
+    },
+    {
+     "code": "6223",
+     "name": "旺矽",
+     "weight": 6.8383
+    }
+   ],
+   "latest_changes": {
+    "new": 0,
+    "add": 0,
+    "reduce": 1,
+    "exit": 0,
+    "corporate_action": 0
+   }
+  }
+ ],
+ "series": {
+  "00981A": [
+   {
+    "date": "2026-09-08",
+    "posted_date": "2026-09-09",
+    "nav": 29.7,
+    "close": 29.73,
+    "premium_pct": 0.1,
+    "volume": 141878564,
+    "aum": 282371304138,
+    "outstanding_units": 9508709000,
+    "non_stock_pct": 3.11,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-09",
+    "posted_date": "2026-09-10",
+    "nav": 30.04,
+    "close": 29.92,
+    "premium_pct": -0.4,
+    "volume": 126233332,
+    "aum": 285310474996,
+    "outstanding_units": 9497709000,
+    "non_stock_pct": 2.97,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-10",
+    "posted_date": "2026-09-11",
+    "nav": 30.02,
+    "close": 29.89,
+    "premium_pct": -0.43,
+    "volume": 77932837,
+    "aum": 283976224291,
+    "outstanding_units": 9459709000,
+    "non_stock_pct": 2.84,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-11",
+    "posted_date": "2026-09-14",
+    "nav": 29.41,
+    "close": 29.44,
+    "premium_pct": 0.1,
+    "volume": 144282035,
+    "aum": 278340707618,
+    "outstanding_units": 9463709000,
+    "non_stock_pct": 2.9,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-14",
+    "posted_date": "2026-09-15",
+    "nav": 29.3,
+    "close": 29.32,
+    "premium_pct": 0.07,
+    "volume": 129531951,
+    "aum": 277374899002,
+    "outstanding_units": 9466709000,
+    "non_stock_pct": 3.08,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-15",
+    "posted_date": "2026-09-16",
+    "nav": 28.66,
+    "close": 28.86,
+    "premium_pct": 0.7,
+    "volume": 164063144,
+    "aum": 271602709764,
+    "outstanding_units": 9475209000,
+    "non_stock_pct": 3.22,
+    "cash_pct": 1.43,
+    "holdings_count": 50
+   }
+  ],
+  "00403A": [
+   {
+    "date": "2026-09-08",
+    "posted_date": "2026-09-09",
+    "nav": 10.3,
+    "close": 10.24,
+    "premium_pct": -0.58,
+    "volume": 112048474,
+    "aum": 157314883882,
+    "outstanding_units": 15275519000,
+    "non_stock_pct": 7.38,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-09",
+    "posted_date": "2026-09-10",
+    "nav": 10.4,
+    "close": 10.35,
+    "premium_pct": -0.48,
+    "volume": 186828705,
+    "aum": 158102592651,
+    "outstanding_units": 15200019000,
+    "non_stock_pct": 7.72,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-10",
+    "posted_date": "2026-09-11",
+    "nav": 10.39,
+    "close": 10.34,
+    "premium_pct": -0.48,
+    "volume": 97190172,
+    "aum": 156196406210,
+    "outstanding_units": 15031519000,
+    "non_stock_pct": 7.46,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-11",
+    "posted_date": "2026-09-14",
+    "nav": 10.21,
+    "close": 10.17,
+    "premium_pct": -0.39,
+    "volume": 133779380,
+    "aum": 152832664403,
+    "outstanding_units": 14974519000,
+    "non_stock_pct": 8.03,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-14",
+    "posted_date": "2026-09-15",
+    "nav": 10.14,
+    "close": 10.09,
+    "premium_pct": -0.49,
+    "volume": 147353056,
+    "aum": 151852059818,
+    "outstanding_units": 14974519000,
+    "non_stock_pct": 8.18,
+    "cash_pct": null,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-15",
+    "posted_date": "2026-09-16",
+    "nav": 9.94,
+    "close": 9.95,
+    "premium_pct": 0.1,
+    "volume": 130139135,
+    "aum": 148779475763,
+    "outstanding_units": 14966519000,
+    "non_stock_pct": 9.14,
+    "cash_pct": 5.62,
+    "holdings_count": 50
+   }
+  ],
+  "00405A": [
+   {
+    "date": "2026-09-08",
+    "posted_date": "2026-09-08",
+    "nav": 8.74,
+    "close": 8.71,
+    "premium_pct": -0.34,
+    "volume": 45687519,
+    "aum": 27487576504,
+    "outstanding_units": 3146245000,
+    "non_stock_pct": 4.68,
+    "cash_pct": 4.74,
+    "holdings_count": 50
+   },
+   {
+    "date": "2026-09-09",
+    "posted_date": "2026-09-09",
+    "nav": 8.81,
+    "close": 8.78,
+    "premium_pct": -0.34,
+    "volume": 59393657,
+    "aum": 27554530908,
+    "outstanding_units": 3126245000,
+    "non_stock_pct": 3.5,
+    "cash_pct": 4.73,
+    "holdings_count": 49
+   },
+   {
+    "date": "2026-09-10",
+    "posted_date": "2026-09-10",
+    "nav": 8.8,
+    "close": 8.77,
+    "premium_pct": -0.34,
+    "volume": 29693816,
+    "aum": 27364947034,
+    "outstanding_units": 3108245000,
+    "non_stock_pct": 4.25,
+    "cash_pct": 5.11,
+    "holdings_count": 48
+   },
+   {
+    "date": "2026-09-11",
+    "posted_date": "2026-09-11",
+    "nav": 8.61,
+    "close": 8.59,
+    "premium_pct": -0.23,
+    "volume": 48228481,
+    "aum": 26618755849,
+    "outstanding_units": 3091745000,
+    "non_stock_pct": 3.9,
+    "cash_pct": 4.2,
+    "holdings_count": 48
+   },
+   {
+    "date": "2026-09-14",
+    "posted_date": "2026-09-14",
+    "nav": 8.6,
+    "close": 8.56,
+    "premium_pct": -0.47,
+    "volume": 38463675,
+    "aum": 26567062676,
+    "outstanding_units": 3090745000,
+    "non_stock_pct": 5.25,
+    "cash_pct": 4.89,
+    "holdings_count": 47
+   },
+   {
+    "date": "2026-09-15",
+    "posted_date": "2026-09-15",
+    "nav": 8.33,
+    "close": 8.32,
+    "premium_pct": -0.12,
+    "volume": 49122906,
+    "aum": 25694955548,
+    "outstanding_units": 3086245000,
+    "non_stock_pct": 5.73,
+    "cash_pct": 4.51,
+    "holdings_count": 47
+   }
+  ]
+ },
+ "intervals": [
+  {
+   "from": "2026-09-14",
+   "to": "2026-09-15",
+   "etfs": [
+    "00403A",
+    "00405A",
+    "00981A"
+   ],
+   "excluded": [],
+   "co_add": [],
+   "co_reduce": [],
+   "corporate_actions": []
+  },
+  {
+   "from": "2026-09-11",
+   "to": "2026-09-14",
+   "etfs": [
+    "00403A",
+    "00405A",
+    "00981A"
+   ],
+   "excluded": [],
+   "co_add": [
+    {
+     "code": "3443",
+     "name": "創意",
+     "etfs": [
+      {
+       "etf": "00403A",
+       "action": "add",
+       "per_unit_change_pct": 6.9,
+       "shares_change": 40000,
+       "weight_curr": 2.61
+      },
+      {
+       "etf": "00981A",
+       "action": "add",
+       "per_unit_change_pct": 10.99,
+       "shares_change": 41000,
+       "weight_curr": 0.95
+      }
+     ],
+     "count": 2
+    }
+   ],
+   "co_reduce": [],
+   "corporate_actions": []
+  },
+  {
+   "from": "2026-09-10",
+   "to": "2026-09-11",
+   "etfs": [
+    "00403A",
+    "00405A",
+    "00981A"
+   ],
+   "excluded": [],
+   "co_add": [],
+   "co_reduce": [],
+   "corporate_actions": []
+  },
+  {
+   "from": "2026-09-09",
+   "to": "2026-09-10",
+   "etfs": [
+    "00403A",
+    "00405A",
+    "00981A"
+   ],
+   "excluded": [],
+   "co_add": [],
+   "co_reduce": [],
+   "corporate_actions": []
+  },
+  {
+   "from": "2026-09-08",
+   "to": "2026-09-09",
+   "etfs": [
+    "00403A",
+    "00405A",
+    "00981A"
+   ],
+   "excluded": [],
+   "co_add": [],
+   "co_reduce": [],
+   "corporate_actions": []
+  }
+ ],
+ "etf_detail": {
+  "00981A": {
+   "date": "2026-09-15",
+   "holdings": [
+    {
+     "code": "2330",
+     "name": "台積電",
+     "shares": 11864000,
+     "amount": 28295640000,
+     "weight": 10.42,
+     "per_unit": 0.0012521095840735544
+    },
+    {
+     "code": "2383",
+     "name": "台光電",
+     "shares": 4750000,
+     "amount": 24296250000,
+     "weight": 8.95,
+     "per_unit": 0.0005013082033335623
+    },
+    {
+     "code": "2454",
+     "name": "聯發科",
+     "shares": 5186000,
+     "amount": 22973980000,
+     "weight": 8.46,
+     "per_unit": 0.0005473230194711272
+    },
+    {
+     "code": "3037",
+     "name": "欣興",
+     "shares": 20300000,
+     "amount": 19305300000,
+     "weight": 7.11,
+     "per_unit": 0.0021424329531939614
+    },
+    {
+     "code": "3017",
+     "name": "奇鋐",
+     "shares": 5949000,
+     "amount": 18531135000,
+     "weight": 6.82,
+     "per_unit": 0.0006278489477118658
+    },
+    {
+     "code": "6669",
+     "name": "緯穎",
+     "shares": 6490561,
+     "amount": 15025648715,
+     "weight": 5.53,
+     "per_unit": 0.0006850045207446084
+    },
+    {
+     "code": "6223",
+     "name": "旺矽",
+     "shares": 2546000,
+     "amount": 13850240000,
+     "weight": 5.1,
+     "per_unit": 0.00026870119698678944
+    },
+    {
+     "code": "2327",
+     "name": "國巨*",
+     "shares": 24987000,
+     "amount": 13418019000,
+     "weight": 4.94,
+     "per_unit": 0.0026370922266727836
+    },
+    {
+     "code": "3653",
+     "name": "健策",
+     "shares": 2512000,
+     "amount": 13338720000,
+     "weight": 4.91,
+     "per_unit": 0.00026511288563661235
+    },
+    {
+     "code": "2303",
+     "name": "聯電",
+     "shares": 89118000,
+     "amount": 12342843000,
+     "weight": 4.54,
+     "per_unit": 0.009405386203090612
+    },
+    {
+     "code": "2308",
+     "name": "台達電",
+     "shares": 7240000,
+     "amount": 12090800000,
+     "weight": 4.45,
+     "per_unit": 0.0007640992404494719
+    },
+    {
+     "code": "2345",
+     "name": "智邦",
+     "shares": 6464000,
+     "amount": 11893760000,
+     "weight": 4.38,
+     "per_unit": 0.0006822013108101362
+    },
+    {
+     "code": "8046",
+     "name": "南電",
+     "shares": 9426000,
+     "amount": 10227210000,
+     "weight": 3.77,
+     "per_unit": 0.0009948065525520334
+    },
+    {
+     "code": "3711",
+     "name": "日月光投控",
+     "shares": 16811000,
+     "amount": 9952112000,
+     "weight": 3.66,
+     "per_unit": 0.0017742088855243192
+    },
+    {
+     "code": "3665",
+     "name": "貿聯-KY",
+     "shares": 4280848,
+     "amount": 8476079040,
+     "weight": 3.12,
+     "per_unit": 0.00045179457255243655
+    },
+    {
+     "code": "6274",
+     "name": "台燿",
+     "shares": 5398000,
+     "amount": 7395260000,
+     "weight": 2.72,
+     "per_unit": 0.0005696971961251725
+    },
+    {
+     "code": "5274",
+     "name": "信驊",
+     "shares": 207900,
+     "amount": 3642408000,
+     "weight": 1.34,
+     "per_unit": 2.1941468520641604e-05
+    },
+    {
+     "code": "6805",
+     "name": "富世達",
+     "shares": 1731000,
+     "amount": 3505275000,
+     "weight": 1.29,
+     "per_unit": 0.00018268726315166242
+    },
+    {
+     "code": "2449",
+     "name": "京元電子",
+     "shares": 12818450,
+     "amount": 3294341650,
+     "weight": 1.21,
+     "per_unit": 0.0013528408713728637
+    },
+    {
+     "code": "3443",
+     "name": "創意",
+     "shares": 413000,
+     "amount": 2492455000,
+     "weight": 0.92,
+     "per_unit": 4.358742904773921e-05
+    },
+    {
+     "code": "6510",
+     "name": "精測",
+     "shares": 446000,
+     "amount": 1451730000,
+     "weight": 0.53,
+     "per_unit": 4.707020182879343e-05
+    },
+    {
+     "code": "8210",
+     "name": "勤誠",
+     "shares": 1516000,
+     "amount": 1324984000,
+     "weight": 0.49,
+     "per_unit": 0.00015999647079024853
+    },
+    {
+     "code": "4958",
+     "name": "臻鼎-KY",
+     "shares": 2712000,
+     "amount": 1294980000,
+     "weight": 0.48,
+     "per_unit": 0.0002862205994611834
+    },
+    {
+     "code": "3264",
+     "name": "欣銓",
+     "shares": 5028000,
+     "amount": 1111188000,
+     "weight": 0.41,
+     "per_unit": 0.0005306479255497161
+    },
+    {
+     "code": "6278",
+     "name": "台表科",
+     "shares": 3248000,
+     "amount": 586264000,
+     "weight": 0.22,
+     "per_unit": 0.0003427892725110338
+    },
+    {
+     "code": "6515",
+     "name": "穎崴",
+     "shares": 95000,
+     "amount": 599450000,
+     "weight": 0.22,
+     "per_unit": 1.0026164066671246e-05
+    },
+    {
+     "code": "8996",
+     "name": "高力",
+     "shares": 485000,
+     "amount": 591700000,
+     "weight": 0.22,
+     "per_unit": 5.118620602458479e-05
+    },
+    {
+     "code": "6271",
+     "name": "同欣電",
+     "shares": 2222000,
+     "amount": 491062000,
+     "weight": 0.18,
+     "per_unit": 0.00023450670059098434
+    },
+    {
+     "code": "6191",
+     "name": "精成科",
+     "shares": 3988000,
+     "amount": 323028000,
+     "weight": 0.12,
+     "per_unit": 0.0004208878136619467
+    },
+    {
+     "code": "3376",
+     "name": "新日興",
+     "shares": 1740000,
+     "amount": 301020000,
+     "weight": 0.11,
+     "per_unit": 0.0001836371102737681
+    },
+    {
+     "code": "2368",
+     "name": "金像電",
+     "shares": 219000,
+     "amount": 212868000,
+     "weight": 0.08,
+     "per_unit": 2.3112946637905296e-05
+    },
+    {
+     "code": "2002",
+     "name": "中鋼",
+     "shares": 5163000,
+     "amount": 96289950,
+     "weight": 0.04,
+     "per_unit": 0.0005448956323813016
+    },
+    {
+     "code": "2313",
+     "name": "華通",
+     "shares": 501000,
+     "amount": 109468500,
+     "weight": 0.04,
+     "per_unit": 5.287482313055047e-05
+    },
+    {
+     "code": "1590",
+     "name": "亞德客-KY",
+     "shares": 1000,
+     "amount": 1280000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "2317",
+     "name": "鴻海",
+     "shares": 1000,
+     "amount": 246500,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "2360",
+     "name": "致茂",
+     "shares": 1000,
+     "amount": 2080000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "2382",
+     "name": "廣達",
+     "shares": 1000,
+     "amount": 333000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "2408",
+     "name": "南亞科",
+     "shares": 1000,
+     "amount": 465500,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "2439",
+     "name": "美律",
+     "shares": 1000,
+     "amount": 76600,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "2481",
+     "name": "強茂",
+     "shares": 5000,
+     "amount": 767500,
+     "weight": 0.0,
+     "per_unit": 5.276928456142762e-07
+    },
+    {
+     "code": "2637",
+     "name": "慧洋-KY",
+     "shares": 1000,
+     "amount": 96900,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "3008",
+     "name": "大立光",
+     "shares": 1000,
+     "amount": 6055000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "3661",
+     "name": "世芯-KY",
+     "shares": 1000,
+     "amount": 3355000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "4966",
+     "name": "譜瑞-KY",
+     "shares": 1000,
+     "amount": 523000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "4979",
+     "name": "華星光",
+     "shares": 1000,
+     "amount": 509000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "5347",
+     "name": "世界",
+     "shares": 1000,
+     "amount": 153000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "6187",
+     "name": "萬潤",
+     "shares": 1000,
+     "amount": 1215000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "6488",
+     "name": "環球晶",
+     "shares": 1000,
+     "amount": 914000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "8150",
+     "name": "南茂",
+     "shares": 1000,
+     "amount": 84400,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    },
+    {
+     "code": "8358",
+     "name": "金居",
+     "shares": 1000,
+     "amount": 482000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07
+    }
+   ],
+   "non_stock": {
+    "cash": 3872315100,
+    "margin": 1823263338,
+    "rp": 1411097300,
+    "receivables": 443464120
+   },
+   "non_stock_items": [
+    {
+     "code": "CASH",
+     "name": "現金",
+     "amount": 3872315100
+    },
+    {
+     "code": "GDM",
+     "name": "期貨保證金",
+     "amount": 1823263338
+    },
+    {
+     "code": "RP",
+     "name": "附買回債券",
+     "amount": 1411097300
+    },
+    {
+     "code": "APAR",
+     "name": "應收付證券款",
+     "amount": 443464120
+    }
+   ],
+   "futures": [
+    {
+     "code": "TX",
+     "name": "台指期貨",
+     "contracts": 679,
+     "amount": 6191393600,
+     "weight": 2.28,
+     "month": "2026/09",
+     "position": "B"
+    }
+   ],
+   "changes": [
+    {
+     "date": "2026-09-15",
+     "prev_date": "2026-09-14",
+     "items": []
+    },
+    {
+     "date": "2026-09-14",
+     "prev_date": "2026-09-11",
+     "items": [
+      {
+       "code": "3653",
+       "name": "健策",
+       "action": "add",
+       "shares_prev": 2477000,
+       "shares_curr": 2512000,
+       "shares_change": 35000,
+       "per_unit_prev": 0.00026173670386526044,
+       "per_unit_curr": 0.000265350926071563,
+       "per_unit_change_pct": 1.38,
+       "weight_prev": 5.13,
+       "weight_curr": 5.27,
+       "amount_curr": 14619840000
+      },
+      {
+       "code": "3443",
+       "name": "創意",
+       "action": "add",
+       "shares_prev": 372000,
+       "shares_curr": 413000,
+       "shares_change": 41000,
+       "per_unit_prev": 3.930805564710411e-05,
+       "per_unit_curr": 4.362656547275299e-05,
+       "per_unit_change_pct": 10.99,
+       "weight_prev": 0.82,
+       "weight_curr": 0.95,
+       "amount_curr": 2643200000
+      },
+      {
+       "code": "6510",
+       "name": "精測",
+       "action": "reduce",
+       "shares_prev": 637000,
+       "shares_curr": 446000,
+       "shares_change": -191000,
+       "per_unit_prev": 6.7309761954853e-05,
+       "per_unit_curr": 4.7112465377355534e-05,
+       "per_unit_change_pct": -30.01,
+       "weight_prev": 0.8,
+       "weight_curr": 0.54,
+       "amount_curr": 1505250000
+      },
+      {
+       "code": "8996",
+       "name": "高力",
+       "action": "reduce",
+       "shares_prev": 700000,
+       "shares_curr": 485000,
+       "shares_change": -215000,
+       "per_unit_prev": 7.396677137895935e-05,
+       "per_unit_curr": 5.123216526461308e-05,
+       "per_unit_change_pct": -30.74,
+       "weight_prev": 0.33,
+       "weight_curr": 0.22,
+       "amount_curr": 598975000
+      }
+     ]
+    },
+    {
+     "date": "2026-09-11",
+     "prev_date": "2026-09-10",
+     "items": []
+    },
+    {
+     "date": "2026-09-10",
+     "prev_date": "2026-09-09",
+     "items": [
+      {
+       "code": "3653",
+       "name": "健策",
+       "action": "add",
+       "shares_prev": 2447000,
+       "shares_curr": 2477000,
+       "shares_change": 30000,
+       "per_unit_prev": 0.0002576410795487628,
+       "per_unit_curr": 0.0002618473781804493,
+       "per_unit_change_pct": 1.63,
+       "weight_prev": 4.94,
+       "weight_curr": 5.05,
+       "amount_curr": 14341830000
+      },
+      {
+       "code": "8210",
+       "name": "勤誠",
+       "action": "reduce",
+       "shares_prev": 1902000,
+       "shares_curr": 1516000,
+       "shares_change": -386000,
+       "per_unit_prev": 0.00020025882031129822,
+       "per_unit_curr": 0.0001602586295202104,
+       "per_unit_change_pct": -19.97,
+       "weight_prev": 0.61,
+       "weight_curr": 0.49,
+       "amount_curr": 1379560000
+      },
+      {
+       "code": "8996",
+       "name": "高力",
+       "action": "reduce",
+       "shares_prev": 745000,
+       "shares_curr": 700000,
+       "shares_change": -45000,
+       "per_unit_prev": 7.843996904937812e-05,
+       "per_unit_curr": 7.399804793149557e-05,
+       "per_unit_change_pct": -5.66,
+       "weight_prev": 0.35,
+       "weight_curr": 0.32,
+       "amount_curr": 910000000
+      },
+      {
+       "code": "4979",
+       "name": "華星光",
+       "action": "reduce",
+       "shares_prev": 924000,
+       "shares_curr": 1000,
+       "shares_change": -923000,
+       "per_unit_prev": 9.728661933104077e-05,
+       "per_unit_curr": 1.0571149704499366e-07,
+       "per_unit_change_pct": -99.89,
+       "weight_prev": 0.2,
+       "weight_curr": 0.0,
+       "amount_curr": 571000
+      }
+     ]
+    },
+    {
+     "date": "2026-09-09",
+     "prev_date": "2026-09-08",
+     "items": []
+    }
+   ]
+  },
+  "00403A": {
+   "date": "2026-09-15",
+   "holdings": [
+    {
+     "code": "2330",
+     "name": "台積電",
+     "shares": 9800000,
+     "amount": 23373000000,
+     "weight": 15.71,
+     "per_unit": 0.0006547948791566028
+    },
+    {
+     "code": "2454",
+     "name": "聯發科",
+     "shares": 2210000,
+     "amount": 9790300000,
+     "weight": 6.58,
+     "per_unit": 0.0001476629268302135
+    },
+    {
+     "code": "3017",
+     "name": "奇鋐",
+     "shares": 2850000,
+     "amount": 8877750000,
+     "weight": 5.97,
+     "per_unit": 0.0001904250413873794
+    },
+    {
+     "code": "2383",
+     "name": "台光電",
+     "shares": 1600000,
+     "amount": 8184000000,
+     "weight": 5.5,
+     "per_unit": 0.00010690528639291475
+    },
+    {
+     "code": "3037",
+     "name": "欣興",
+     "shares": 8460000,
+     "amount": 8045460000,
+     "weight": 5.41,
+     "per_unit": 0.0005652617018025367
+    },
+    {
+     "code": "2303",
+     "name": "聯電",
+     "shares": 55000000,
+     "amount": 7617500000,
+     "weight": 5.12,
+     "per_unit": 0.0036748692197564443
+    },
+    {
+     "code": "6223",
+     "name": "旺矽",
+     "shares": 1100000,
+     "amount": 5984000000,
+     "weight": 4.02,
+     "per_unit": 7.349738439512889e-05
+    },
+    {
+     "code": "3653",
+     "name": "健策",
+     "shares": 1115000,
+     "amount": 5920650000,
+     "weight": 3.98,
+     "per_unit": 7.449962145506247e-05
+    },
+    {
+     "code": "2308",
+     "name": "台達電",
+     "shares": 2750000,
+     "amount": 4592500000,
+     "weight": 3.09,
+     "per_unit": 0.0001837434609878222
+    },
+    {
+     "code": "6669",
+     "name": "緯穎",
+     "shares": 1987956,
+     "amount": 4602118140,
+     "weight": 3.09,
+     "per_unit": 0.00013282687844782076
+    },
+    {
+     "code": "2327",
+     "name": "國巨*",
+     "shares": 8000000,
+     "amount": 4296000000,
+     "weight": 2.89,
+     "per_unit": 0.0005345264319645737
+    },
+    {
+     "code": "2345",
+     "name": "智邦",
+     "shares": 2307000,
+     "amount": 4244880000,
+     "weight": 2.85,
+     "per_unit": 0.00015414405981778394
+    },
+    {
+     "code": "3443",
+     "name": "創意",
+     "shares": 620000,
+     "amount": 3741700000,
+     "weight": 2.51,
+     "per_unit": 4.142579847725447e-05
+    },
+    {
+     "code": "8046",
+     "name": "南電",
+     "shares": 2770000,
+     "amount": 3005450000,
+     "weight": 2.02,
+     "per_unit": 0.00018507977706773364
+    },
+    {
+     "code": "1303",
+     "name": "南亞",
+     "shares": 13500000,
+     "amount": 2990250000,
+     "weight": 2.01,
+     "per_unit": 0.0009020133539402182
+    },
+    {
+     "code": "3189",
+     "name": "景碩",
+     "shares": 3700000,
+     "amount": 2941500000,
+     "weight": 1.98,
+     "per_unit": 0.00024721847478361537
+    },
+    {
+     "code": "6274",
+     "name": "台燿",
+     "shares": 1900000,
+     "amount": 2603000000,
+     "weight": 1.75,
+     "per_unit": 0.00012695002759158627
+    },
+    {
+     "code": "3665",
+     "name": "貿聯-KY",
+     "shares": 1293000,
+     "amount": 2560140000,
+     "weight": 1.72,
+     "per_unit": 8.639283456627422e-05
+    },
+    {
+     "code": "6488",
+     "name": "環球晶",
+     "shares": 2800000,
+     "amount": 2559200000,
+     "weight": 1.72,
+     "per_unit": 0.00018708425118760082
+    },
+    {
+     "code": "3008",
+     "name": "大立光",
+     "shares": 380000,
+     "amount": 2300900000,
+     "weight": 1.55,
+     "per_unit": 2.539000551831725e-05
+    },
+    {
+     "code": "5274",
+     "name": "信驊",
+     "shares": 120500,
+     "amount": 2111160000,
+     "weight": 1.42,
+     "per_unit": 8.051304381466392e-06
+    },
+    {
+     "code": "2360",
+     "name": "致茂",
+     "shares": 1000000,
+     "amount": 2080000000,
+     "weight": 1.4,
+     "per_unit": 6.681580399557171e-05
+    },
+    {
+     "code": "8996",
+     "name": "高力",
+     "shares": 1580000,
+     "amount": 1927600000,
+     "weight": 1.3,
+     "per_unit": 0.00010556897031300332
+    },
+    {
+     "code": "6805",
+     "name": "富世達",
+     "shares": 760000,
+     "amount": 1539000000,
+     "weight": 1.03,
+     "per_unit": 5.07800110366345e-05
+    },
+    {
+     "code": "6239",
+     "name": "力成",
+     "shares": 5360000,
+     "amount": 1436480000,
+     "weight": 0.97,
+     "per_unit": 0.0003581327094162644
+    },
+    {
+     "code": "7769",
+     "name": "鴻勁",
+     "shares": 130000,
+     "amount": 797550000,
+     "weight": 0.54,
+     "per_unit": 8.686054519424322e-06
+    },
+    {
+     "code": "2317",
+     "name": "鴻海",
+     "shares": 3200000,
+     "amount": 788800000,
+     "weight": 0.53,
+     "per_unit": 0.0002138105727858295
+    },
+    {
+     "code": "3211",
+     "name": "順達",
+     "shares": 2000000,
+     "amount": 722000000,
+     "weight": 0.49,
+     "per_unit": 0.00013363160799114343
+    },
+    {
+     "code": "2449",
+     "name": "京元電子",
+     "shares": 2600000,
+     "amount": 668200000,
+     "weight": 0.45,
+     "per_unit": 0.00017372109038848646
+    },
+    {
+     "code": "3711",
+     "name": "日月光投控",
+     "shares": 1000000,
+     "amount": 592000000,
+     "weight": 0.4,
+     "per_unit": 6.681580399557171e-05
+    },
+    {
+     "code": "3450",
+     "name": "聯鈞",
+     "shares": 1100000,
+     "amount": 541750000,
+     "weight": 0.36,
+     "per_unit": 7.349738439512889e-05
+    },
+    {
+     "code": "3583",
+     "name": "辛耘",
+     "shares": 800000,
+     "amount": 531200000,
+     "weight": 0.36,
+     "per_unit": 5.3452643196457374e-05
+    },
+    {
+     "code": "6442",
+     "name": "光聖",
+     "shares": 350000,
+     "amount": 528500000,
+     "weight": 0.36,
+     "per_unit": 2.3385531398450102e-05
+    },
+    {
+     "code": "2481",
+     "name": "強茂",
+     "shares": 3000000,
+     "amount": 460500000,
+     "weight": 0.31,
+     "per_unit": 0.00020044741198671514
+    },
+    {
+     "code": "2882",
+     "name": "國泰金",
+     "shares": 4000000,
+     "amount": 440000000,
+     "weight": 0.3,
+     "per_unit": 0.00026726321598228686
+    },
+    {
+     "code": "2059",
+     "name": "川湖",
+     "shares": 35000,
+     "amount": 410025000,
+     "weight": 0.28,
+     "per_unit": 2.33855313984501e-06
+    },
+    {
+     "code": "3533",
+     "name": "嘉澤",
+     "shares": 200000,
+     "amount": 304000000,
+     "weight": 0.2,
+     "per_unit": 1.3363160799114344e-05
+    },
+    {
+     "code": "2404",
+     "name": "漢唐",
+     "shares": 250000,
+     "amount": 258750000,
+     "weight": 0.17,
+     "per_unit": 1.670395099889293e-05
+    },
+    {
+     "code": "2455",
+     "name": "全新",
+     "shares": 386000,
+     "amount": 200720000,
+     "weight": 0.13,
+     "per_unit": 2.5790900342290684e-05
+    },
+    {
+     "code": "3264",
+     "name": "欣銓",
+     "shares": 700000,
+     "amount": 154700000,
+     "weight": 0.1,
+     "per_unit": 4.6771062796900204e-05
+    },
+    {
+     "code": "1560",
+     "name": "中砂",
+     "shares": 191000,
+     "amount": 140385000,
+     "weight": 0.09,
+     "per_unit": 1.2761818563154198e-05
+    },
+    {
+     "code": "1717",
+     "name": "長興",
+     "shares": 1500000,
+     "amount": 102150000,
+     "weight": 0.07,
+     "per_unit": 0.00010022370599335757
+    },
+    {
+     "code": "2301",
+     "name": "光寶科",
+     "shares": 300000,
+     "amount": 82200000,
+     "weight": 0.06,
+     "per_unit": 2.0044741198671514e-05
+    },
+    {
+     "code": "6285",
+     "name": "啟碁",
+     "shares": 350000,
+     "amount": 77700000,
+     "weight": 0.05,
+     "per_unit": 2.3385531398450102e-05
+    },
+    {
+     "code": "8358",
+     "name": "金居",
+     "shares": 100000,
+     "amount": 48200000,
+     "weight": 0.03,
+     "per_unit": 6.681580399557172e-06
+    },
+    {
+     "code": "2049",
+     "name": "上銀",
+     "shares": 1000,
+     "amount": 329000,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08
+    },
+    {
+     "code": "2337",
+     "name": "旺宏",
+     "shares": 1000,
+     "amount": 114500,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08
+    },
+    {
+     "code": "2344",
+     "name": "華邦電",
+     "shares": 1000,
+     "amount": 159500,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08
+    },
+    {
+     "code": "6196",
+     "name": "帆宣",
+     "shares": 1000,
+     "amount": 518000,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08
+    },
+    {
+     "code": "8299",
+     "name": "群聯",
+     "shares": 1000,
+     "amount": 1920000,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08
+    }
+   ],
+   "non_stock": {
+    "cash": 8362926078,
+    "margin": 0,
+    "rp": 3318409687,
+    "receivables": 1422387891
+   },
+   "non_stock_items": [
+    {
+     "code": "CASH",
+     "name": "現金",
+     "amount": 8362926078
+    },
+    {
+     "code": "GDM",
+     "name": "期貨保證金",
+     "amount": 0
+    },
+    {
+     "code": "RP",
+     "name": "附買回債券",
+     "amount": 3318409687
+    },
+    {
+     "code": "APAR",
+     "name": "應收付證券款",
+     "amount": 1422387891
+    }
+   ],
+   "futures": [],
+   "changes": [
+    {
+     "date": "2026-09-15",
+     "prev_date": "2026-09-14",
+     "items": [
+      {
+       "code": "8046",
+       "name": "南電",
+       "action": "add",
+       "shares_prev": 2640000,
+       "shares_curr": 2770000,
+       "shares_change": 130000,
+       "per_unit_prev": 0.00017629948581320042,
+       "per_unit_curr": 0.00018507977706773364,
+       "per_unit_change_pct": 4.98,
+       "weight_prev": 1.83,
+       "weight_curr": 2.02,
+       "amount_curr": 3005450000
+      },
+      {
+       "code": "3189",
+       "name": "景碩",
+       "action": "add",
+       "shares_prev": 3550000,
+       "shares_curr": 3700000,
+       "shares_change": 150000,
+       "per_unit_prev": 0.0002370693843321445,
+       "per_unit_curr": 0.00024721847478361537,
+       "per_unit_change_pct": 4.28,
+       "weight_prev": 1.87,
+       "weight_curr": 1.98,
+       "amount_curr": 2941500000
+      },
+      {
+       "code": "3008",
+       "name": "大立光",
+       "action": "reduce",
+       "shares_prev": 536000,
+       "shares_curr": 380000,
+       "shares_change": -156000,
+       "per_unit_prev": 3.579413802874069e-05,
+       "per_unit_curr": 2.539000551831725e-05,
+       "per_unit_change_pct": -29.07,
+       "weight_prev": 2.12,
+       "weight_curr": 1.55,
+       "amount_curr": 2300900000
+      },
+      {
+       "code": "3711",
+       "name": "日月光投控",
+       "action": "reduce",
+       "shares_prev": 2000000,
+       "shares_curr": 1000000,
+       "shares_change": -1000000,
+       "per_unit_prev": 0.00013356021652515183,
+       "per_unit_curr": 6.681580399557171e-05,
+       "per_unit_change_pct": -49.97,
+       "weight_prev": 0.81,
+       "weight_curr": 0.4,
+       "amount_curr": 592000000
+      }
+     ]
+    },
+    {
+     "date": "2026-09-14",
+     "prev_date": "2026-09-11",
+     "items": [
+      {
+       "code": "3443",
+       "name": "創意",
+       "action": "add",
+       "shares_prev": 580000,
+       "shares_curr": 620000,
+       "shares_change": 40000,
+       "per_unit_prev": 3.873246279229403e-05,
+       "per_unit_curr": 4.1403667122797064e-05,
+       "per_unit_change_pct": 6.9,
+       "weight_prev": 2.32,
+       "weight_curr": 2.61,
+       "amount_curr": 3968000000
+      },
+      {
+       "code": "3189",
+       "name": "景碩",
+       "action": "add",
+       "shares_prev": 3400000,
+       "shares_curr": 3550000,
+       "shares_change": 150000,
+       "per_unit_prev": 0.00022705236809275812,
+       "per_unit_curr": 0.0002370693843321445,
+       "per_unit_change_pct": 4.41,
+       "weight_prev": 1.83,
+       "weight_curr": 1.87,
+       "amount_curr": 2832900000
+      },
+      {
+       "code": "3008",
+       "name": "大立光",
+       "action": "reduce",
+       "shares_prev": 600000,
+       "shares_curr": 536000,
+       "shares_change": -64000,
+       "per_unit_prev": 4.006806495754555e-05,
+       "per_unit_curr": 3.579413802874069e-05,
+       "per_unit_change_pct": -10.67,
+       "weight_prev": 2.61,
+       "weight_curr": 2.12,
+       "amount_curr": 3213320000
+      },
+      {
+       "code": "2344",
+       "name": "華邦電",
+       "action": "reduce",
+       "shares_prev": 1000000,
+       "shares_curr": 1000,
+       "shares_change": -999000,
+       "per_unit_prev": 6.678010826257591e-05,
+       "per_unit_curr": 6.678010826257591e-08,
+       "per_unit_change_pct": -99.9,
+       "weight_prev": 0.11,
+       "weight_curr": 0.0,
+       "amount_curr": 160000
+      }
+     ]
+    },
+    {
+     "date": "2026-09-11",
+     "prev_date": "2026-09-10",
+     "items": [
+      {
+       "code": "3711",
+       "name": "日月光投控",
+       "action": "reduce",
+       "shares_prev": 4000000,
+       "shares_curr": 2000000,
+       "shares_change": -2000000,
+       "per_unit_prev": 0.0002661075038390997,
+       "per_unit_curr": 0.00013356021652515183,
+       "per_unit_change_pct": -49.81,
+       "weight_prev": 1.66,
+       "weight_curr": 0.81,
+       "amount_curr": 1236000000
+      }
+     ]
+    },
+    {
+     "date": "2026-09-10",
+     "prev_date": "2026-09-09",
+     "items": [
+      {
+       "code": "2330",
+       "name": "台積電",
+       "action": "reduce",
+       "shares_prev": 10000000,
+       "shares_curr": 9800000,
+       "shares_change": -200000,
+       "per_unit_prev": 0.0006578939144747122,
+       "per_unit_curr": 0.0006519633844057943,
+       "per_unit_change_pct": -0.9,
+       "weight_prev": 15.59,
+       "weight_curr": 15.37,
+       "amount_curr": 24010000000
+      },
+      {
+       "code": "5274",
+       "name": "信驊",
+       "action": "reduce",
+       "shares_prev": 140500,
+       "shares_curr": 120500,
+       "shares_change": -20000,
+       "per_unit_prev": 9.243409498369707e-06,
+       "per_unit_curr": 8.016488553152878e-06,
+       "per_unit_change_pct": -13.27,
+       "weight_prev": 1.65,
+       "weight_curr": 1.44,
+       "amount_curr": 2253350000
+      },
+      {
+       "code": "3533",
+       "name": "嘉澤",
+       "action": "reduce",
+       "shares_prev": 250000,
+       "shares_curr": 200000,
+       "shares_change": -50000,
+       "per_unit_prev": 1.6447347861867804e-05,
+       "per_unit_curr": 1.3305375191954984e-05,
+       "per_unit_change_pct": -19.1,
+       "weight_prev": 0.26,
+       "weight_curr": 0.2,
+       "amount_curr": 315000000
+      },
+      {
+       "code": "2344",
+       "name": "華邦電",
+       "action": "reduce",
+       "shares_prev": 1500000,
+       "shares_curr": 1000000,
+       "shares_change": -500000,
+       "per_unit_prev": 9.868408717120682e-05,
+       "per_unit_curr": 6.652687595977492e-05,
+       "per_unit_change_pct": -32.59,
+       "weight_prev": 0.17,
+       "weight_curr": 0.11,
+       "amount_curr": 179500000
+      },
+      {
+       "code": "2337",
+       "name": "旺宏",
+       "action": "reduce",
+       "shares_prev": 1000000,
+       "shares_curr": 1000,
+       "shares_change": -999000,
+       "per_unit_prev": 6.578939144747122e-05,
+       "per_unit_curr": 6.652687595977492e-08,
+       "per_unit_change_pct": -99.9,
+       "weight_prev": 0.08,
+       "weight_curr": 0.0,
+       "amount_curr": 122500
+      },
+      {
+       "code": "8358",
+       "name": "金居",
+       "action": "reduce",
+       "shares_prev": 200000,
+       "shares_curr": 100000,
+       "shares_change": -100000,
+       "per_unit_prev": 1.3157878289494243e-05,
+       "per_unit_curr": 6.652687595977492e-06,
+       "per_unit_change_pct": -49.44,
+       "weight_prev": 0.07,
+       "weight_curr": 0.03,
+       "amount_curr": 52100000
+      }
+     ]
+    },
+    {
+     "date": "2026-09-09",
+     "prev_date": "2026-09-08",
+     "items": [
+      {
+       "code": "6805",
+       "name": "富世達",
+       "action": "add",
+       "shares_prev": 650000,
+       "shares_curr": 760000,
+       "shares_change": 110000,
+       "per_unit_prev": 4.255174570500682e-05,
+       "per_unit_curr": 4.9999937500078125e-05,
+       "per_unit_change_pct": 17.5,
+       "weight_prev": 0.89,
+       "weight_curr": 1.1,
+       "amount_curr": 1744200000
+      },
+      {
+       "code": "5274",
+       "name": "信驊",
+       "action": "reduce",
+       "shares_prev": 210500,
+       "shares_curr": 140500,
+       "shares_change": -70000,
+       "per_unit_prev": 1.3780219186006053e-05,
+       "per_unit_curr": 9.243409498369707e-06,
+       "per_unit_change_pct": -32.92,
+       "weight_prev": 2.57,
+       "weight_curr": 1.65,
+       "amount_curr": 2614002500
+      },
+      {
+       "code": "8358",
+       "name": "金居",
+       "action": "reduce",
+       "shares_prev": 400000,
+       "shares_curr": 200000,
+       "shares_change": -200000,
+       "per_unit_prev": 2.618568966461958e-05,
+       "per_unit_curr": 1.3157878289494243e-05,
+       "per_unit_change_pct": -49.75,
+       "weight_prev": 0.13,
+       "weight_curr": 0.07,
+       "amount_curr": 105200000
+      }
+     ]
+    }
+   ]
+  },
+  "00405A": {
+   "date": "2026-09-15",
+   "holdings": [
+    {
+     "code": "3443",
+     "name": "創意",
+     "shares": 364000,
+     "amount": 2196740000,
+     "weight": 8.5493,
+     "per_unit": 0.00011794267791442352
+    },
+    {
+     "code": "2454",
+     "name": "聯發科",
+     "shares": 480000,
+     "amount": 2126400000,
+     "weight": 8.2755,
+     "per_unit": 0.00015552880604099805
+    },
+    {
+     "code": "6223",
+     "name": "旺矽",
+     "shares": 323000,
+     "amount": 1757120000,
+     "weight": 6.8383,
+     "per_unit": 0.00010465792573175494
+    },
+    {
+     "code": "3037",
+     "name": "欣興",
+     "shares": 1720000,
+     "amount": 1635720000,
+     "weight": 6.3659,
+     "per_unit": 0.000557311554980243
+    },
+    {
+     "code": "3653",
+     "name": "健策",
+     "shares": 260000,
+     "amount": 1380600000,
+     "weight": 5.373,
+     "per_unit": 8.424476993887394e-05
+    },
+    {
+     "code": "3665",
+     "name": "貿聯-KY",
+     "shares": 665000,
+     "amount": 1316700000,
+     "weight": 5.1243,
+     "per_unit": 0.00021547220003596604
+    },
+    {
+     "code": "3017",
+     "name": "奇鋐",
+     "shares": 378000,
+     "amount": 1177470000,
+     "weight": 4.5824,
+     "per_unit": 0.00012247893475728595
+    },
+    {
+     "code": "2368",
+     "name": "金像電",
+     "shares": 1127000,
+     "amount": 1095444000,
+     "weight": 4.2632,
+     "per_unit": 0.00036516867585042665
+    },
+    {
+     "code": "2383",
+     "name": "台光電",
+     "shares": 212000,
+     "amount": 1084380000,
+     "weight": 4.2202,
+     "per_unit": 6.869188933477414e-05
+    },
+    {
+     "code": "2345",
+     "name": "智邦",
+     "shares": 529000,
+     "amount": 973360000,
+     "weight": 3.7881,
+     "per_unit": 0.0001714057049910166
+    },
+    {
+     "code": "5274",
+     "name": "信驊",
+     "shares": 54300,
+     "amount": 951336000,
+     "weight": 3.7024,
+     "per_unit": 1.7594196183387902e-05
+    },
+    {
+     "code": "6531",
+     "name": "愛普*",
+     "shares": 1030000,
+     "amount": 916700000,
+     "weight": 3.5676,
+     "per_unit": 0.0003337388962963083
+    },
+    {
+     "code": "8046",
+     "name": "南電",
+     "shares": 739000,
+     "amount": 801815000,
+     "weight": 3.1205,
+     "per_unit": 0.00023944955763395323
+    },
+    {
+     "code": "6510",
+     "name": "精測",
+     "shares": 245000,
+     "amount": 797475000,
+     "weight": 3.1036,
+     "per_unit": 7.938449475009275e-05
+    },
+    {
+     "code": "7769",
+     "name": "鴻勁",
+     "shares": 120000,
+     "amount": 736200000,
+     "weight": 2.8651,
+     "per_unit": 3.888220151024951e-05
+    },
+    {
+     "code": "6805",
+     "name": "富世達",
+     "shares": 271000,
+     "amount": 548775000,
+     "weight": 2.1357,
+     "per_unit": 8.780897174398015e-05
+    },
+    {
+     "code": "4991",
+     "name": "環宇-KY",
+     "shares": 1200000,
+     "amount": 501600000,
+     "weight": 1.9521,
+     "per_unit": 0.0003888220151024951
+    },
+    {
+     "code": "2059",
+     "name": "川湖",
+     "shares": 42000,
+     "amount": 492030000,
+     "weight": 1.9148,
+     "per_unit": 1.3608770528587328e-05
+    },
+    {
+     "code": "2330",
+     "name": "台積電",
+     "shares": 179000,
+     "amount": 426915000,
+     "weight": 1.6614,
+     "per_unit": 5.799928391945552e-05
+    },
+    {
+     "code": "6274",
+     "name": "台燿",
+     "shares": 306000,
+     "amount": 419220000,
+     "weight": 1.6315,
+     "per_unit": 9.914961385113624e-05
+    },
+    {
+     "code": "7734",
+     "name": "印能科技",
+     "shares": 150000,
+     "amount": 383250000,
+     "weight": 1.4915,
+     "per_unit": 4.8602751887811886e-05
+    },
+    {
+     "code": "8996",
+     "name": "高力",
+     "shares": 282000,
+     "amount": 344040000,
+     "weight": 1.3389,
+     "per_unit": 9.137317354908635e-05
+    },
+    {
+     "code": "3450",
+     "name": "聯鈞",
+     "shares": 650000,
+     "amount": 320125000,
+     "weight": 1.2458,
+     "per_unit": 0.00021061192484718484
+    },
+    {
+     "code": "6278",
+     "name": "台表科",
+     "shares": 1400000,
+     "amount": 252700000,
+     "weight": 0.9834,
+     "per_unit": 0.0004536256842862443
+    },
+    {
+     "code": "2303",
+     "name": "聯電",
+     "shares": 1778000,
+     "amount": 246253000,
+     "weight": 0.9583,
+     "per_unit": 0.0005761046190435302
+    },
+    {
+     "code": "6187",
+     "name": "萬潤",
+     "shares": 198000,
+     "amount": 240570000,
+     "weight": 0.9362,
+     "per_unit": 6.41556324919117e-05
+    },
+    {
+     "code": "6669",
+     "name": "緯穎",
+     "shares": 99139,
+     "amount": 229506785,
+     "weight": 0.8931,
+     "per_unit": 3.212285479603855e-05
+    },
+    {
+     "code": "2308",
+     "name": "台達電",
+     "shares": 94000,
+     "amount": 156980000,
+     "weight": 0.6109,
+     "per_unit": 3.0457724516362117e-05
+    },
+    {
+     "code": "6515",
+     "name": "穎崴",
+     "shares": 23000,
+     "amount": 145130000,
+     "weight": 0.5648,
+     "per_unit": 7.452421956131156e-06
+    },
+    {
+     "code": "6831",
+     "name": "邁科",
+     "shares": 250000,
+     "amount": 128250000,
+     "weight": 0.4991,
+     "per_unit": 8.100458647968648e-05
+    },
+    {
+     "code": "6488",
+     "name": "環球晶",
+     "shares": 110000,
+     "amount": 100540000,
+     "weight": 0.3912,
+     "per_unit": 3.564201805106205e-05
+    },
+    {
+     "code": "6526",
+     "name": "達發",
+     "shares": 146000,
+     "amount": 90958000,
+     "weight": 0.3539,
+     "per_unit": 4.7306678504136906e-05
+    },
+    {
+     "code": "6285",
+     "name": "啟碁",
+     "shares": 400000,
+     "amount": 88800000,
+     "weight": 0.3455,
+     "per_unit": 0.00012960733836749836
+    },
+    {
+     "code": "4749",
+     "name": "新應材",
+     "shares": 95000,
+     "amount": 66975000,
+     "weight": 0.2606,
+     "per_unit": 3.078174286228086e-05
+    },
+    {
+     "code": "5347",
+     "name": "世界",
+     "shares": 211000,
+     "amount": 32283000,
+     "weight": 0.1256,
+     "per_unit": 6.836787098885538e-05
+    },
+    {
+     "code": "4576",
+     "name": "大銀微系統",
+     "shares": 72000,
+     "amount": 16596000,
+     "weight": 0.0645,
+     "per_unit": 2.3329320906149706e-05
+    },
+    {
+     "code": "2449",
+     "name": "京元電子",
+     "shares": 42650,
+     "amount": 10961050,
+     "weight": 0.0426,
+     "per_unit": 1.3819382453434513e-05
+    },
+    {
+     "code": "3163",
+     "name": "波若威",
+     "shares": 13300,
+     "amount": 8445500,
+     "weight": 0.0328,
+     "per_unit": 4.309444000719321e-06
+    },
+    {
+     "code": "3264",
+     "name": "欣銓",
+     "shares": 34000,
+     "amount": 7514000,
+     "weight": 0.0292,
+     "per_unit": 1.1016623761237361e-05
+    },
+    {
+     "code": "8021",
+     "name": "尖點",
+     "shares": 10000,
+     "amount": 4315000,
+     "weight": 0.0167,
+     "per_unit": 3.240183459187459e-06
+    },
+    {
+     "code": "2395",
+     "name": "研華",
+     "shares": 5000,
+     "amount": 3425000,
+     "weight": 0.0133,
+     "per_unit": 1.6200917295937296e-06
+    },
+    {
+     "code": "3661",
+     "name": "世芯-KY",
+     "shares": 1000,
+     "amount": 3355000,
+     "weight": 0.013,
+     "per_unit": 3.240183459187459e-07
+    },
+    {
+     "code": "3711",
+     "name": "日月光投控",
+     "shares": 3000,
+     "amount": 1776000,
+     "weight": 0.0069,
+     "per_unit": 9.720550377562378e-07
+    },
+    {
+     "code": "3533",
+     "name": "嘉澤",
+     "shares": 1000,
+     "amount": 1520000,
+     "weight": 0.0059,
+     "per_unit": 3.240183459187459e-07
+    },
+    {
+     "code": "3491",
+     "name": "昇達科",
+     "shares": 1000,
+     "amount": 1355000,
+     "weight": 0.0052,
+     "per_unit": 3.240183459187459e-07
+    },
+    {
+     "code": "1590",
+     "name": "亞德客-KY",
+     "shares": 1000,
+     "amount": 1280000,
+     "weight": 0.0049,
+     "per_unit": 3.240183459187459e-07
+    },
+    {
+     "code": "8028",
+     "name": "昇陽半導體",
+     "shares": 1000,
+     "amount": 226500,
+     "weight": 0.0008,
+     "per_unit": 3.240183459187459e-07
+    }
+   ],
+   "non_stock": {
+    "cash": 1158539028,
+    "redemption_payable": 187367339,
+    "receivables": 482376410
+   },
+   "non_stock_items": [
+    {
+     "code": "CASH",
+     "name": "現金",
+     "amount": 1158539028
+    },
+    {
+     "code": "REDEMPTION_PAYABLE",
+     "name": "應付受益權單位買回款",
+     "amount": 187367339
+    },
+    {
+     "code": "APAR",
+     "name": "應收(付)證券款",
+     "amount": 482376410
+    }
+   ],
+   "futures": [],
+   "changes": [
+    {
+     "date": "2026-09-15",
+     "prev_date": "2026-09-14",
+     "items": [
+      {
+       "code": "6669",
+       "name": "緯穎",
+       "action": "reduce",
+       "shares_prev": 149139,
+       "shares_curr": 99139,
+       "shares_change": -50000,
+       "per_unit_prev": 4.825341462980608e-05,
+       "per_unit_curr": 3.212285479603855e-05,
+       "per_unit_change_pct": -33.43,
+       "weight_prev": 1.2743,
+       "weight_curr": 0.8931,
+       "amount_curr": 229506785
+      }
+     ]
+    },
+    {
+     "date": "2026-09-14",
+     "prev_date": "2026-09-11",
+     "items": [
+      {
+       "code": "3017",
+       "name": "奇鋐",
+       "action": "reduce",
+       "shares_prev": 468000,
+       "shares_curr": 378000,
+       "shares_change": -90000,
+       "per_unit_prev": 0.0001513708278011285,
+       "per_unit_curr": 0.0001223006103706388,
+       "per_unit_change_pct": -19.2,
+       "weight_prev": 5.9249,
+       "weight_curr": 4.7095,
+       "amount_curr": 1251180000
+      },
+      {
+       "code": "3131",
+       "name": "弘塑",
+       "action": "exit",
+       "shares_prev": 30000,
+       "shares_curr": 0,
+       "shares_change": -30000,
+       "per_unit_prev": 9.703258192380031e-06,
+       "per_unit_curr": null,
+       "per_unit_change_pct": -100.0,
+       "weight_prev": 0.262,
+       "weight_curr": null,
+       "amount_curr": null
+      }
+     ]
+    },
+    {
+     "date": "2026-09-11",
+     "prev_date": "2026-09-10",
+     "items": [
+      {
+       "code": "6531",
+       "name": "愛普*",
+       "action": "add",
+       "shares_prev": 950000,
+       "shares_curr": 1030000,
+       "shares_change": 80000,
+       "per_unit_prev": 0.00030563871252105285,
+       "per_unit_curr": 0.0003331451979383811,
+       "per_unit_change_pct": 9.0,
+       "weight_prev": 3.5757,
+       "weight_curr": 3.823,
+       "amount_curr": 1017640000
+      },
+      {
+       "code": "3131",
+       "name": "弘塑",
+       "action": "reduce",
+       "shares_prev": 72000,
+       "shares_curr": 30000,
+       "shares_change": -42000,
+       "per_unit_prev": 2.3164197159490323e-05,
+       "per_unit_curr": 9.703258192380031e-06,
+       "per_unit_change_pct": -58.11,
+       "weight_prev": 0.6472,
+       "weight_curr": 0.262,
+       "amount_curr": 69750000
+      }
+     ]
+    },
+    {
+     "date": "2026-09-10",
+     "prev_date": "2026-09-09",
+     "items": [
+      {
+       "code": "2303",
+       "name": "聯電",
+       "action": "add",
+       "shares_prev": 78000,
+       "shares_curr": 1778000,
+       "shares_change": 1700000,
+       "per_unit_prev": 2.495005989613738e-05,
+       "per_unit_curr": 0.0005720269798551916,
+       "per_unit_change_pct": 2192.69,
+       "weight_prev": 0.04,
+       "weight_curr": 0.9258,
+       "amount_curr": 253365000
+      },
+      {
+       "code": "3131",
+       "name": "弘塑",
+       "action": "reduce",
+       "shares_prev": 132000,
+       "shares_curr": 72000,
+       "shares_change": -60000,
+       "per_unit_prev": 4.222317828577095e-05,
+       "per_unit_curr": 2.3164197159490323e-05,
+       "per_unit_change_pct": -45.14,
+       "weight_prev": 1.2239,
+       "weight_curr": 0.6472,
+       "amount_curr": 177120000
+      },
+      {
+       "code": "3081",
+       "name": "聯亞",
+       "action": "exit",
+       "shares_prev": 158400,
+       "shares_curr": 0,
+       "shares_change": -158400,
+       "per_unit_prev": 5.066781394292514e-05,
+       "per_unit_curr": null,
+       "per_unit_change_pct": -100.0,
+       "weight_prev": 1.6383,
+       "weight_curr": null,
+       "amount_curr": null
+      }
+     ]
+    },
+    {
+     "date": "2026-09-09",
+     "prev_date": "2026-09-08",
+     "items": [
+      {
+       "code": "3037",
+       "name": "欣興",
+       "action": "add",
+       "shares_prev": 1570000,
+       "shares_curr": 1720000,
+       "shares_change": 150000,
+       "per_unit_prev": 0.0004990075470918508,
+       "per_unit_curr": 0.0005501808079661063,
+       "per_unit_change_pct": 10.26,
+       "weight_prev": 5.4489,
+       "weight_curr": 6.1984,
+       "amount_curr": 1707960000
+      },
+      {
+       "code": "6531",
+       "name": "愛普*",
+       "action": "add",
+       "shares_prev": 750000,
+       "shares_curr": 950000,
+       "shares_change": 200000,
+       "per_unit_prev": 0.00023837940147699877,
+       "per_unit_curr": 0.00030387893463244245,
+       "per_unit_change_pct": 27.48,
+       "weight_prev": 2.5402,
+       "weight_curr": 3.4442,
+       "amount_curr": 949050000
+      },
+      {
+       "code": "3131",
+       "name": "弘塑",
+       "action": "reduce",
+       "shares_prev": 152000,
+       "shares_curr": 132000,
+       "shares_change": -20000,
+       "per_unit_prev": 4.831155869933842e-05,
+       "per_unit_curr": 4.222317828577095e-05,
+       "per_unit_change_pct": -12.6,
+       "weight_prev": 1.457,
+       "weight_curr": 1.2239,
+       "amount_curr": 337260000
+      },
+      {
+       "code": "8210",
+       "name": "勤誠",
+       "action": "exit",
+       "shares_prev": 168000,
+       "shares_curr": 0,
+       "shares_change": -168000,
+       "per_unit_prev": 5.339698593084773e-05,
+       "per_unit_curr": null,
+       "per_unit_change_pct": -100.0,
+       "weight_prev": 0.5543,
+       "weight_curr": null,
+       "amount_curr": null
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "stocks": {
+  "2330": {
+   "code": "2330",
+   "name": "台積電",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 9800000,
+     "amount": 23373000000,
+     "weight": 15.71,
+     "per_unit": 0.0006547948791566028,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "reduce",
+      "per_unit_change_pct": -0.9,
+      "shares_change": -200000
+     }
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 11864000,
+     "amount": 28295640000,
+     "weight": 10.42,
+     "per_unit": 0.0012521095840735544,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 179000,
+     "amount": 426915000,
+     "weight": 1.6614,
+     "per_unit": 5.799928391945552e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 52095555000
+  },
+  "2454": {
+   "code": "2454",
+   "name": "聯發科",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 5186000,
+     "amount": 22973980000,
+     "weight": 8.46,
+     "per_unit": 0.0005473230194711272,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 480000,
+     "amount": 2126400000,
+     "weight": 8.2755,
+     "per_unit": 0.00015552880604099805,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2210000,
+     "amount": 9790300000,
+     "weight": 6.58,
+     "per_unit": 0.0001476629268302135,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 34890680000
+  },
+  "2383": {
+   "code": "2383",
+   "name": "台光電",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 4750000,
+     "amount": 24296250000,
+     "weight": 8.95,
+     "per_unit": 0.0005013082033335623,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1600000,
+     "amount": 8184000000,
+     "weight": 5.5,
+     "per_unit": 0.00010690528639291475,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 212000,
+     "amount": 1084380000,
+     "weight": 4.2202,
+     "per_unit": 6.869188933477414e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 33564630000
+  },
+  "3037": {
+   "code": "3037",
+   "name": "欣興",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 20300000,
+     "amount": 19305300000,
+     "weight": 7.11,
+     "per_unit": 0.0021424329531939614,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1720000,
+     "amount": 1635720000,
+     "weight": 6.3659,
+     "per_unit": 0.000557311554980243,
+     "last_change": {
+      "date": "2026-09-09",
+      "action": "add",
+      "per_unit_change_pct": 10.26,
+      "shares_change": 150000
+     }
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 8460000,
+     "amount": 8045460000,
+     "weight": 5.41,
+     "per_unit": 0.0005652617018025367,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 28986480000
+  },
+  "3017": {
+   "code": "3017",
+   "name": "奇鋐",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 5949000,
+     "amount": 18531135000,
+     "weight": 6.82,
+     "per_unit": 0.0006278489477118658,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2850000,
+     "amount": 8877750000,
+     "weight": 5.97,
+     "per_unit": 0.0001904250413873794,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 378000,
+     "amount": 1177470000,
+     "weight": 4.5824,
+     "per_unit": 0.00012247893475728595,
+     "last_change": {
+      "date": "2026-09-14",
+      "action": "reduce",
+      "per_unit_change_pct": -19.2,
+      "shares_change": -90000
+     }
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 28586355000
+  },
+  "6223": {
+   "code": "6223",
+   "name": "旺矽",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 323000,
+     "amount": 1757120000,
+     "weight": 6.8383,
+     "per_unit": 0.00010465792573175494,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 2546000,
+     "amount": 13850240000,
+     "weight": 5.1,
+     "per_unit": 0.00026870119698678944,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1100000,
+     "amount": 5984000000,
+     "weight": 4.02,
+     "per_unit": 7.349738439512889e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 21591360000
+  },
+  "3653": {
+   "code": "3653",
+   "name": "健策",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 260000,
+     "amount": 1380600000,
+     "weight": 5.373,
+     "per_unit": 8.424476993887394e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 2512000,
+     "amount": 13338720000,
+     "weight": 4.91,
+     "per_unit": 0.00026511288563661235,
+     "last_change": {
+      "date": "2026-09-14",
+      "action": "add",
+      "per_unit_change_pct": 1.38,
+      "shares_change": 35000
+     }
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1115000,
+     "amount": 5920650000,
+     "weight": 3.98,
+     "per_unit": 7.449962145506247e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 20639970000
+  },
+  "2303": {
+   "code": "2303",
+   "name": "聯電",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 55000000,
+     "amount": 7617500000,
+     "weight": 5.12,
+     "per_unit": 0.0036748692197564443,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 89118000,
+     "amount": 12342843000,
+     "weight": 4.54,
+     "per_unit": 0.009405386203090612,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1778000,
+     "amount": 246253000,
+     "weight": 0.9583,
+     "per_unit": 0.0005761046190435302,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "add",
+      "per_unit_change_pct": 2192.69,
+      "shares_change": 1700000
+     }
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 20206596000
+  },
+  "6669": {
+   "code": "6669",
+   "name": "緯穎",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 6490561,
+     "amount": 15025648715,
+     "weight": 5.53,
+     "per_unit": 0.0006850045207446084,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1987956,
+     "amount": 4602118140,
+     "weight": 3.09,
+     "per_unit": 0.00013282687844782076,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 99139,
+     "amount": 229506785,
+     "weight": 0.8931,
+     "per_unit": 3.212285479603855e-05,
+     "last_change": {
+      "date": "2026-09-15",
+      "action": "reduce",
+      "per_unit_change_pct": -33.43,
+      "shares_change": -50000
+     }
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 19857273640
+  },
+  "2345": {
+   "code": "2345",
+   "name": "智邦",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 6464000,
+     "amount": 11893760000,
+     "weight": 4.38,
+     "per_unit": 0.0006822013108101362,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 529000,
+     "amount": 973360000,
+     "weight": 3.7881,
+     "per_unit": 0.0001714057049910166,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2307000,
+     "amount": 4244880000,
+     "weight": 2.85,
+     "per_unit": 0.00015414405981778394,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 17112000000
+  },
+  "2308": {
+   "code": "2308",
+   "name": "台達電",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 7240000,
+     "amount": 12090800000,
+     "weight": 4.45,
+     "per_unit": 0.0007640992404494719,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2750000,
+     "amount": 4592500000,
+     "weight": 3.09,
+     "per_unit": 0.0001837434609878222,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 94000,
+     "amount": 156980000,
+     "weight": 0.6109,
+     "per_unit": 3.0457724516362117e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 16840280000
+  },
+  "8046": {
+   "code": "8046",
+   "name": "南電",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 9426000,
+     "amount": 10227210000,
+     "weight": 3.77,
+     "per_unit": 0.0009948065525520334,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 739000,
+     "amount": 801815000,
+     "weight": 3.1205,
+     "per_unit": 0.00023944955763395323,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2770000,
+     "amount": 3005450000,
+     "weight": 2.02,
+     "per_unit": 0.00018507977706773364,
+     "last_change": {
+      "date": "2026-09-15",
+      "action": "add",
+      "per_unit_change_pct": 4.98,
+      "shares_change": 130000
+     }
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 14034475000
+  },
+  "3665": {
+   "code": "3665",
+   "name": "貿聯-KY",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 665000,
+     "amount": 1316700000,
+     "weight": 5.1243,
+     "per_unit": 0.00021547220003596604,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 4280848,
+     "amount": 8476079040,
+     "weight": 3.12,
+     "per_unit": 0.00045179457255243655,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1293000,
+     "amount": 2560140000,
+     "weight": 1.72,
+     "per_unit": 8.639283456627422e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 12352919040
+  },
+  "3711": {
+   "code": "3711",
+   "name": "日月光投控",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 16811000,
+     "amount": 9952112000,
+     "weight": 3.66,
+     "per_unit": 0.0017742088855243192,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1000000,
+     "amount": 592000000,
+     "weight": 0.4,
+     "per_unit": 6.681580399557171e-05,
+     "last_change": {
+      "date": "2026-09-15",
+      "action": "reduce",
+      "per_unit_change_pct": -49.97,
+      "shares_change": -1000000
+     }
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 3000,
+     "amount": 1776000,
+     "weight": 0.0069,
+     "per_unit": 9.720550377562378e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 10545888000
+  },
+  "6274": {
+   "code": "6274",
+   "name": "台燿",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 5398000,
+     "amount": 7395260000,
+     "weight": 2.72,
+     "per_unit": 0.0005696971961251725,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1900000,
+     "amount": 2603000000,
+     "weight": 1.75,
+     "per_unit": 0.00012695002759158627,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 306000,
+     "amount": 419220000,
+     "weight": 1.6315,
+     "per_unit": 9.914961385113624e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 10417480000
+  },
+  "3443": {
+   "code": "3443",
+   "name": "創意",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 364000,
+     "amount": 2196740000,
+     "weight": 8.5493,
+     "per_unit": 0.00011794267791442352,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 620000,
+     "amount": 3741700000,
+     "weight": 2.51,
+     "per_unit": 4.142579847725447e-05,
+     "last_change": {
+      "date": "2026-09-14",
+      "action": "add",
+      "per_unit_change_pct": 6.9,
+      "shares_change": 40000
+     }
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 413000,
+     "amount": 2492455000,
+     "weight": 0.92,
+     "per_unit": 4.358742904773921e-05,
+     "last_change": {
+      "date": "2026-09-14",
+      "action": "add",
+      "per_unit_change_pct": 10.99,
+      "shares_change": 41000
+     }
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 8430895000
+  },
+  "5274": {
+   "code": "5274",
+   "name": "信驊",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 54300,
+     "amount": 951336000,
+     "weight": 3.7024,
+     "per_unit": 1.7594196183387902e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 120500,
+     "amount": 2111160000,
+     "weight": 1.42,
+     "per_unit": 8.051304381466392e-06,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "reduce",
+      "per_unit_change_pct": -13.27,
+      "shares_change": -20000
+     }
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 207900,
+     "amount": 3642408000,
+     "weight": 1.34,
+     "per_unit": 2.1941468520641604e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 6704904000
+  },
+  "6805": {
+   "code": "6805",
+   "name": "富世達",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 271000,
+     "amount": 548775000,
+     "weight": 2.1357,
+     "per_unit": 8.780897174398015e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1731000,
+     "amount": 3505275000,
+     "weight": 1.29,
+     "per_unit": 0.00018268726315166242,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 760000,
+     "amount": 1539000000,
+     "weight": 1.03,
+     "per_unit": 5.07800110366345e-05,
+     "last_change": {
+      "date": "2026-09-09",
+      "action": "add",
+      "per_unit_change_pct": 17.5,
+      "shares_change": 110000
+     }
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 5593050000
+  },
+  "2449": {
+   "code": "2449",
+   "name": "京元電子",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 12818450,
+     "amount": 3294341650,
+     "weight": 1.21,
+     "per_unit": 0.0013528408713728637,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2600000,
+     "amount": 668200000,
+     "weight": 0.45,
+     "per_unit": 0.00017372109038848646,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 42650,
+     "amount": 10961050,
+     "weight": 0.0426,
+     "per_unit": 1.3819382453434513e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 3973502700
+  },
+  "8996": {
+   "code": "8996",
+   "name": "高力",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 282000,
+     "amount": 344040000,
+     "weight": 1.3389,
+     "per_unit": 9.137317354908635e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1580000,
+     "amount": 1927600000,
+     "weight": 1.3,
+     "per_unit": 0.00010556897031300332,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 485000,
+     "amount": 591700000,
+     "weight": 0.22,
+     "per_unit": 5.118620602458479e-05,
+     "last_change": {
+      "date": "2026-09-14",
+      "action": "reduce",
+      "per_unit_change_pct": -30.74,
+      "shares_change": -215000
+     }
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 2863340000
+  },
+  "6488": {
+   "code": "6488",
+   "name": "環球晶",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2800000,
+     "amount": 2559200000,
+     "weight": 1.72,
+     "per_unit": 0.00018708425118760082,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 110000,
+     "amount": 100540000,
+     "weight": 0.3912,
+     "per_unit": 3.564201805106205e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 914000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 2660654000
+  },
+  "3264": {
+   "code": "3264",
+   "name": "欣銓",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 5028000,
+     "amount": 1111188000,
+     "weight": 0.41,
+     "per_unit": 0.0005306479255497161,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 700000,
+     "amount": 154700000,
+     "weight": 0.1,
+     "per_unit": 4.6771062796900204e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 34000,
+     "amount": 7514000,
+     "weight": 0.0292,
+     "per_unit": 1.1016623761237361e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 3,
+   "total_amount": 1273402000
+  },
+  "2327": {
+   "code": "2327",
+   "name": "國巨*",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 24987000,
+     "amount": 13418019000,
+     "weight": 4.94,
+     "per_unit": 0.0026370922266727836,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 8000000,
+     "amount": 4296000000,
+     "weight": 2.89,
+     "per_unit": 0.0005345264319645737,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 17714019000
+  },
+  "3008": {
+   "code": "3008",
+   "name": "大立光",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 380000,
+     "amount": 2300900000,
+     "weight": 1.55,
+     "per_unit": 2.539000551831725e-05,
+     "last_change": {
+      "date": "2026-09-15",
+      "action": "reduce",
+      "per_unit_change_pct": -29.07,
+      "shares_change": -156000
+     }
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 6055000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 2306955000
+  },
+  "6510": {
+   "code": "6510",
+   "name": "精測",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 245000,
+     "amount": 797475000,
+     "weight": 3.1036,
+     "per_unit": 7.938449475009275e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 446000,
+     "amount": 1451730000,
+     "weight": 0.53,
+     "per_unit": 4.707020182879343e-05,
+     "last_change": {
+      "date": "2026-09-14",
+      "action": "reduce",
+      "per_unit_change_pct": -30.01,
+      "shares_change": -191000
+     }
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 2249205000
+  },
+  "2360": {
+   "code": "2360",
+   "name": "致茂",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1000000,
+     "amount": 2080000000,
+     "weight": 1.4,
+     "per_unit": 6.681580399557171e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 2080000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 2082080000
+  },
+  "7769": {
+   "code": "7769",
+   "name": "鴻勁",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 120000,
+     "amount": 736200000,
+     "weight": 2.8651,
+     "per_unit": 3.888220151024951e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 130000,
+     "amount": 797550000,
+     "weight": 0.54,
+     "per_unit": 8.686054519424322e-06,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 1533750000
+  },
+  "2368": {
+   "code": "2368",
+   "name": "金像電",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1127000,
+     "amount": 1095444000,
+     "weight": 4.2632,
+     "per_unit": 0.00036516867585042665,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 219000,
+     "amount": 212868000,
+     "weight": 0.08,
+     "per_unit": 2.3112946637905296e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 1308312000
+  },
+  "2059": {
+   "code": "2059",
+   "name": "川湖",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 42000,
+     "amount": 492030000,
+     "weight": 1.9148,
+     "per_unit": 1.3608770528587328e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 35000,
+     "amount": 410025000,
+     "weight": 0.28,
+     "per_unit": 2.33855313984501e-06,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 902055000
+  },
+  "3450": {
+   "code": "3450",
+   "name": "聯鈞",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 650000,
+     "amount": 320125000,
+     "weight": 1.2458,
+     "per_unit": 0.00021061192484718484,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1100000,
+     "amount": 541750000,
+     "weight": 0.36,
+     "per_unit": 7.349738439512889e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 861875000
+  },
+  "6278": {
+   "code": "6278",
+   "name": "台表科",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1400000,
+     "amount": 252700000,
+     "weight": 0.9834,
+     "per_unit": 0.0004536256842862443,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 3248000,
+     "amount": 586264000,
+     "weight": 0.22,
+     "per_unit": 0.0003427892725110338,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 838964000
+  },
+  "2317": {
+   "code": "2317",
+   "name": "鴻海",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 3200000,
+     "amount": 788800000,
+     "weight": 0.53,
+     "per_unit": 0.0002138105727858295,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 246500,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 789046500
+  },
+  "6515": {
+   "code": "6515",
+   "name": "穎崴",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 23000,
+     "amount": 145130000,
+     "weight": 0.5648,
+     "per_unit": 7.452421956131156e-06,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 95000,
+     "amount": 599450000,
+     "weight": 0.22,
+     "per_unit": 1.0026164066671246e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 744580000
+  },
+  "2481": {
+   "code": "2481",
+   "name": "強茂",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 3000000,
+     "amount": 460500000,
+     "weight": 0.31,
+     "per_unit": 0.00020044741198671514,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 5000,
+     "amount": 767500,
+     "weight": 0.0,
+     "per_unit": 5.276928456142762e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 461267500
+  },
+  "3533": {
+   "code": "3533",
+   "name": "嘉澤",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 200000,
+     "amount": 304000000,
+     "weight": 0.2,
+     "per_unit": 1.3363160799114344e-05,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "reduce",
+      "per_unit_change_pct": -19.1,
+      "shares_change": -50000
+     }
+    },
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 1520000,
+     "weight": 0.0059,
+     "per_unit": 3.240183459187459e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 305520000
+  },
+  "6187": {
+   "code": "6187",
+   "name": "萬潤",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 198000,
+     "amount": 240570000,
+     "weight": 0.9362,
+     "per_unit": 6.41556324919117e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 1215000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 241785000
+  },
+  "6285": {
+   "code": "6285",
+   "name": "啟碁",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 400000,
+     "amount": 88800000,
+     "weight": 0.3455,
+     "per_unit": 0.00012960733836749836,
+     "last_change": null
+    },
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 350000,
+     "amount": 77700000,
+     "weight": 0.05,
+     "per_unit": 2.3385531398450102e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 166500000
+  },
+  "8358": {
+   "code": "8358",
+   "name": "金居",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 100000,
+     "amount": 48200000,
+     "weight": 0.03,
+     "per_unit": 6.681580399557172e-06,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "reduce",
+      "per_unit_change_pct": -49.44,
+      "shares_change": -100000
+     }
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 482000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 48682000
+  },
+  "5347": {
+   "code": "5347",
+   "name": "世界",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 211000,
+     "amount": 32283000,
+     "weight": 0.1256,
+     "per_unit": 6.836787098885538e-05,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 153000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 32436000
+  },
+  "3661": {
+   "code": "3661",
+   "name": "世芯-KY",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 3355000,
+     "weight": 0.013,
+     "per_unit": 3.240183459187459e-07,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 3355000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 6710000
+  },
+  "1590": {
+   "code": "1590",
+   "name": "亞德客-KY",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 1280000,
+     "weight": 0.0049,
+     "per_unit": 3.240183459187459e-07,
+     "last_change": null
+    },
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 1280000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 2,
+   "total_amount": 2560000
+  },
+  "1303": {
+   "code": "1303",
+   "name": "南亞",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 13500000,
+     "amount": 2990250000,
+     "weight": 2.01,
+     "per_unit": 0.0009020133539402182,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 2990250000
+  },
+  "3189": {
+   "code": "3189",
+   "name": "景碩",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 3700000,
+     "amount": 2941500000,
+     "weight": 1.98,
+     "per_unit": 0.00024721847478361537,
+     "last_change": {
+      "date": "2026-09-15",
+      "action": "add",
+      "per_unit_change_pct": 4.28,
+      "shares_change": 150000
+     }
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 2941500000
+  },
+  "6239": {
+   "code": "6239",
+   "name": "力成",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 5360000,
+     "amount": 1436480000,
+     "weight": 0.97,
+     "per_unit": 0.0003581327094162644,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 1436480000
+  },
+  "8210": {
+   "code": "8210",
+   "name": "勤誠",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1516000,
+     "amount": 1324984000,
+     "weight": 0.49,
+     "per_unit": 0.00015999647079024853,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "reduce",
+      "per_unit_change_pct": -19.97,
+      "shares_change": -386000
+     }
+    }
+   ],
+   "exited_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-09",
+     "action": "exit",
+     "per_unit_change_pct": -100.0,
+     "shares_change": -168000
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 1324984000
+  },
+  "4958": {
+   "code": "4958",
+   "name": "臻鼎-KY",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 2712000,
+     "amount": 1294980000,
+     "weight": 0.48,
+     "per_unit": 0.0002862205994611834,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 1294980000
+  },
+  "6531": {
+   "code": "6531",
+   "name": "愛普*",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1030000,
+     "amount": 916700000,
+     "weight": 3.5676,
+     "per_unit": 0.0003337388962963083,
+     "last_change": {
+      "date": "2026-09-11",
+      "action": "add",
+      "per_unit_change_pct": 9.0,
+      "shares_change": 80000
+     }
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 916700000
+  },
+  "3211": {
+   "code": "3211",
+   "name": "順達",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 2000000,
+     "amount": 722000000,
+     "weight": 0.49,
+     "per_unit": 0.00013363160799114343,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 722000000
+  },
+  "3583": {
+   "code": "3583",
+   "name": "辛耘",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 800000,
+     "amount": 531200000,
+     "weight": 0.36,
+     "per_unit": 5.3452643196457374e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 531200000
+  },
+  "6442": {
+   "code": "6442",
+   "name": "光聖",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 350000,
+     "amount": 528500000,
+     "weight": 0.36,
+     "per_unit": 2.3385531398450102e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 528500000
+  },
+  "4991": {
+   "code": "4991",
+   "name": "環宇-KY",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1200000,
+     "amount": 501600000,
+     "weight": 1.9521,
+     "per_unit": 0.0003888220151024951,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 501600000
+  },
+  "6271": {
+   "code": "6271",
+   "name": "同欣電",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 2222000,
+     "amount": 491062000,
+     "weight": 0.18,
+     "per_unit": 0.00023450670059098434,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 491062000
+  },
+  "2882": {
+   "code": "2882",
+   "name": "國泰金",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 4000000,
+     "amount": 440000000,
+     "weight": 0.3,
+     "per_unit": 0.00026726321598228686,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 440000000
+  },
+  "7734": {
+   "code": "7734",
+   "name": "印能科技",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 150000,
+     "amount": 383250000,
+     "weight": 1.4915,
+     "per_unit": 4.8602751887811886e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 383250000
+  },
+  "6191": {
+   "code": "6191",
+   "name": "精成科",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 3988000,
+     "amount": 323028000,
+     "weight": 0.12,
+     "per_unit": 0.0004208878136619467,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 323028000
+  },
+  "3376": {
+   "code": "3376",
+   "name": "新日興",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1740000,
+     "amount": 301020000,
+     "weight": 0.11,
+     "per_unit": 0.0001836371102737681,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 301020000
+  },
+  "2404": {
+   "code": "2404",
+   "name": "漢唐",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 250000,
+     "amount": 258750000,
+     "weight": 0.17,
+     "per_unit": 1.670395099889293e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 258750000
+  },
+  "2455": {
+   "code": "2455",
+   "name": "全新",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 386000,
+     "amount": 200720000,
+     "weight": 0.13,
+     "per_unit": 2.5790900342290684e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 200720000
+  },
+  "1560": {
+   "code": "1560",
+   "name": "中砂",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 191000,
+     "amount": 140385000,
+     "weight": 0.09,
+     "per_unit": 1.2761818563154198e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 140385000
+  },
+  "6831": {
+   "code": "6831",
+   "name": "邁科",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 250000,
+     "amount": 128250000,
+     "weight": 0.4991,
+     "per_unit": 8.100458647968648e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 128250000
+  },
+  "2313": {
+   "code": "2313",
+   "name": "華通",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 501000,
+     "amount": 109468500,
+     "weight": 0.04,
+     "per_unit": 5.287482313055047e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 109468500
+  },
+  "1717": {
+   "code": "1717",
+   "name": "長興",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1500000,
+     "amount": 102150000,
+     "weight": 0.07,
+     "per_unit": 0.00010022370599335757,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 102150000
+  },
+  "2002": {
+   "code": "2002",
+   "name": "中鋼",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 5163000,
+     "amount": 96289950,
+     "weight": 0.04,
+     "per_unit": 0.0005448956323813016,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 96289950
+  },
+  "6526": {
+   "code": "6526",
+   "name": "達發",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 146000,
+     "amount": 90958000,
+     "weight": 0.3539,
+     "per_unit": 4.7306678504136906e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 90958000
+  },
+  "2301": {
+   "code": "2301",
+   "name": "光寶科",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 300000,
+     "amount": 82200000,
+     "weight": 0.06,
+     "per_unit": 2.0044741198671514e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 82200000
+  },
+  "4749": {
+   "code": "4749",
+   "name": "新應材",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 95000,
+     "amount": 66975000,
+     "weight": 0.2606,
+     "per_unit": 3.078174286228086e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 66975000
+  },
+  "4576": {
+   "code": "4576",
+   "name": "大銀微系統",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 72000,
+     "amount": 16596000,
+     "weight": 0.0645,
+     "per_unit": 2.3329320906149706e-05,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 16596000
+  },
+  "3163": {
+   "code": "3163",
+   "name": "波若威",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 13300,
+     "amount": 8445500,
+     "weight": 0.0328,
+     "per_unit": 4.309444000719321e-06,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 8445500
+  },
+  "8021": {
+   "code": "8021",
+   "name": "尖點",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 10000,
+     "amount": 4315000,
+     "weight": 0.0167,
+     "per_unit": 3.240183459187459e-06,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 4315000
+  },
+  "2395": {
+   "code": "2395",
+   "name": "研華",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 5000,
+     "amount": 3425000,
+     "weight": 0.0133,
+     "per_unit": 1.6200917295937296e-06,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 3425000
+  },
+  "8299": {
+   "code": "8299",
+   "name": "群聯",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 1920000,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 1920000
+  },
+  "3491": {
+   "code": "3491",
+   "name": "昇達科",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 1355000,
+     "weight": 0.0052,
+     "per_unit": 3.240183459187459e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 1355000
+  },
+  "4966": {
+   "code": "4966",
+   "name": "譜瑞-KY",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 523000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 523000
+  },
+  "6196": {
+   "code": "6196",
+   "name": "帆宣",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 518000,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 518000
+  },
+  "4979": {
+   "code": "4979",
+   "name": "華星光",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 509000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "reduce",
+      "per_unit_change_pct": -99.89,
+      "shares_change": -923000
+     }
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 509000
+  },
+  "2408": {
+   "code": "2408",
+   "name": "南亞科",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 465500,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 465500
+  },
+  "2382": {
+   "code": "2382",
+   "name": "廣達",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 333000,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 333000
+  },
+  "2049": {
+   "code": "2049",
+   "name": "上銀",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 329000,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 329000
+  },
+  "8028": {
+   "code": "8028",
+   "name": "昇陽半導體",
+   "held_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 226500,
+     "weight": 0.0008,
+     "per_unit": 3.240183459187459e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 226500
+  },
+  "2344": {
+   "code": "2344",
+   "name": "華邦電",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 159500,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08,
+     "last_change": {
+      "date": "2026-09-14",
+      "action": "reduce",
+      "per_unit_change_pct": -99.9,
+      "shares_change": -999000
+     }
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 159500
+  },
+  "2337": {
+   "code": "2337",
+   "name": "旺宏",
+   "held_by": [
+    {
+     "etf": "00403A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 114500,
+     "weight": 0.0,
+     "per_unit": 6.681580399557171e-08,
+     "last_change": {
+      "date": "2026-09-10",
+      "action": "reduce",
+      "per_unit_change_pct": -99.9,
+      "shares_change": -999000
+     }
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 114500
+  },
+  "2637": {
+   "code": "2637",
+   "name": "慧洋-KY",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 96900,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 96900
+  },
+  "8150": {
+   "code": "8150",
+   "name": "南茂",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 84400,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 84400
+  },
+  "2439": {
+   "code": "2439",
+   "name": "美律",
+   "held_by": [
+    {
+     "etf": "00981A",
+     "date": "2026-09-15",
+     "shares": 1000,
+     "amount": 76600,
+     "weight": 0.0,
+     "per_unit": 1.0553856912285523e-07,
+     "last_change": null
+    }
+   ],
+   "etf_count": 1,
+   "total_amount": 76600
+  },
+  "3131": {
+   "code": "3131",
+   "name": "弘塑",
+   "held_by": [],
+   "exited_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-14",
+     "action": "exit",
+     "per_unit_change_pct": -100.0,
+     "shares_change": -30000
+    }
+   ],
+   "etf_count": 0,
+   "total_amount": 0
+  },
+  "3081": {
+   "code": "3081",
+   "name": "聯亞",
+   "held_by": [],
+   "exited_by": [
+    {
+     "etf": "00405A",
+     "date": "2026-09-10",
+     "action": "exit",
+     "per_unit_change_pct": -100.0,
+     "shares_change": -158400
+    }
+   ],
+   "etf_count": 0,
+   "total_amount": 0
+  }
+ },
+ "notes": {
+  "per_unit": "每單位持股數 = 股數 / 流通在外單位數；日對日比較用它，排除申贖造成的規模效果。加/減碼要同時滿足股數有變且每單位變動超過門檻。",
+  "non_stock_pct": "非股票水位 = (基金淨資產 - 股票市值) / 基金淨資產；cash_pct 是投信揭露的現金項目，統一只有最新一天有。",
+  "intervals": "共同訊號只比較全體日期序列中相鄰兩天，且只納入兩天都有快照的 ETF（excluded 列出缺席者）。",
+  "corporate_action": "多檔 ETF 同日對同一股票出現一致的大倍數股數變化，標記為疑似公司行動（分割/併股）待核對，不算加減碼。",
+  "prices": "close 為證交所當日收盤價；premium_pct = (收盤 - 淨值) / 淨值，淨值為投信當日公告值。缺行情的日子為 null。"
+ }
+}

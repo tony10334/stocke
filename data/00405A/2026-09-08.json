@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "etf": "00405A",
+  "name": "主動富邦台灣龍耀",
+  "provider": "fubon",
+  "date": "2026-09-08",
+  "posted_date": "2026-09-08",
+  "fetched_at": "2026-09-15T17:31:43+08:00",
+  "source": "official",
+  "nav": 8.74,
+  "outstanding_units": 3146245000,
+  "aum": 27487576504,
+  "stock_value": 26201923085,
+  "non_stock_total": 1285653419,
+  "non_stock": {
+    "cash": 1303415762,
+    "redemption_payable": 324869753,
+    "receivables": 279470195
+  },
+  "non_stock_items": [
+    {
+      "code": "CASH",
+      "name": "現金",
+      "amount": 1303415762
+    },
+    {
+      "code": "REDEMPTION_PAYABLE",
+      "name": "應付受益權單位買回款",
+      "amount": 324869753
+    },
+    {
+      "code": "APAR",
+      "name": "應收(付)證券款",
+      "amount": 279470195
+    }
+  ],
+  "futures": [],
+  "holdings": [
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "shares": 480000,
+      "amount": 2260800000,
+      "weight": 8.2248
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "shares": 364000,
+      "amount": 2169440000,
+      "weight": 7.8924
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "shares": 323000,
+      "amount": 1871785000,
+      "weight": 6.8095
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "shares": 468000,
+      "amount": 1537380000,
+      "weight": 5.5929
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "shares": 1570000,
+      "amount": 1497780000,
+      "weight": 5.4489
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "shares": 260000,
+      "amount": 1443000000,
+      "weight": 5.2496
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "shares": 665000,
+      "amount": 1286775000,
+      "weight": 4.6812
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "shares": 1127000,
+      "amount": 1211525000,
+      "weight": 4.4075
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "shares": 212000,
+      "amount": 1132080000,
+      "weight": 4.1185
+    },
+    {
+      "code": "5274",
+      "name": "信驊",
+      "shares": 54300,
+      "amount": 1043646000,
+      "weight": 3.7967
+    },
+    {
+      "code": "2345",
+      "name": "智邦",
+      "shares": 529000,
+      "amount": 1034195000,
+      "weight": 3.7624
+    },
+    {
+      "code": "6510",
+      "name": "精測",
+      "shares": 245000,
+      "amount": 886900000,
+      "weight": 3.2265
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "shares": 120000,
+      "amount": 836400000,
+      "weight": 3.0428
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "shares": 739000,
+      "amount": 757475000,
+      "weight": 2.7556
+    },
+    {
+      "code": "6531",
+      "name": "愛普*",
+      "shares": 750000,
+      "amount": 698250000,
+      "weight": 2.5402
+    },
+    {
+      "code": "4991",
+      "name": "環宇-KY",
+      "shares": 1200000,
+      "amount": 591600000,
+      "weight": 2.1522
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "shares": 271000,
+      "amount": 584005000,
+      "weight": 2.1246
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "shares": 42000,
+      "amount": 525840000,
+      "weight": 1.913
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "shares": 158400,
+      "amount": 453816000,
+      "weight": 1.6509
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "shares": 179000,
+      "amount": 442130000,
+      "weight": 1.6084
+    },
+    {
+      "code": "7734",
+      "name": "印能科技",
+      "shares": 150000,
+      "amount": 436500000,
+      "weight": 1.5879
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "shares": 306000,
+      "amount": 411570000,
+      "weight": 1.4972
+    },
+    {
+      "code": "3131",
+      "name": "弘塑",
+      "shares": 152000,
+      "amount": 400520000,
+      "weight": 1.457
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "shares": 149139,
+      "amount": 348985260,
+      "weight": 1.2696
+    },
+    {
+      "code": "8996",
+      "name": "高力",
+      "shares": 282000,
+      "amount": 345450000,
+      "weight": 1.2567
+    },
+    {
+      "code": "3450",
+      "name": "聯鈞",
+      "shares": 650000,
+      "amount": 342550000,
+      "weight": 1.2461
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "shares": 198000,
+      "amount": 274230000,
+      "weight": 0.9976
+    },
+    {
+      "code": "6278",
+      "name": "台表科",
+      "shares": 1400000,
+      "amount": 263900000,
+      "weight": 0.96
+    },
+    {
+      "code": "6515",
+      "name": "穎崴",
+      "shares": 23000,
+      "amount": 177100000,
+      "weight": 0.6442
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "shares": 94000,
+      "amount": 169670000,
+      "weight": 0.6172
+    },
+    {
+      "code": "8210",
+      "name": "勤誠",
+      "shares": 168000,
+      "amount": 152376000,
+      "weight": 0.5543
+    },
+    {
+      "code": "6831",
+      "name": "邁科",
+      "shares": 250000,
+      "amount": 140000000,
+      "weight": 0.5093
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "shares": 110000,
+      "amount": 105050000,
+      "weight": 0.3821
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "shares": 400000,
+      "amount": 94400000,
+      "weight": 0.3434
+    },
+    {
+      "code": "6526",
+      "name": "達發",
+      "shares": 146000,
+      "amount": 93878000,
+      "weight": 0.3415
+    },
+    {
+      "code": "4749",
+      "name": "新應材",
+      "shares": 95000,
+      "amount": 74100000,
+      "weight": 0.2695
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "shares": 211000,
+      "amount": 32072000,
+      "weight": 0.1166
+    },
+    {
+      "code": "4576",
+      "name": "大銀微系統",
+      "shares": 72000,
+      "amount": 16956000,
+      "weight": 0.0616
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "shares": 42650,
+      "amount": 11451525,
+      "weight": 0.0416
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "shares": 78000,
+      "amount": 10686000,
+      "weight": 0.0388
+    },
+    {
+      "code": "3163",
+      "name": "波若威",
+      "shares": 13300,
+      "amount": 9655800,
+      "weight": 0.0351
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "shares": 34000,
+      "amount": 7650000,
+      "weight": 0.0278
+    },
+    {
+      "code": "8021",
+      "name": "尖點",
+      "shares": 10000,
+      "amount": 4500000,
+      "weight": 0.0163
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "shares": 1000,
+      "amount": 4030000,
+      "weight": 0.0146
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "shares": 5000,
+      "amount": 3285000,
+      "weight": 0.0119
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "shares": 3000,
+      "amount": 1854000,
+      "weight": 0.0067
+    },
+    {
+      "code": "3533",
+      "name": "嘉澤",
+      "shares": 1000,
+      "amount": 1620000,
+      "weight": 0.0058
+    },
+    {
+      "code": "3491",
+      "name": "昇達科",
+      "shares": 1000,
+      "amount": 1490000,
+      "weight": 0.0054
+    },
+    {
+      "code": "1590",
+      "name": "亞德客-KY",
+      "shares": 1000,
+      "amount": 1335000,
+      "weight": 0.0048
+    },
+    {
+      "code": "8028",
+      "name": "昇陽半導體",
+      "shares": 1000,
+      "amount": 236500,
+      "weight": 0.0008
+    }
+  ],
+  "extra": {
+    "stock_weight_total": 95.32,
+    "query_date": "2026-09-08",
+    "non_stock_detail": "ok"
+  }
+}
