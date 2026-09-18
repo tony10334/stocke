@@ -249,3 +249,7 @@
 {"ts": "2026-09-17T22:23:22+08:00", "etf": "00403A", "date": "2026-09-17", "status": "created", "posted_date": "2026-09-18", "path": "data/00403A/2026-09-17.json"}
 {"ts": "2026-09-17T22:23:25+08:00", "etf": "00405A", "date": "2026-09-17", "status": "created", "posted_date": "2026-09-17", "path": "data/00405A/2026-09-17.json"}
 {"ts": "2026-09-17T22:23:27+08:00", "etf": "*", "date": "2026-09-17", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 1, "has_end": true}, "00403A": {"changed": 1, "has_end": true}, "00405A": {"changed": 1, "has_end": true}}}
+{"ts": "2026-09-18T21:44:02+08:00", "etf": "00981A", "date": "2026-09-18", "status": "created", "posted_date": "2026-09-21", "path": "data/00981A/2026-09-18.json"}
+{"ts": "2026-09-18T21:44:08+08:00", "etf": "00403A", "date": "2026-09-18", "status": "created", "posted_date": "2026-09-21", "path": "data/00403A/2026-09-18.json"}
+{"ts": "2026-09-18T21:44:10+08:00", "etf": "00405A", "date": "2026-09-18", "status": "created", "posted_date": "2026-09-18", "path": "data/00405A/2026-09-18.json"}
+{"ts": "2026-09-18T21:44:13+08:00", "etf": "*", "date": "2026-09-18", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 1, "has_end": true}, "00403A": {"changed": 1, "has_end": true}, "00405A": {"changed": 1, "has_end": true}}}
