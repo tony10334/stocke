@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "etf": "00985A",
+  "name": "主動野村台灣50",
+  "provider": "nomura",
+  "date": "2026-06-04",
+  "posted_date": "2026-06-04",
+  "fetched_at": "2026-09-22T14:08:05+08:00",
+  "source": "official",
+  "nav": 22.36,
+  "outstanding_units": 502289000,
+  "aum": 11229940903,
+  "stock_value": 10001047400,
+  "non_stock_total": 1228893503,
+  "non_stock": {
+    "cash": 712611720,
+    "margin": 104334618,
+    "receivables": 583109049
+  },
+  "non_stock_items": [
+    {
+      "code": "CASH",
+      "name": "現金",
+      "amount": 712611720
+    },
+    {
+      "code": "MARGIN",
+      "name": "保證金",
+      "amount": 104334618
+    },
+    {
+      "code": "APAR",
+      "name": "應收(付)證券款",
+      "amount": 583109049
+    },
+    {
+      "code": "OTHER:申贖應付款",
+      "name": "申贖應付款",
+      "amount": -167822940
+    }
+  ],
+  "futures": [
+    {
+      "code": "CDF",
+      "name": "台積電期貨",
+      "contracts": 46,
+      "amount": 221229836,
+      "weight": 1.97,
+      "month": null
+    }
+  ],
+  "holdings": [
+    {
+      "code": "2330",
+      "name": "台灣積體電路製造",
+      "shares": 1096000,
+      "amount": 2614330242,
+      "weight": 23.28
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "shares": 752000,
+      "amount": 393047932,
+      "weight": 3.5
+    },
+    {
+      "code": "3293",
+      "name": "鈊象電子",
+      "shares": 479000,
+      "amount": 382940985,
+      "weight": 3.41
+    },
+    {
+      "code": "2308",
+      "name": "台達電子工業",
+      "shares": 119000,
+      "amount": 288609481,
+      "weight": 2.57
+    },
+    {
+      "code": "8046",
+      "name": "南亞電路板",
+      "shares": 323000,
+      "amount": 284117505,
+      "weight": 2.53
+    },
+    {
+      "code": "1216",
+      "name": "統一企業",
+      "shares": 3569000,
+      "amount": 262780617,
+      "weight": 2.34
+    },
+    {
+      "code": "2360",
+      "name": "致茂電子",
+      "shares": 100000,
+      "amount": 261657623,
+      "weight": 2.33
+    },
+    {
+      "code": "3661",
+      "name": "世芯電子",
+      "shares": 60000,
+      "amount": 260534629,
+      "weight": 2.32
+    },
+    {
+      "code": "2412",
+      "name": "中華電信",
+      "shares": 1778000,
+      "amount": 251550676,
+      "weight": 2.24
+    },
+    {
+      "code": "2376",
+      "name": "技嘉科技",
+      "shares": 657000,
+      "amount": 245935706,
+      "weight": 2.19
+    },
+    {
+      "code": "3036",
+      "name": "文曄科技",
+      "shares": 868000,
+      "amount": 244812712,
+      "weight": 2.18
+    },
+    {
+      "code": "2454",
+      "name": "聯發科技",
+      "shares": 55000,
+      "amount": 243689718,
+      "weight": 2.17
+    },
+    {
+      "code": "6223",
+      "name": "旺矽科技",
+      "shares": 40000,
+      "amount": 242566724,
+      "weight": 2.16
+    },
+    {
+      "code": "6669",
+      "name": "緯穎科技服務",
+      "shares": 41000,
+      "amount": 227967800,
+      "weight": 2.03
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐科技",
+      "shares": 83000,
+      "amount": 224598818,
+      "weight": 2.0
+    },
+    {
+      "code": "2049",
+      "name": "上銀科技",
+      "shares": 623000,
+      "amount": 223475824,
+      "weight": 1.99
+    },
+    {
+      "code": "3653",
+      "name": "健策精密工業",
+      "shares": 60000,
+      "amount": 223475824,
+      "weight": 1.99
+    },
+    {
+      "code": "2368",
+      "name": "金像電子（股）公司",
+      "shares": 165000,
+      "amount": 222352830,
+      "weight": 1.98
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁精密",
+      "shares": 29000,
+      "amount": 214491871,
+      "weight": 1.91
+    },
+    {
+      "code": "1477",
+      "name": "聚陽實業",
+      "shares": 927000,
+      "amount": 213368877,
+      "weight": 1.9
+    },
+    {
+      "code": "2383",
+      "name": "台光電子材料",
+      "shares": 37000,
+      "amount": 178556060,
+      "weight": 1.59
+    },
+    {
+      "code": "2059",
+      "name": "川湖科技",
+      "shares": 33000,
+      "amount": 176310072,
+      "weight": 1.57
+    },
+    {
+      "code": "6442",
+      "name": "光紅建聖",
+      "shares": 81000,
+      "amount": 174064084,
+      "weight": 1.55
+    },
+    {
+      "code": "2345",
+      "name": "智邦科技",
+      "shares": 66000,
+      "amount": 166203125,
+      "weight": 1.48
+    },
+    {
+      "code": "3711",
+      "name": "日月光投資控股",
+      "shares": 263000,
+      "amount": 156096179,
+      "weight": 1.39
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "shares": 77000,
+      "amount": 152727196,
+      "weight": 1.36
+    },
+    {
+      "code": "3105",
+      "name": "穩懋半導體",
+      "shares": 279000,
+      "amount": 135882285,
+      "weight": 1.21
+    },
+    {
+      "code": "2881",
+      "name": "富邦金融控股",
+      "shares": 1027000,
+      "amount": 116791385,
+      "weight": 1.04
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎科技控股",
+      "shares": 238000,
+      "amount": 116791385,
+      "weight": 1.04
+    },
+    {
+      "code": "8299",
+      "name": "群聯電子",
+      "shares": 45000,
+      "amount": 115668391,
+      "weight": 1.03
+    },
+    {
+      "code": "6488",
+      "name": "環球晶圓",
+      "shares": 129000,
+      "amount": 112299409,
+      "weight": 1.0
+    },
+    {
+      "code": "8996",
+      "name": "高力熱處理工業",
+      "shares": 98000,
+      "amount": 110053421,
+      "weight": 0.98
+    },
+    {
+      "code": "3529",
+      "name": "力旺電子",
+      "shares": 25000,
+      "amount": 88716533,
+      "weight": 0.79
+    },
+    {
+      "code": "2344",
+      "name": "華邦電子",
+      "shares": 491000,
+      "amount": 87593539,
+      "weight": 0.78
+    },
+    {
+      "code": "2891",
+      "name": "中國信託金融控股",
+      "shares": 1217000,
+      "amount": 83101563,
+      "weight": 0.74
+    },
+    {
+      "code": "6415",
+      "name": "矽力杰",
+      "shares": 144000,
+      "amount": 81978569,
+      "weight": 0.73
+    },
+    {
+      "code": "4904",
+      "name": "遠傳電信",
+      "shares": 713000,
+      "amount": 72994616,
+      "weight": 0.65
+    },
+    {
+      "code": "6789",
+      "name": "采鈺科技",
+      "shares": 128000,
+      "amount": 67379645,
+      "weight": 0.6
+    },
+    {
+      "code": "2408",
+      "name": "南亞科技",
+      "shares": 143000,
+      "amount": 56149705,
+      "weight": 0.5
+    },
+    {
+      "code": "3665",
+      "name": "貿聯控股（BizLink Holding In",
+      "shares": 25000,
+      "amount": 53903716,
+      "weight": 0.48
+    },
+    {
+      "code": "6781",
+      "name": "AES Holding Co Ltd",
+      "shares": 38000,
+      "amount": 43796770,
+      "weight": 0.39
+    },
+    {
+      "code": "3533",
+      "name": "嘉澤端子工業",
+      "shares": 13000,
+      "amount": 31443835,
+      "weight": 0.28
+    },
+    {
+      "code": "8210",
+      "name": "勤誠興業",
+      "shares": 20000,
+      "amount": 28074852,
+      "weight": 0.25
+    },
+    {
+      "code": "2317",
+      "name": "鴻海精密工業",
+      "shares": 78000,
+      "amount": 22459882,
+      "weight": 0.2
+    },
+    {
+      "code": "2474",
+      "name": "可成科技",
+      "shares": 92000,
+      "amount": 22459882,
+      "weight": 0.2
+    },
+    {
+      "code": "2382",
+      "name": "廣達電腦",
+      "shares": 14000,
+      "amount": 5614970,
+      "weight": 0.05
+    },
+    {
+      "code": "3037",
+      "name": "欣興電子",
+      "shares": 6000,
+      "amount": 5614970,
+      "weight": 0.05
+    },
+    {
+      "code": "6239",
+      "name": "力成科技",
+      "shares": 16000,
+      "amount": 5614970,
+      "weight": 0.05
+    },
+    {
+      "code": "1519",
+      "name": "華城電機",
+      "shares": 5000,
+      "amount": 4491976,
+      "weight": 0.04
+    },
+    {
+      "code": "3189",
+      "name": "景碩科技",
+      "shares": 2000,
+      "amount": 1122994,
+      "weight": 0.01
+    }
+  ],
+  "extra": {
+    "futures_notional": 221720000,
+    "non_stock_detail": "ok",
+    "amount_basis": "weight_x_aum"
+  }
+}

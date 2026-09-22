@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "etf": "00400A",
+  "name": "主動國泰動能高息",
+  "provider": "cathay",
+  "date": "2026-07-21",
+  "posted_date": "2026-07-21",
+  "fetched_at": "2026-09-22T14:12:34+08:00",
+  "source": "official",
+  "nav": 13.41,
+  "outstanding_units": 1938640000,
+  "aum": 25991416782,
+  "stock_value": 24735000660,
+  "non_stock_total": 1256416122,
+  "non_stock": {
+    "cash": 1478336479,
+    "redemption_payable": -5917347
+  },
+  "non_stock_items": [
+    {
+      "code": "CASH",
+      "name": "現金",
+      "amount": 1478336479
+    },
+    {
+      "code": "REDEMPTION_PAYABLE",
+      "name": "申贖應付款",
+      "amount": -5917347
+    }
+  ],
+  "futures": [],
+  "holdings": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "shares": 958000,
+      "amount": 2308037810,
+      "weight": 8.88
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "shares": 440000,
+      "amount": 1614066982,
+      "weight": 6.21
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "shares": 291000,
+      "amount": 1406135648,
+      "weight": 5.41
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "shares": 665000,
+      "amount": 1341157106,
+      "weight": 5.16
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "shares": 457000,
+      "amount": 1060449805,
+      "weight": 4.08
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "shares": 1250000,
+      "amount": 1031859246,
+      "weight": 3.97
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "shares": 853000,
+      "amount": 1026660963,
+      "weight": 3.95
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "shares": 203000,
+      "amount": 1016264396,
+      "weight": 3.91
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "shares": 171000,
+      "amount": 1005867829,
+      "weight": 3.87
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "shares": 113000,
+      "amount": 901902162,
+      "weight": 3.47
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "shares": 446000,
+      "amount": 818729629,
+      "weight": 3.15
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "shares": 190000,
+      "amount": 782341645,
+      "weight": 3.01
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "shares": 354000,
+      "amount": 706966536,
+      "weight": 2.72
+    },
+    {
+      "code": "5274",
+      "name": "信  驊",
+      "shares": 46400,
+      "amount": 654983703,
+      "weight": 2.52
+    },
+    {
+      "code": "2345",
+      "name": "智邦",
+      "shares": 227000,
+      "amount": 504233486,
+      "weight": 1.94
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "shares": 1218000,
+      "amount": 493836919,
+      "weight": 1.9
+    },
+    {
+      "code": "3044",
+      "name": "健鼎",
+      "shares": 1034000,
+      "amount": 418461810,
+      "weight": 1.61
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "shares": 581000,
+      "amount": 389871252,
+      "weight": 1.5
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "shares": 608000,
+      "amount": 384672968,
+      "weight": 1.48
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "shares": 481000,
+      "amount": 353483268,
+      "weight": 1.36
+    },
+    {
+      "code": "6187",
+      "name": "萬  潤",
+      "shares": 349000,
+      "amount": 348284985,
+      "weight": 1.34
+    },
+    {
+      "code": "6510",
+      "name": "精  測",
+      "shares": 132000,
+      "amount": 348284985,
+      "weight": 1.34
+    },
+    {
+      "code": "2376",
+      "name": "技嘉",
+      "shares": 919000,
+      "amount": 314496143,
+      "weight": 1.21
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "shares": 258000,
+      "amount": 306698718,
+      "weight": 1.18
+    },
+    {
+      "code": "3036",
+      "name": "文曄",
+      "shares": 1497000,
+      "amount": 293703010,
+      "weight": 1.13
+    },
+    {
+      "code": "8210",
+      "name": "勤  誠",
+      "shares": 250000,
+      "amount": 291103868,
+      "weight": 1.12
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "shares": 542000,
+      "amount": 275509018,
+      "weight": 1.06
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "shares": 2006000,
+      "amount": 270310735,
+      "weight": 1.04
+    },
+    {
+      "code": "1590",
+      "name": "亞德客-KY",
+      "shares": 193000,
+      "amount": 262513309,
+      "weight": 1.01
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "shares": 260000,
+      "amount": 254715884,
+      "weight": 0.98
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "shares": 2995000,
+      "amount": 254715884,
+      "weight": 0.98
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "shares": 4012000,
+      "amount": 246918459,
+      "weight": 0.95
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "shares": 960000,
+      "amount": 236521893,
+      "weight": 0.91
+    },
+    {
+      "code": "2313",
+      "name": "華通",
+      "shares": 1107336,
+      "amount": 231323609,
+      "weight": 0.89
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "shares": 63000,
+      "amount": 220927043,
+      "weight": 0.85
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "shares": 664000,
+      "amount": 215728759,
+      "weight": 0.83
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "shares": 1234000,
+      "amount": 213129618,
+      "weight": 0.82
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "shares": 1401000,
+      "amount": 210530476,
+      "weight": 0.81
+    },
+    {
+      "code": "5347",
+      "name": "世界先進",
+      "shares": 1351000,
+      "amount": 210530476,
+      "weight": 0.81
+    },
+    {
+      "code": "3211",
+      "name": "順  達",
+      "shares": 549000,
+      "amount": 207931334,
+      "weight": 0.8
+    },
+    {
+      "code": "2404",
+      "name": "漢唐",
+      "shares": 126000,
+      "amount": 145551934,
+      "weight": 0.56
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "shares": 615000,
+      "amount": 119560517,
+      "weight": 0.46
+    },
+    {
+      "code": "5434",
+      "name": "崇越",
+      "shares": 200000,
+      "amount": 109163950,
+      "weight": 0.42
+    },
+    {
+      "code": "3090",
+      "name": "日電貿",
+      "shares": 592000,
+      "amount": 103965667,
+      "weight": 0.4
+    },
+    {
+      "code": "3374",
+      "name": "精  材",
+      "shares": 271000,
+      "amount": 103965667,
+      "weight": 0.4
+    },
+    {
+      "code": "2881",
+      "name": "富邦金",
+      "shares": 817000,
+      "amount": 101366525,
+      "weight": 0.39
+    },
+    {
+      "code": "3293",
+      "name": "鈊  象",
+      "shares": 133000,
+      "amount": 96168242,
+      "weight": 0.37
+    },
+    {
+      "code": "6442",
+      "name": "光  聖",
+      "shares": 77000,
+      "amount": 96168242,
+      "weight": 0.37
+    },
+    {
+      "code": "7769",
+      "name": "鴻  勁",
+      "shares": 13000,
+      "amount": 85771675,
+      "weight": 0.33
+    },
+    {
+      "code": "2481",
+      "name": "強  茂",
+      "shares": 565000,
+      "amount": 80573392,
+      "weight": 0.31
+    },
+    {
+      "code": "6121",
+      "name": "新  普",
+      "shares": 178000,
+      "amount": 64978542,
+      "weight": 0.25
+    },
+    {
+      "code": "6715",
+      "name": "嘉  基",
+      "shares": 140000,
+      "amount": 54581975,
+      "weight": 0.21
+    },
+    {
+      "code": "3167",
+      "name": "大  量",
+      "shares": 61000,
+      "amount": 44185409,
+      "weight": 0.17
+    },
+    {
+      "code": "2385",
+      "name": "群光",
+      "shares": 338000,
+      "amount": 36387983,
+      "weight": 0.14
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "shares": 236000,
+      "amount": 23392275,
+      "weight": 0.09
+    },
+    {
+      "code": "9939",
+      "name": "宏全",
+      "shares": 180000,
+      "amount": 23392275,
+      "weight": 0.09
+    },
+    {
+      "code": "6139",
+      "name": "亞  翔",
+      "shares": 12000,
+      "amount": 10396567,
+      "weight": 0.04
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "shares": 25000,
+      "amount": 7797425,
+      "weight": 0.03
+    }
+  ],
+  "extra": {
+    "options": [],
+    "non_stock_detail": "ok",
+    "amount_basis": "weight_x_aum"
+  }
+}

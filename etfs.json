@@ -35,10 +35,68 @@
       "description": "鎖定台灣長期耀眼的趨勢產業與龍頭企業，依市況動態調整，追求優於大盤的成長。",
       "color": "#d97b1f",
       "info_url": "https://websys.fsit.com.tw/FubonETF/Fund/Profile.aspx?stkId=00405A"
+    },
+    {
+      "code": "00980A",
+      "name": "主動野村臺灣優選",
+      "full_name": "野村臺灣智慧優選主動式ETF",
+      "provider": "nomura",
+      "provider_id": "00980A",
+      "issuer": "野村投信",
+      "tag": "智慧優選",
+      "description": "以基本面研究搭配量化工具，挑選兼具成長性與配息能力的台灣企業。",
+      "color": "#7c5cd6",
+      "info_url": "https://www.nomurafunds.com.tw/ETFWEB/product-description?fundNo=00980A"
+    },
+    {
+      "code": "00985A",
+      "name": "主動野村台灣50",
+      "provider": "nomura",
+      "provider_id": "00985A",
+      "issuer": "野村投信",
+      "tag": "大型股增強",
+      "description": "以台灣大型企業為核心，透過主動選股追求超越績效指標的表現。",
+      "color": "#c2416b",
+      "info_url": "https://www.nomurafunds.com.tw/ETFWEB/product-description?fundNo=00985A"
+    },
+    {
+      "code": "00999A",
+      "name": "主動野村臺灣高息",
+      "provider": "nomura",
+      "provider_id": "00999A",
+      "issuer": "野村投信",
+      "tag": "收益與成長",
+      "description": "結合高股息與價值選股，兼顧股息收益與中長期資本增值。",
+      "color": "#0f8b8d",
+      "info_url": "https://www.nomurafunds.com.tw/ETFWEB/product-description?fundNo=00999A"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "full_name": "國泰台股動能高息主動式ETF基金",
+      "provider": "cathay",
+      "provider_id": "EA",
+      "issuer": "國泰投信",
+      "tag": "動能高息",
+      "description": "結合股價動能與股息挑選台灣企業，並搭配台指選擇權策略增加收益。",
+      "color": "#8c6d3f",
+      "info_url": "https://www.cathaysite.com.tw/ETF/detail/EEA?tab=etf3"
+    },
+    {
+      "code": "00401A",
+      "name": "主動摩根台灣鑫收",
+      "full_name": "摩根台灣鑫收益主動式ETF基金",
+      "provider": "jpm",
+      "provider_id": "TW00000401A1",
+      "issuer": "摩根投信",
+      "tag": "掩護性買權",
+      "description": "主動精選台灣股票，搭配紀律性掩護性買權策略，追求資本增值與收益。",
+      "color": "#4b6584",
+      "info_url": "https://am.jpmorgan.com/tw/zh/asset-management/twetf/products/jpmorgan-taiwan-taiwan-equity-high-income-active-etf-tw00000401a1"
     }
   ],
   "analysis": {
-    "co_signal_min_etfs": 2,
+    "co_signal_min_etfs": 3,
     "min_per_unit_change_pct": 0.5,
     "corporate_action_min_ratio": 1.5,
     "corporate_action_tolerance_pct": 1.0,

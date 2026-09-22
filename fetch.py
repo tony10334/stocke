@@ -39,6 +39,7 @@ def parse_args(argv=None):
     p.add_argument("--date-to", type=dt.date.fromisoformat, help="與 --date 搭配，逐日抓到這天（含）")
     p.add_argument("--config", default="etfs.json")
     p.add_argument("--data-dir", default="data")
+    p.add_argument("--catch-up", type=int, default=3, help="單日模式下，順便補抓前 N 個營業日缺漏的快照（0 = 不補）")
     p.add_argument("--no-prices", action="store_true", help="不抓證交所行情")
     p.add_argument("--prices-only", action="store_true", help="只抓行情，不抓持股")
     p.add_argument("-v", "--verbose", action="store_true")
@@ -80,37 +81,53 @@ def run(args) -> int:
     clients: dict[str, HttpClient] = {}
     had_error = False
 
-    for data_date in ([] if args.prices_only else iter_dates(start, args.date_to)):
-        for cfg in etfs:
-            code, provider = cfg["code"], cfg["provider"]
-            fetcher = get_fetcher(provider)
-            record = {"ts": now_taipei().isoformat(), "etf": code, "date": data_date.isoformat()}
-            if fetcher is None:
-                log.warning("%s: fetcher for provider %r not implemented, skipped", code, provider)
-                append_log(args.data_dir, {**record, "status": "skipped", "reason": "no_fetcher"})
-                continue
-            client = clients.setdefault(provider, HttpClient())
-            try:
-                snap = fetcher(cfg, data_date, client)
-                if snap["date"] != data_date.isoformat():
-                    raise FetchError(f"fetcher returned data date {snap['date']}, wanted {data_date}")
-                path, status = write_snapshot(args.data_dir, snap)
-                log.info("%s %s: %s (%d holdings, nav %s, cash detail %s) %s",
-                         code, data_date, status, len(snap["holdings"]), snap["nav"],
-                         "yes" if snap["non_stock"] else "no", path)
-                append_log(args.data_dir, {**record, "status": status, "posted_date": snap["posted_date"],
-                                           "path": path.replace("\\", "/")})
-            except NoDataError as e:
-                log.warning("%s %s: no data (%s)", code, data_date, e)
-                append_log(args.data_dir, {**record, "status": "no_data", "reason": str(e)})
-            except FetchError as e:
-                had_error = True
-                log.error("%s %s: FAILED: %s", code, data_date, e)
-                append_log(args.data_dir, {**record, "status": "error", "reason": str(e)})
-            except Exception as e:  # 網路層或未預期的例外，也不能讓其他檔中斷
-                had_error = True
-                log.exception("%s %s: unexpected error", code, data_date)
-                append_log(args.data_dir, {**record, "status": "error", "reason": f"{type(e).__name__}: {e}"})
+    # 要抓的 (資料日, ETF)：正常區間 + 單日模式下前幾個營業日缺漏的補抓（投信延遲公告用）
+    jobs: list[tuple[dt.date, dict, str]] = []
+    if not args.prices_only:
+        for data_date in iter_dates(start, args.date_to):
+            for cfg in etfs:
+                jobs.append((data_date, cfg, "fetch"))
+        if args.date_to is None and args.catch_up > 0:
+            d, n = start, 0
+            while n < args.catch_up:
+                d -= dt.timedelta(days=1)
+                if d.weekday() >= 5:
+                    continue
+                n += 1
+                for cfg in etfs:
+                    if not os.path.exists(os.path.join(args.data_dir, cfg["code"], f"{d.isoformat()}.json")):
+                        jobs.append((d, cfg, "catch_up"))
+
+    for data_date, cfg, mode in jobs:
+        code, provider = cfg["code"], cfg["provider"]
+        fetcher = get_fetcher(provider)
+        record = {"ts": now_taipei().isoformat(), "etf": code, "date": data_date.isoformat(), "mode": mode}
+        if fetcher is None:
+            log.warning("%s: fetcher for provider %r not implemented, skipped", code, provider)
+            append_log(args.data_dir, {**record, "status": "skipped", "reason": "no_fetcher"})
+            continue
+        client = clients.setdefault(provider, HttpClient())
+        try:
+            snap = fetcher(cfg, data_date, client)
+            if snap["date"] != data_date.isoformat():
+                raise FetchError(f"fetcher returned data date {snap['date']}, wanted {data_date}")
+            path, status = write_snapshot(args.data_dir, snap)
+            log.info("%s %s: %s (%d holdings, nav %s, cash detail %s) %s",
+                     code, data_date, status, len(snap["holdings"]), snap["nav"],
+                     "yes" if snap["non_stock"] else "no", path)
+            append_log(args.data_dir, {**record, "status": status, "posted_date": snap["posted_date"],
+                                       "path": path.replace("\\", "/")})
+        except NoDataError as e:
+            (log.info if mode == "catch_up" else log.warning)("%s %s: no data (%s)", code, data_date, e)
+            append_log(args.data_dir, {**record, "status": "no_data", "reason": str(e)})
+        except FetchError as e:
+            had_error = True
+            log.error("%s %s: FAILED: %s", code, data_date, e)
+            append_log(args.data_dir, {**record, "status": "error", "reason": str(e)})
+        except Exception as e:  # 網路層或未預期的例外，也不能讓其他檔中斷
+            had_error = True
+            log.exception("%s %s: unexpected error", code, data_date)
+            append_log(args.data_dir, {**record, "status": "error", "reason": f"{type(e).__name__}: {e}"})
 
     if not args.no_prices:
         end = args.date_to or start

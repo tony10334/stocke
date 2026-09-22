@@ -257,3 +257,4 @@
 {"ts": "2026-09-21T23:59:05+08:00", "etf": "00403A", "date": "2026-09-21", "status": "created", "posted_date": "2026-09-22", "path": "data/00403A/2026-09-21.json"}
 {"ts": "2026-09-21T23:59:08+08:00", "etf": "00405A", "date": "2026-09-21", "status": "created", "posted_date": "2026-09-21", "path": "data/00405A/2026-09-21.json"}
 {"ts": "2026-09-21T23:59:09+08:00", "etf": "*", "date": "2026-09-21", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 1, "has_end": true}, "00403A": {"changed": 1, "has_end": true}, "00405A": {"changed": 1, "has_end": true}}}
+{"ts": "2026-09-22T14:18:33+08:00", "etf": "*", "date": "2026-09-22", "kind": "prices", "status": "ok", "summary": {"00980A": {"changed": 80, "has_end": true}, "00985A": {"changed": 80, "has_end": true}, "00999A": {"changed": 80, "has_end": true}, "00400A": {"changed": 80, "has_end": true}, "00401A": {"changed": 80, "has_end": true}}}

@@ -156,6 +156,36 @@
 7. **流通單位數**兩家都直接揭露（統一 `OUT_UNIT`，富邦「基金在外流通單位數」），不需用規模÷淨值推算。
 8. 統一 fundCode（`49YTW`）與交易代號不同，`etfs.json` 每檔要多一個 `provider_id` 欄位。
 
+## 3b. 2026-09-22 新增：野村、國泰、摩根
+
+### 野村投信（00980A、00985A、00999A）— `www.nomurafunds.com.tw`
+
+- 頁面 `ETFWEB/product-description?fundNo=00980A&tab=Shareholding`（Angular）。
+- API：`POST /API/ETFAPI/api/Fund/GetFundAssets`，JSON `{"FundID":"00980A","SearchDate":"2026-09-21"}`。
+  - `SearchDate` 必須是 `YYYY-MM-DD`；空字串或 `2026/09/21` 會 400；缺參數或 null 回最新一天。
+  - 非營業日／未公告：`StatusCode: 5`「此搜尋條件尚無相關資料」。
+  - 回傳 `Entries.Data.FundAsset {Aum, Units, Nav, NavDate}`，`Table[]` 三張：`股票`（代號、名稱、股數、權重%）、`期貨`（代碼、名稱、口數、權重%）、空標題（項目／金額，含 股票、期貨、現金、保證金、應收(付)證券款）。
+  - 不需 cookie，curl 直接可打。歷史至少到 2026-06。
+- 樣本：`nomura/00980A_GetFundAssets_2026-09-21.json`、`00985A_…`、`00999A_…`。
+
+### 國泰投信（00400A）— `cwapi.cathaysite.com.tw`
+
+- 官網 `www.cathaysite.com.tw/ETF/detail/EEA?tab=etf3` 是前端渲染，資料來自 `cwapi`，全部 GET、無需 cookie：
+  - `/api/ETF/GetETFAssets?FundCode=EA&SearchDate=2026-09-21&status=1` → `{preDate, fundNav(淨資產), fundOutstandingShares, fundPerNav}`
+  - `/api/ETF/GetETFDetailStockList`（stockCode, stockName, volumn, weights）、`GetETFOptionList`、`GetETFDetailBalList`（現金、保證金、申贖應付款、股票、選擇權）、`GetETFDetailFutureList`。
+  - `FundCode` 是內部代碼，`GetETFList` 可查對照（00400A = `EA`）。
+  - 查未來日期會退回最新（`preDate` 為準），週日回 `returnCode 4005 查無資料`。歷史至少到 2026-04。
+- 樣本：`cathay/00400A_*_2026-09-21.json`（五個端點）。
+
+### 摩根投信（00401A）— `am.jpmorgan.com`
+
+- 產品頁 `…/twetf/products/jpmorgan-taiwan-taiwan-equity-high-income-active-etf-tw00000401a1`，資料由 `FundsMarketingHandler/product-data?cusip=TW00000401A1&country=tw&role=twetf&language=zh` JSON 提供（只有最新一天的持股）。
+- 歷史用 Excel：`FundsMarketingHandler/excel?type=m12_pcf&cusip=TW00000401A1&country=tw&role=twetf&locale=zh-TW&date=YYYY-MM-DD`
+  - `date` 是 PCF 公告日（資料日的下一營業日）；工作表：現金申購買回清單公告（淨資產、單位數、淨值）、基金資產 - 股票（代碼、名稱、股數、金額、權重）、期貨、選擇權、現金與約當現金。工作表標題括號內是資料日。
+  - `type=holding_pcf&date=<資料日>` 只有持股四張表，沒有摘要。
+  - `product-data` 的 `stringValueWrapper.m12AvailableDates` 列出有 PCF 的日期。
+- 樣本：`jpm/00401A_m12_pcf_2026-09-22.xlsx`、`00401A_holding_pcf_2026-09-21.xlsx`、`00401A_product-data.json`。
+
 ## 4. robots.txt（2026-09-15 查詢）
 
 - `websys.fsit.com.tw/robots.txt`：`Disallow: /` 但 `Allow: /FubonETF`、`Allow: /Event` → 我們用的 `/FubonETF/Trade/Assets.aspx` 在允許範圍。

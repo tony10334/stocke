@@ -12,8 +12,11 @@ data_date 是「持股資料日」（不是投信的公告日）。回傳值是 
 import importlib
 
 PROVIDERS = {
-    "uni": "fetchers.uni",      # 統一投信
-    "fubon": "fetchers.fubon",  # 富邦投信（步驟 2 後半再寫）
+    "uni": "fetchers.uni",        # 統一投信
+    "fubon": "fetchers.fubon",    # 富邦投信
+    "nomura": "fetchers.nomura",  # 野村投信
+    "cathay": "fetchers.cathay",  # 國泰投信
+    "jpm": "fetchers.jpm",        # 摩根投信
 }
 
 

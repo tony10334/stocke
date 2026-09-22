@@ -32,7 +32,8 @@ DEFAULT_CONFIG = {
     "corporate_action_min_ratio": 1.5,  # 股數倍數 >= 1.5 或 <= 1/1.5 才可能是公司行動
     "corporate_action_tolerance_pct": 1.0,  # 各 ETF 倍數彼此差異 <= 1% 視為一致
     "top_holdings": 3,                  # 總覽卡片顯示前幾大
-    "detail_change_intervals": 40,      # 單檔明細保留最近幾個區間的異動（反向索引仍看完整歷史）
+    "detail_change_intervals": 30,      # 單檔明細保留最近幾個區間的異動（反向索引仍看完整歷史）
+    "history_days": 30,                 # holdings_history 保留最近幾個資料日（前端比較窗口最多 10 天 + 歷史 6 個區間）
 }
 
 ACTION_ORDER = {"new": 0, "add": 1, "reduce": 2, "exit": 3, "corporate_action": 4}
@@ -267,15 +268,16 @@ def build_site_data(etfs: list[dict], snapshots: dict[str, dict[str, dict]],
             "top10_weight": round(sum(sorted((h.get("weight") or 0 for h in s["holdings"]), reverse=True)[:10]), 2),
         } for d, s in ((d, snaps[d]) for d in ds)]
 
+        hist_dates = ds[-cfg.get("history_days", 30):]
         stocks_hist: dict[str, dict] = {}
-        for i, d in enumerate(ds):
+        for i, d in enumerate(hist_dates):
             for h in snaps[d]["holdings"]:
-                entry = stocks_hist.setdefault(h["code"], {"name": h.get("name"), "shares": [0] * len(ds)})
+                entry = stocks_hist.setdefault(h["code"], {"name": h.get("name"), "shares": [0] * len(hist_dates)})
                 entry["shares"][i] = h.get("shares") or 0
                 entry["name"] = h.get("name") or entry["name"]
         holdings_history[code] = {
-            "dates": ds,
-            "units": [snaps[d]["outstanding_units"] for d in ds],
+            "dates": hist_dates,
+            "units": [snaps[d]["outstanding_units"] for d in hist_dates],
             "stocks": stocks_hist,
         }
 
