@@ -12,13 +12,13 @@
   const ICON_DB = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>';
 
   // 觀察設定：只存在這個瀏覽器（localStorage），資料本身不變
-  const SETTINGS_KEY = "stocketf.settings.v1";
+  const SETTINGS_KEY = "stocketf.settings.v2";  // v2：預設方向改為 both（加碼與減碼一起看）
   const SECTIONS = [
     ["signals", "共同異動雷達"], ["cash", "現金水位"], ["holdings", "持股與調整"],
     ["m-close", "收盤價"], ["m-nav", "基金淨值"], ["m-vol", "成交量"], ["m-chg", "每日漲跌幅"],
     ["m-prem", "折溢價"], ["m-aum", "基金規模"], ["m-units", "流通單位數"], ["m-top10", "前十大集中度"],
   ];
-  let settings = { window: 1, basis: "funds", min: null, direction: "buy", strength: null, show: Object.fromEntries(SECTIONS.map(([k]) => [k, true])) };
+  let settings = { window: 1, basis: "funds", min: null, direction: "both", strength: null, show: Object.fromEntries(SECTIONS.map(([k]) => [k, true])) };
   const loadSettings = () => { try { const s = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "null"); if (s) settings = { ...settings, ...s, show: { ...settings.show, ...(s.show || {}) } }; } catch (e) { /* ignore */ } };
   const saveSettings = () => { try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings)); } catch (e) { /* ignore */ } };
   const showSection = (key) => settings.show[key] !== false;
@@ -223,11 +223,20 @@
     return { from, to, participating, excluded, co_add: signals(ADD), co_reduce: signals(REDUCE), corporate_actions: Object.values(ca).sort((a, b) => a.code.localeCompare(b.code)) };
   }
 
+  // 標題裡的門檻數字是可直接改的下拉（與觀察設定面板同步）
+  function minSelect(cls) {
+    const minCount = settings.min ?? site.config.co_signal_min_etfs;
+    const maxN = Math.max(2, site.etfs.length);
+    const sel = el("select", { class: cls, "aria-label": "共同訊號門檻", onchange: (ev) => { settings.min = Number(ev.target.value); saveSettings(); renderSettings(); renderSummary(); renderConsensus(); } },
+      Array.from({ length: maxN - 1 }, (_, i) => el("option", { value: String(i + 2), selected: i + 2 === minCount || null }, String(i + 2))));
+    return sel;
+  }
+
   function renderConsensus() {
     const minCount = settings.min ?? site.config.co_signal_min_etfs;
     const unit = settings.basis === "issuers" ? "家投信" : "檔 ETF";
-    const dirLabel = settings.direction === "sell" ? "減碼" : settings.direction === "both" ? "異動" : "加碼";
-    $("#consensus-title").textContent = `${minCount} ${unit} 以上共同${dirLabel}`;
+    const dirLabel = settings.direction === "sell" ? "減碼" : settings.direction === "both" ? "加碼／減碼" : "加碼";
+    fill($("#consensus-title"), minSelect("inline-select"), ` ${unit} 以上共同${dirLabel}`);
     const body = $("#consensus-body");
     const last = site.dates.length - 1;
     const iv = computeWindow(last);
@@ -255,8 +264,8 @@
         iv.excluded.length ? el("span", null, `未納入：${iv.excluded.join("、")}`) : el("span", null, "無缺日"),
         el("span", null, `窗口 ${settings.window} 個資料日 · 強度 ≥ ${strength}%`),
       ),
-      showBuy ? (iv.co_add.length ? signalList(iv.co_add) : empty("加碼")) : null,
-      showSell ? el("div", { class: "signal-group" }, el("h3", null, `${minCount} ${unit} 以上共同減碼`), iv.co_reduce.length ? signalList(iv.co_reduce) : (showBuy ? el("p", { class: "empty" }, "無") : empty("減碼"))) : null,
+      showBuy ? el("div", { class: "signal-group" }, el("h3", null, el("span", { class: "tag-buy" }, "加碼"), `${minCount} ${unit} 以上同時建倉／加碼`), iv.co_add.length ? signalList(iv.co_add) : empty("加碼")) : null,
+      showSell ? el("div", { class: "signal-group" }, el("h3", null, el("span", { class: "tag-sell" }, "減碼"), `${minCount} ${unit} 以上同時減碼／出清`), iv.co_reduce.length ? signalList(iv.co_reduce) : empty("減碼")) : null,
       iv.corporate_actions.length ? el("div", { class: "signal-group" }, el("h3", null, "疑似公司行動（待核對）"), el("ul", null, iv.corporate_actions.map((c) => el("li", null, `${c.code} ${c.name || ""}：股數 ×${c.ratio}（${c.etfs.join("、")}）`)))) : null,
       el("p", { class: "footnote" }, `「每單位」用持有股數除以基金流通單位數，協助排除申購買回造成的規模效果。加減碼需股數確實改變且每單位變動超過強度門檻。多檔出現一致倍數變化時標為公司行動待核對。權重上升本身不算買進。`),
       el("details", { class: "signal-history" },

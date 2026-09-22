@@ -196,7 +196,16 @@ h1 { font-size: clamp(30px, 4vw, 47px); font-weight: 800; letter-spacing: -0.045
 .signal-item .stock code { font-family: var(--mono); color: var(--teal-dark); margin-right: 6px; }
 .signal-item .count { padding: 2px 9px; border-radius: 999px; background: #e7f2f3; color: var(--teal-dark); font-size: 11px; font-weight: 700; }
 .signal-item .etfs { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
-.signal-group h3 { font-size: 13px; color: #52686f; margin: 18px 0 4px; font-weight: 700; }
+.signal-group h3 { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #52686f; margin: 18px 0 8px; font-weight: 700; }
+.signal-group h3 .tag-buy, .signal-group h3 .tag-sell { padding: 1px 8px; border-radius: 999px; font-size: 11px; color: #fff; }
+.signal-group h3 .tag-buy { background: var(--up); }
+.signal-group h3 .tag-sell { background: var(--down); }
+.inline-select {
+  height: 34px; padding: 0 26px 0 10px; margin-right: 2px; border-radius: 8px; border: 1px solid var(--teal); color: var(--teal-dark);
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232b7a83' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 6px center / 14px;
+  font: inherit; font-size: 20px; font-weight: 750; appearance: none; -webkit-appearance: none; cursor: pointer; vertical-align: middle;
+}
+.inline-select:hover { background-color: #eef5f6; }
 
 .pill {
   --fund-color: var(--teal);
