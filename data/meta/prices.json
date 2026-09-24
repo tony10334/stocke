@@ -809,6 +809,16 @@
    "close": 15.57,
    "change": 0.08,
    "transactions": 5522
+  },
+  "2026-09-24": {
+   "volume": 22871974,
+   "value": 356726371,
+   "open": 15.55,
+   "high": 15.66,
+   "low": 15.47,
+   "close": 15.66,
+   "change": 0.09,
+   "transactions": 5535
   }
  },
  "00401A": {
@@ -1621,6 +1631,16 @@
    "close": 14.32,
    "change": -0.01,
    "transactions": 1008
+  },
+  "2026-09-24": {
+   "volume": 6473480,
+   "value": 92406423,
+   "open": 14.28,
+   "high": 14.32,
+   "low": 14.24,
+   "close": 14.28,
+   "change": -0.04,
+   "transactions": 1163
   }
  },
  "00403A": {
@@ -2433,6 +2453,16 @@
    "close": 10.81,
    "change": 0.11,
    "transactions": 50268
+  },
+  "2026-09-24": {
+   "volume": 285018846,
+   "value": 3089243229,
+   "open": 10.74,
+   "high": 10.89,
+   "low": 10.74,
+   "close": 10.88,
+   "change": 0.07,
+   "transactions": 40047
   }
  },
  "00405A": {
@@ -3185,6 +3215,16 @@
    "close": 9.36,
    "change": 0.13,
    "transactions": 12785
+  },
+  "2026-09-24": {
+   "volume": 71028949,
+   "value": 664459043,
+   "open": 9.35,
+   "high": 9.4,
+   "low": 9.29,
+   "close": 9.39,
+   "change": 0.03,
+   "transactions": 7726
   }
  },
  "00980A": {
@@ -3997,6 +4037,16 @@
    "close": 25.51,
    "change": 0.17,
    "transactions": 2455
+  },
+  "2026-09-24": {
+   "volume": 3989759,
+   "value": 101744772,
+   "open": 25.48,
+   "high": 25.6,
+   "low": 25.32,
+   "close": 25.56,
+   "change": 0.05,
+   "transactions": 1504
   }
  },
  "00981A": {
@@ -4809,6 +4859,16 @@
    "close": 30.65,
    "change": 0.5,
    "transactions": 57290
+  },
+  "2026-09-24": {
+   "volume": 163174741,
+   "value": 5013234497,
+   "open": 30.46,
+   "high": 30.86,
+   "low": 30.45,
+   "close": 30.85,
+   "change": 0.2,
+   "transactions": 42598
   }
  },
  "00985A": {
@@ -5621,6 +5681,16 @@
    "close": 23.44,
    "change": 0.08,
    "transactions": 764
+  },
+  "2026-09-24": {
+   "volume": 2403784,
+   "value": 56370216,
+   "open": 23.4,
+   "high": 23.52,
+   "low": 23.32,
+   "close": 23.48,
+   "change": 0.04,
+   "transactions": 855
   }
  },
  "00999A": {
@@ -6433,6 +6503,16 @@
    "close": 11.35,
    "change": 0.09,
    "transactions": 1718
+  },
+  "2026-09-24": {
+   "volume": 7280767,
+   "value": 82503535,
+   "open": 11.34,
+   "high": 11.38,
+   "low": 11.27,
+   "close": 11.35,
+   "change": 0.0,
+   "transactions": 1470
   }
  }
 }
