@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "etf": "00401A",
+  "name": "主動摩根台灣鑫收",
+  "provider": "jpm",
+  "date": "2026-09-29",
+  "posted_date": "2026-09-30",
+  "fetched_at": "2026-09-30T00:03:56+08:00",
+  "source": "official",
+  "nav": 14.17,
+  "outstanding_units": 261895000,
+  "aum": 3710380288,
+  "stock_value": 3438863855,
+  "non_stock_total": 271516433,
+  "non_stock": {
+    "cash": 296126433
+  },
+  "non_stock_items": [
+    {
+      "code": "CASH",
+      "name": "NEW TAIWAN DOLLAR",
+      "amount": 296126433
+    }
+  ],
+  "futures": [
+    {
+      "code": "FTV6",
+      "name": "台股期貨10/26",
+      "contracts": 27,
+      "amount": 9646989,
+      "weight": 0.26,
+      "month": null
+    }
+  ],
+  "holdings": [
+    {
+      "code": "2330",
+      "name": "台灣積體電路製造",
+      "shares": 300960,
+      "amount": 744876000,
+      "weight": 20.08
+    },
+    {
+      "code": "2454",
+      "name": "聯發科技",
+      "shares": 50610,
+      "amount": 248495100,
+      "weight": 6.7
+    },
+    {
+      "code": "2303",
+      "name": "聯華電子",
+      "shares": 604000,
+      "amount": 92714000,
+      "weight": 2.5
+    },
+    {
+      "code": "3711",
+      "name": "日月光",
+      "shares": 135000,
+      "amount": 92745000,
+      "weight": 2.5
+    },
+    {
+      "code": "2308",
+      "name": "台達電子工業",
+      "shares": 49990,
+      "amount": 91731650,
+      "weight": 2.47
+    },
+    {
+      "code": "3037",
+      "name": "欣興電子",
+      "shares": 74000,
+      "amount": 86210000,
+      "weight": 2.32
+    },
+    {
+      "code": "2455",
+      "name": "全新光電科技",
+      "shares": 153000,
+      "amount": 83079000,
+      "weight": 2.24
+    },
+    {
+      "code": "3008",
+      "name": "大立光電",
+      "shares": 13108,
+      "amount": 78910160,
+      "weight": 2.13
+    },
+    {
+      "code": "2382",
+      "name": "廣達電腦",
+      "shares": 233000,
+      "amount": 78404500,
+      "weight": 2.11
+    },
+    {
+      "code": "5274",
+      "name": "信驊科技",
+      "shares": 3966,
+      "amount": 76920570,
+      "weight": 2.07
+    },
+    {
+      "code": "2881",
+      "name": "富邦金融控股",
+      "shares": 476000,
+      "amount": 72114000,
+      "weight": 1.94
+    },
+    {
+      "code": "2884",
+      "name": "玉山金融控股",
+      "shares": 1536000,
+      "amount": 68966400,
+      "weight": 1.86
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "shares": 32083,
+      "amount": 67374300,
+      "weight": 1.82
+    },
+    {
+      "code": "2357",
+      "name": "華碩電腦",
+      "shares": 68000,
+      "amount": 65484000,
+      "weight": 1.76
+    },
+    {
+      "code": "7828",
+      "name": "創新服務",
+      "shares": 34370,
+      "amount": 65303000,
+      "weight": 1.76
+    },
+    {
+      "code": "3491",
+      "name": "昇達科技",
+      "shares": 41660,
+      "amount": 62906600,
+      "weight": 1.7
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "shares": 1563000,
+      "amount": 60878850,
+      "weight": 1.64
+    },
+    {
+      "code": "6515",
+      "name": "穎崴",
+      "shares": 10743,
+      "amount": 60966525,
+      "weight": 1.64
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "shares": 324000,
+      "amount": 60102000,
+      "weight": 1.62
+    },
+    {
+      "code": "6531",
+      "name": "愛普",
+      "shares": 64000,
+      "amount": 59456000,
+      "weight": 1.6
+    },
+    {
+      "code": "6223",
+      "name": "旺矽科技",
+      "shares": 11114,
+      "amount": 57626090,
+      "weight": 1.55
+    },
+    {
+      "code": "2891",
+      "name": "中國信託金融控股",
+      "shares": 801000,
+      "amount": 55028700,
+      "weight": 1.48
+    },
+    {
+      "code": "2360",
+      "name": "致茂電子",
+      "shares": 23120,
+      "amount": 50517200,
+      "weight": 1.36
+    },
+    {
+      "code": "2313",
+      "name": "華通電腦",
+      "shares": 221356,
+      "amount": 50026456,
+      "weight": 1.35
+    },
+    {
+      "code": "5347",
+      "name": "世界先進積體電路",
+      "shares": 278000,
+      "amount": 49623000,
+      "weight": 1.34
+    },
+    {
+      "code": "6147",
+      "name": "頎邦科技",
+      "shares": 232000,
+      "amount": 48372000,
+      "weight": 1.3
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "shares": 8597,
+      "amount": 48014245,
+      "weight": 1.29
+    },
+    {
+      "code": "6285",
+      "name": "啟碁科技",
+      "shares": 204000,
+      "amount": 47430000,
+      "weight": 1.28
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金融控股",
+      "shares": 962000,
+      "amount": 47234200,
+      "weight": 1.27
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "shares": 94000,
+      "amount": 46859000,
+      "weight": 1.26
+    },
+    {
+      "code": "2379",
+      "name": "瑞昱半導體",
+      "shares": 51000,
+      "amount": 38760000,
+      "weight": 1.04
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "shares": 926160,
+      "amount": 38713488,
+      "weight": 1.04
+    },
+    {
+      "code": "2882",
+      "name": "國泰金融控股",
+      "shares": 335000,
+      "amount": 37352500,
+      "weight": 1.01
+    },
+    {
+      "code": "2603",
+      "name": "長榮海運",
+      "shares": 155000,
+      "amount": 36890000,
+      "weight": 0.99
+    },
+    {
+      "code": "8464",
+      "name": "億豐綜合工業",
+      "shares": 98000,
+      "amount": 36505000,
+      "weight": 0.98
+    },
+    {
+      "code": "1303",
+      "name": "南亞塑膠工業",
+      "shares": 146000,
+      "amount": 36062000,
+      "weight": 0.97
+    },
+    {
+      "code": "2059",
+      "name": "川湖科技",
+      "shares": 2951,
+      "amount": 35751365,
+      "weight": 0.96
+    },
+    {
+      "code": "4991",
+      "name": "環宇通訊半導體控股",
+      "shares": 73000,
+      "amount": 34638500,
+      "weight": 0.93
+    },
+    {
+      "code": "1477",
+      "name": "聚陽實業",
+      "shares": 160000,
+      "amount": 30400000,
+      "weight": 0.82
+    },
+    {
+      "code": "2345",
+      "name": "智邦科技",
+      "shares": 16423,
+      "amount": 29725630,
+      "weight": 0.8
+    },
+    {
+      "code": "2412",
+      "name": "中華電信",
+      "shares": 202000,
+      "amount": 29088000,
+      "weight": 0.78
+    },
+    {
+      "code": "2383",
+      "name": "台光電子材料",
+      "shares": 5520,
+      "amount": 27158400,
+      "weight": 0.73
+    },
+    {
+      "code": "3131",
+      "name": "弘塑科技",
+      "shares": 10760,
+      "amount": 26631000,
+      "weight": 0.72
+    },
+    {
+      "code": "4904",
+      "name": "遠傳電信",
+      "shares": 255000,
+      "amount": 26647500,
+      "weight": 0.72
+    },
+    {
+      "code": "6187",
+      "name": "萬潤科技",
+      "shares": 19065,
+      "amount": 24975150,
+      "weight": 0.67
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "shares": 40000,
+      "amount": 21920000,
+      "weight": 0.59
+    },
+    {
+      "code": "2317",
+      "name": "鴻海精密工業",
+      "shares": 82000,
+      "amount": 20541000,
+      "weight": 0.55
+    },
+    {
+      "code": "5904",
+      "name": "寶雅國際",
+      "shares": 271000,
+      "amount": 18644800,
+      "weight": 0.5
+    },
+    {
+      "code": "7856",
+      "name": "漢測",
+      "shares": 4000,
+      "amount": 17260000,
+      "weight": 0.47
+    },
+    {
+      "code": "4938",
+      "name": "和碩聯合科技",
+      "shares": 119000,
+      "amount": 10805200,
+      "weight": 0.29
+    },
+    {
+      "code": "2890",
+      "name": "永豐金融控股",
+      "shares": 239920,
+      "amount": 10532488,
+      "weight": 0.28
+    },
+    {
+      "code": "1216",
+      "name": "統一企業",
+      "shares": 129000,
+      "amount": 9533100,
+      "weight": 0.26
+    },
+    {
+      "code": "2912",
+      "name": "統一超商",
+      "shares": 42000,
+      "amount": 8904000,
+      "weight": 0.24
+    },
+    {
+      "code": "3034",
+      "name": "聯詠科技",
+      "shares": 14000,
+      "amount": 7560000,
+      "weight": 0.2
+    },
+    {
+      "code": "5871",
+      "name": "中租-KY",
+      "shares": 44920,
+      "amount": 4806440,
+      "weight": 0.13
+    },
+    {
+      "code": "2885",
+      "name": "元大金融控股",
+      "shares": 10040,
+      "amount": 689748,
+      "weight": 0.02
+    }
+  ],
+  "extra": {
+    "options": [
+      {
+        "code": "TWSE 10/21/26 C46800",
+        "name": "臺指選擇權10/26 46800 買權",
+        "contracts": -20,
+        "weight": -0.04
+      },
+      {
+        "code": "TWSE 10/21/26 C46000",
+        "name": "臺指選擇權10/26 46000 買權",
+        "contracts": -20,
+        "weight": -0.06
+      },
+      {
+        "code": "TWSE 10/21/26 C46400",
+        "name": "臺指選擇權10/26 46400 買權",
+        "contracts": -320,
+        "weight": -0.82
+      }
+    ],
+    "non_stock_detail": "ok"
+  }
+}
