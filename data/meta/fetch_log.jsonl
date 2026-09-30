@@ -343,3 +343,21 @@
 {"ts": "2026-10-01T00:02:40+08:00", "etf": "00400A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetETFAssets: 查無資料"}
 {"ts": "2026-10-01T00:02:40+08:00", "etf": "00401A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "no m12_pcf with data date 2026-09-28 (not posted yet or holiday)"}
 {"ts": "2026-10-01T00:02:43+08:00", "etf": "*", "date": "2026-10-01", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 0, "has_end": false}, "00403A": {"changed": 0, "has_end": false}, "00405A": {"changed": 0, "has_end": false}, "00980A": {"changed": 0, "has_end": false}, "00985A": {"changed": 0, "has_end": false}, "00999A": {"changed": 0, "has_end": false}, "00400A": {"changed": 0, "has_end": false}, "00401A": {"changed": 0, "has_end": false}}}
+{"ts": "2026-10-01T02:09:54+08:00", "etf": "00981A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "latest PCF data date is 2026-09-30, 2026-10-01 not posted yet"}
+{"ts": "2026-10-01T02:09:58+08:00", "etf": "00403A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "latest PCF data date is 2026-09-30, 2026-10-01 not posted yet"}
+{"ts": "2026-10-01T02:09:59+08:00", "etf": "00405A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "page shows data date 2026-09-30, 2026-10-01 not posted yet (or holiday)"}
+{"ts": "2026-10-01T02:10:00+08:00", "etf": "00980A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T02:10:01+08:00", "etf": "00985A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T02:10:02+08:00", "etf": "00999A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T02:10:03+08:00", "etf": "00400A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetETFAssets preDate 2026/09/30 != 2026-10-01 (not posted yet or holiday)"}
+{"ts": "2026-10-01T02:10:04+08:00", "etf": "00401A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "no m12_pcf with data date 2026-10-01 (not posted yet or holiday)"}
+{"ts": "2026-10-01T02:10:08+08:00", "etf": "00405A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-09-30", "path": "data/00405A/2026-09-30.json"}
+{"ts": "2026-10-01T02:10:10+08:00", "etf": "00981A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "no PCF with data date 2026-09-28 (holiday?)"}
+{"ts": "2026-10-01T02:10:13+08:00", "etf": "00403A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "no PCF with data date 2026-09-28 (holiday?)"}
+{"ts": "2026-10-01T02:10:16+08:00", "etf": "00405A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "page shows data date 2026-09-24, 2026-09-28 not posted yet (or holiday)"}
+{"ts": "2026-10-01T02:10:17+08:00", "etf": "00980A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T02:10:18+08:00", "etf": "00985A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T02:10:19+08:00", "etf": "00999A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T02:10:20+08:00", "etf": "00400A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetETFAssets: 查無資料"}
+{"ts": "2026-10-01T02:10:21+08:00", "etf": "00401A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "no m12_pcf with data date 2026-09-28 (not posted yet or holiday)"}
+{"ts": "2026-10-01T02:10:23+08:00", "etf": "*", "date": "2026-10-01", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 0, "has_end": false}, "00403A": {"changed": 0, "has_end": false}, "00405A": {"changed": 0, "has_end": false}, "00980A": {"changed": 0, "has_end": false}, "00985A": {"changed": 0, "has_end": false}, "00999A": {"changed": 0, "has_end": false}, "00400A": {"changed": 0, "has_end": false}, "00401A": {"changed": 0, "has_end": false}}}
