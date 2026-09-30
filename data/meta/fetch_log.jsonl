@@ -318,3 +318,28 @@
 {"ts": "2026-09-30T00:04:19+08:00", "etf": "00400A", "date": "2026-09-25", "mode": "catch_up", "status": "no_data", "reason": "GetETFAssets: 查無資料"}
 {"ts": "2026-09-30T00:04:20+08:00", "etf": "00401A", "date": "2026-09-25", "mode": "catch_up", "status": "no_data", "reason": "no m12_pcf with data date 2026-09-25 (not posted yet or holiday)"}
 {"ts": "2026-09-30T00:04:21+08:00", "etf": "*", "date": "2026-09-30", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 1, "has_end": false}, "00403A": {"changed": 1, "has_end": false}, "00405A": {"changed": 1, "has_end": false}, "00980A": {"changed": 1, "has_end": false}, "00985A": {"changed": 1, "has_end": false}, "00999A": {"changed": 1, "has_end": false}, "00400A": {"changed": 1, "has_end": false}, "00401A": {"changed": 1, "has_end": false}}}
+{"ts": "2026-10-01T00:02:06+08:00", "etf": "00981A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "latest PCF data date is 2026-09-30, 2026-10-01 not posted yet"}
+{"ts": "2026-10-01T00:02:10+08:00", "etf": "00403A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "latest PCF data date is 2026-09-30, 2026-10-01 not posted yet"}
+{"ts": "2026-10-01T00:02:12+08:00", "etf": "00405A", "date": "2026-10-01", "mode": "fetch", "status": "error", "reason": "RemoteDisconnected: Remote end closed connection without response"}
+{"ts": "2026-10-01T00:02:12+08:00", "etf": "00980A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T00:02:13+08:00", "etf": "00985A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T00:02:14+08:00", "etf": "00999A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T00:02:16+08:00", "etf": "00400A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "GetETFAssets preDate 2026/09/30 != 2026-10-01 (not posted yet or holiday)"}
+{"ts": "2026-10-01T00:02:17+08:00", "etf": "00401A", "date": "2026-10-01", "mode": "fetch", "status": "no_data", "reason": "no m12_pcf with data date 2026-10-01 (not posted yet or holiday)"}
+{"ts": "2026-10-01T00:02:21+08:00", "etf": "00981A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-10-01", "path": "data/00981A/2026-09-30.json"}
+{"ts": "2026-10-01T00:02:23+08:00", "etf": "00403A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-10-01", "path": "data/00403A/2026-09-30.json"}
+{"ts": "2026-10-01T00:02:25+08:00", "etf": "00405A", "date": "2026-09-30", "mode": "catch_up", "status": "error", "reason": "RemoteDisconnected: Remote end closed connection without response"}
+{"ts": "2026-10-01T00:02:26+08:00", "etf": "00980A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-09-30", "path": "data/00980A/2026-09-30.json"}
+{"ts": "2026-10-01T00:02:27+08:00", "etf": "00985A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-09-30", "path": "data/00985A/2026-09-30.json"}
+{"ts": "2026-10-01T00:02:28+08:00", "etf": "00999A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-09-30", "path": "data/00999A/2026-09-30.json"}
+{"ts": "2026-10-01T00:02:28+08:00", "etf": "00400A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-09-30", "path": "data/00400A/2026-09-30.json"}
+{"ts": "2026-10-01T00:02:30+08:00", "etf": "00401A", "date": "2026-09-30", "mode": "catch_up", "status": "created", "posted_date": "2026-10-01", "path": "data/00401A/2026-09-30.json"}
+{"ts": "2026-10-01T00:02:31+08:00", "etf": "00981A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "no PCF with data date 2026-09-28 (holiday?)"}
+{"ts": "2026-10-01T00:02:34+08:00", "etf": "00403A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "no PCF with data date 2026-09-28 (holiday?)"}
+{"ts": "2026-10-01T00:02:37+08:00", "etf": "00405A", "date": "2026-09-28", "mode": "catch_up", "status": "error", "reason": "RemoteDisconnected: Remote end closed connection without response"}
+{"ts": "2026-10-01T00:02:37+08:00", "etf": "00980A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T00:02:38+08:00", "etf": "00985A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T00:02:39+08:00", "etf": "00999A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-10-01T00:02:40+08:00", "etf": "00400A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "GetETFAssets: 查無資料"}
+{"ts": "2026-10-01T00:02:40+08:00", "etf": "00401A", "date": "2026-09-28", "mode": "catch_up", "status": "no_data", "reason": "no m12_pcf with data date 2026-09-28 (not posted yet or holiday)"}
+{"ts": "2026-10-01T00:02:43+08:00", "etf": "*", "date": "2026-10-01", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 0, "has_end": false}, "00403A": {"changed": 0, "has_end": false}, "00405A": {"changed": 0, "has_end": false}, "00980A": {"changed": 0, "has_end": false}, "00985A": {"changed": 0, "has_end": false}, "00999A": {"changed": 0, "has_end": false}, "00400A": {"changed": 0, "has_end": false}, "00401A": {"changed": 0, "has_end": false}}}
