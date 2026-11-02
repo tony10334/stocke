@@ -688,3 +688,22 @@
 {"ts": "2026-10-31T02:17:07+08:00", "etf": "00401A", "date": "2026-10-29", "mode": "catch_up", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
 {"ts": "2026-10-31T02:17:10+08:00", "etf": "00401A", "date": "2026-10-28", "mode": "catch_up", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
 {"ts": "2026-10-31T02:17:12+08:00", "etf": "*", "date": "2026-10-31", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 0, "has_end": false}, "00403A": {"changed": 0, "has_end": false}, "00405A": {"changed": 0, "has_end": false}, "00980A": {"changed": 0, "has_end": false}, "00985A": {"changed": 0, "has_end": false}, "00999A": {"changed": 0, "has_end": false}, "00400A": {"changed": 0, "has_end": false}, "00401A": {"changed": 0, "has_end": false}}}
+{"ts": "2026-11-03T03:40:25+08:00", "etf": "00981A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "latest PCF data date is 2026-11-02, 2026-11-03 not posted yet"}
+{"ts": "2026-11-03T03:40:30+08:00", "etf": "00403A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "latest PCF data date is 2026-11-02, 2026-11-03 not posted yet"}
+{"ts": "2026-11-03T03:40:31+08:00", "etf": "00405A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "page shows data date 2026-11-02, 2026-11-03 not posted yet (or holiday)"}
+{"ts": "2026-11-03T03:40:32+08:00", "etf": "00980A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-11-03T03:40:33+08:00", "etf": "00985A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-11-03T03:40:35+08:00", "etf": "00999A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "GetFundAssets: 此搜尋條件尚無相關資料"}
+{"ts": "2026-11-03T03:40:35+08:00", "etf": "00400A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "GetETFAssets preDate 2026/11/02 != 2026-11-03 (not posted yet or holiday)"}
+{"ts": "2026-11-03T03:40:36+08:00", "etf": "00401A", "date": "2026-11-03", "mode": "fetch", "status": "no_data", "reason": "no m12_pcf with data date 2026-11-03 (not posted yet or holiday)"}
+{"ts": "2026-11-03T03:40:40+08:00", "etf": "00981A", "date": "2026-11-02", "mode": "catch_up", "status": "created", "posted_date": "2026-11-03", "path": "data/00981A/2026-11-02.json"}
+{"ts": "2026-11-03T03:40:43+08:00", "etf": "00403A", "date": "2026-11-02", "mode": "catch_up", "status": "created", "posted_date": "2026-11-03", "path": "data/00403A/2026-11-02.json"}
+{"ts": "2026-11-03T03:40:46+08:00", "etf": "00405A", "date": "2026-11-02", "mode": "catch_up", "status": "created", "posted_date": "2026-11-02", "path": "data/00405A/2026-11-02.json"}
+{"ts": "2026-11-03T03:40:48+08:00", "etf": "00980A", "date": "2026-11-02", "mode": "catch_up", "status": "created", "posted_date": "2026-11-02", "path": "data/00980A/2026-11-02.json"}
+{"ts": "2026-11-03T03:40:49+08:00", "etf": "00985A", "date": "2026-11-02", "mode": "catch_up", "status": "created", "posted_date": "2026-11-02", "path": "data/00985A/2026-11-02.json"}
+{"ts": "2026-11-03T03:40:50+08:00", "etf": "00999A", "date": "2026-11-02", "mode": "catch_up", "status": "created", "posted_date": "2026-11-02", "path": "data/00999A/2026-11-02.json"}
+{"ts": "2026-11-03T03:40:51+08:00", "etf": "00400A", "date": "2026-11-02", "mode": "catch_up", "status": "created", "posted_date": "2026-11-02", "path": "data/00400A/2026-11-02.json"}
+{"ts": "2026-11-03T03:40:54+08:00", "etf": "00401A", "date": "2026-11-02", "mode": "catch_up", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
+{"ts": "2026-11-03T03:40:57+08:00", "etf": "00401A", "date": "2026-10-30", "mode": "catch_up", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
+{"ts": "2026-11-03T03:40:58+08:00", "etf": "00401A", "date": "2026-10-29", "mode": "catch_up", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
+{"ts": "2026-11-03T03:40:58+08:00", "etf": "*", "date": "2026-11-03", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 1, "has_end": false}, "00403A": {"changed": 1, "has_end": false}, "00405A": {"changed": 1, "has_end": false}, "00980A": {"changed": 1, "has_end": false}, "00985A": {"changed": 1, "has_end": false}, "00999A": {"changed": 1, "has_end": false}, "00400A": {"changed": 1, "has_end": false}, "00401A": {"changed": 1, "has_end": false}}}
