@@ -707,3 +707,19 @@
 {"ts": "2026-11-03T03:40:57+08:00", "etf": "00401A", "date": "2026-10-30", "mode": "catch_up", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
 {"ts": "2026-11-03T03:40:58+08:00", "etf": "00401A", "date": "2026-10-29", "mode": "catch_up", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
 {"ts": "2026-11-03T03:40:58+08:00", "etf": "*", "date": "2026-11-03", "kind": "prices", "status": "ok", "summary": {"00981A": {"changed": 1, "has_end": false}, "00403A": {"changed": 1, "has_end": false}, "00405A": {"changed": 1, "has_end": false}, "00980A": {"changed": 1, "has_end": false}, "00985A": {"changed": 1, "has_end": false}, "00999A": {"changed": 1, "has_end": false}, "00400A": {"changed": 1, "has_end": false}, "00401A": {"changed": 1, "has_end": false}}}
+{"ts": "2026-11-03T11:21:54+08:00", "etf": "00401A", "date": "2026-11-02", "mode": "fetch", "status": "error", "reason": "m12_pcf: summary sheet missing aum/units"}
+{"ts": "2026-11-03T11:23:02+08:00", "etf": "00401A", "date": "2026-10-13", "mode": "fetch", "status": "created", "posted_date": "2026-10-14", "path": "data/00401A/2026-10-13.json"}
+{"ts": "2026-11-03T11:23:05+08:00", "etf": "00401A", "date": "2026-10-14", "mode": "fetch", "status": "created", "posted_date": "2026-10-15", "path": "data/00401A/2026-10-14.json"}
+{"ts": "2026-11-03T11:23:07+08:00", "etf": "00401A", "date": "2026-10-15", "mode": "fetch", "status": "created", "posted_date": "2026-10-16", "path": "data/00401A/2026-10-15.json"}
+{"ts": "2026-11-03T11:23:09+08:00", "etf": "00401A", "date": "2026-10-16", "mode": "fetch", "status": "created", "posted_date": "2026-10-19", "path": "data/00401A/2026-10-16.json"}
+{"ts": "2026-11-03T11:23:11+08:00", "etf": "00401A", "date": "2026-10-19", "mode": "fetch", "status": "created", "posted_date": "2026-10-20", "path": "data/00401A/2026-10-19.json"}
+{"ts": "2026-11-03T11:23:13+08:00", "etf": "00401A", "date": "2026-10-20", "mode": "fetch", "status": "created", "posted_date": "2026-10-21", "path": "data/00401A/2026-10-20.json"}
+{"ts": "2026-11-03T11:23:14+08:00", "etf": "00401A", "date": "2026-10-21", "mode": "fetch", "status": "created", "posted_date": "2026-10-22", "path": "data/00401A/2026-10-21.json"}
+{"ts": "2026-11-03T11:23:17+08:00", "etf": "00401A", "date": "2026-10-22", "mode": "fetch", "status": "created", "posted_date": "2026-10-27", "path": "data/00401A/2026-10-22.json"}
+{"ts": "2026-11-03T11:23:19+08:00", "etf": "00401A", "date": "2026-10-23", "mode": "fetch", "status": "no_data", "reason": "no m12_pcf with data date 2026-10-23 (not posted yet or holiday)"}
+{"ts": "2026-11-03T11:23:24+08:00", "etf": "00401A", "date": "2026-10-26", "mode": "fetch", "status": "no_data", "reason": "no m12_pcf with data date 2026-10-26 (not posted yet or holiday)"}
+{"ts": "2026-11-03T11:23:26+08:00", "etf": "00401A", "date": "2026-10-27", "mode": "fetch", "status": "created", "posted_date": "2026-10-28", "path": "data/00401A/2026-10-27.json"}
+{"ts": "2026-11-03T11:23:27+08:00", "etf": "00401A", "date": "2026-10-28", "mode": "fetch", "status": "created", "posted_date": "2026-10-29", "path": "data/00401A/2026-10-28.json"}
+{"ts": "2026-11-03T11:23:29+08:00", "etf": "00401A", "date": "2026-10-29", "mode": "fetch", "status": "created", "posted_date": "2026-10-30", "path": "data/00401A/2026-10-29.json"}
+{"ts": "2026-11-03T11:23:30+08:00", "etf": "00401A", "date": "2026-10-30", "mode": "fetch", "status": "created", "posted_date": "2026-11-02", "path": "data/00401A/2026-10-30.json"}
+{"ts": "2026-11-03T11:23:31+08:00", "etf": "00401A", "date": "2026-11-02", "mode": "fetch", "status": "created", "posted_date": "2026-11-03", "path": "data/00401A/2026-11-02.json"}

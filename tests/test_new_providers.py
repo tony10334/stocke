@@ -128,6 +128,17 @@ class Jpm(unittest.TestCase):
         self.assertEqual(p["options"][2]["contracts"], -320)
         self.assertEqual(p["non_stock"], {"cash": 296_414_430})
 
+    def test_parse_m12_new_label_format(self):
+        # 2026-10 中起摘要列標籤帶日期前綴：「2026/11/02 基金淨資產價值(元)」
+        p = jpm.parse_m12(load_bytes("jpm", "00401A_m12_pcf_2026-11-03.xlsx"))
+        self.assertEqual(p["date"], dt.date(2026, 11, 2))
+        self.assertEqual(p["posted_date"], dt.date(2026, 11, 3))
+        self.assertEqual(p["aum"], 3_872_297_605)
+        self.assertEqual(p["outstanding_units"], 296_895_000)
+        self.assertEqual(p["nav"], 13.04)
+        self.assertEqual(p["holdings"][0]["code"], "2330")
+        self.assertEqual(p["holdings"][0]["shares"], 327_760)
+
     def test_not_xlsx_is_no_data(self):
         with self.assertRaises(NoDataError):
             jpm.parse_m12(b"<html>nope</html>")

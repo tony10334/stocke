@@ -77,12 +77,13 @@ def parse_m12(data: bytes) -> dict:
 
     aum = units = nav = None
     post_date = _title_date(summary)
+    # 標籤 2026-10 中起多了日期前綴（「2026/11/02 基金淨資產價值(元)」），所以用尾端／包含比對
     for r in summary:
         label = (r[0] or "").strip() if r else ""
         val = r[1] if len(r) > 1 else None
-        if label == "基金淨資產價值(元)":
+        if label.endswith("基金淨資產價值(元)"):
             aum = to_int(_num(val))
-        elif label == "已發行受益權單位總數":
+        elif label.endswith("已發行受益權單位總數"):
             units = to_int(_num(val))
         elif "每受益權單位淨資產價值" in label:
             nav = _num(val)
